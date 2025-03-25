@@ -1,0 +1,99 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          
+      - name: Install Dependencies
+        working-directory: ./deploy-ember
+        run: npm install
+      
+      - name: Create Directories
+        run: |
+          mkdir -p deploy-ember/public
+          mkdir -p deploy-ember/public/css
+          mkdir -p deploy-ember/public/js
+          mkdir -p deploy-ember/public/js/systems
+          mkdir -p deploy-ember/public/media/images/generated/characters
+          mkdir -p deploy-ember/public/media/images/generated/locations
+          mkdir -p deploy-ember/public/media/images/generated/ui
+          mkdir -p deploy-ember/public/media/audio/music
+          mkdir -p deploy-ember/public/media/audio/sfx
+          mkdir -p deploy-ember/public/media/audio/ambient
+      
+      - name: Copy Game Files
+        run: |
+          # HTML files
+          cp -f rpg-game/index.html deploy-ember/public/ || true
+          cp -f rpg-game/game.html deploy-ember/public/ || true
+          cp -f rpg-game/ember-throne.html deploy-ember/public/ || true
+          
+          # CSS files
+          cp -f rpg-game/css/*.css deploy-ember/public/css/ || true
+          
+          # JS files
+          cp -f rpg-game/js/*.js deploy-ember/public/js/ || true
+          cp -f rpg-game/js/systems/*.js deploy-ember/public/js/systems/ || true
+          
+          # Media files - Character images
+          cp -f rpg-game/media/images/generated/characters/*_portrait.png deploy-ember/public/media/images/generated/characters/ || true
+          cp -f rpg-game/media/images/generated/characters/warrior_character.png deploy-ember/public/media/images/generated/characters/ || true
+          cp -f rpg-game/media/images/generated/characters/wizard_character.png deploy-ember/public/media/images/generated/characters/ || true
+          cp -f rpg-game/media/images/generated/characters/rogue_character.png deploy-ember/public/media/images/generated/characters/ || true
+          cp -f rpg-game/media/images/generated/characters/cleric_character.png deploy-ember/public/media/images/generated/characters/ || true
+          
+          # Media files - Location images
+          cp -f rpg-game/media/images/generated/locations/*.png deploy-ember/public/media/images/generated/locations/ || true
+          
+          # Media files - UI elements
+          cp -f rpg-game/media/images/generated/ui/*.png deploy-ember/public/media/images/generated/ui/ || true
+          
+          # Media files - Audio files
+          cp -f rpg-game/media/audio/music/*.ogg deploy-ember/public/media/audio/music/ || true
+          cp -f rpg-game/media/audio/sfx/*.ogg deploy-ember/public/media/audio/sfx/ || true
+          cp -f rpg-game/media/audio/ambient/*.ogg deploy-ember/public/media/audio/ambient/ || true
+      
+      - name: Create GitHub Pages 404 redirect
+        run: |
+          cp deploy-ember/public/index.html deploy-ember/public/404.html || true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './deploy-ember/public'
+          
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3 
