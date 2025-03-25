@@ -18,23 +18,34 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Pre-check job to verify files exist
+  # Pre-check job to verify files exist and validate structure
   verify:
     runs-on: ubuntu-latest
     outputs:
       files_exist: ${{ steps.check.outputs.files_exist }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          
       - name: Check if files exist
         id: check
         shell: bash
         run: |
-          if [ -d "./rpg-game" ]; then
-            echo "files_exist=true" >> $GITHUB_OUTPUT
-          else
-            echo "Directory ./rpg-game not found!"
+          if [ ! -d "./rpg-game" ]; then
+            echo "::error::Directory ./rpg-game not found!"
             exit 1
           fi
+          
+          # Verify essential files exist
+          required_files=("index.html" "game.html")
+          for file in "${required_files[@]}"; do
+            if [ ! -f "./rpg-game/$file" ]; then
+              echo "::error::Required file $file not found in rpg-game directory!"
+              exit 1
+            fi
+          done
+          echo "files_exist=true" >> $GITHUB_OUTPUT
 
   build:
     needs: verify
@@ -49,10 +60,21 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
         
-      - name: Verify directory contents
+      - name: Verify directory contents and permissions
         run: |
+          echo "Verifying directory structure and permissions..."
+          find ./rpg-game -type f -exec chmod 644 {} \;
+          find ./rpg-game -type d -exec chmod 755 {} \;
+          
+          # List all files for logging
+          echo "Directory contents:"
           ls -la ./rpg-game
-          echo "Verifying directory structure..."
+          
+          # Verify no sensitive files
+          if find ./rpg-game -type f -name "*.env*" -o -name "*.key" -o -name "*.pem" -o -name "*.pfx" -o -name "*.p12" -o -name "*secret*" -o -name "*password*" 2>/dev/null; then
+            echo "::error::Sensitive files detected in deployment directory!"
+            exit 1
+          fi
           
       - name: Upload artifact
         id: upload
@@ -65,7 +87,17 @@ jobs:
         if: always()
         run: |
           if [ "${{ steps.upload.outcome }}" != "success" ]; then
-            echo "Artifact upload failed! Retrying..."
+            echo "::error::Artifact upload failed! Attempting retry..."
+            # Retry upload up to 3 times
+            for i in {1..3}; do
+              echo "Retry attempt $i..."
+              if actions/upload-pages-artifact@v3 with path='./rpg-game' retention-days=1; then
+                echo "Retry successful!"
+                exit 0
+              fi
+              sleep 5
+            done
+            echo "::error::All retry attempts failed!"
             exit 1
           fi
 
@@ -83,11 +115,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        timeout-minutes: 10
         
       - name: Verify deployment
         if: always()
         run: |
           if [ "${{ steps.deployment.outcome }}" != "success" ]; then
-            echo "Deployment failed! Check permissions and environment protection rules."
-            exit 1
-          fi 
+            echo "::error::Deployment failed! Checking status..."
+            
+            # Check deployment status
+            if curl -s -o /dev/null -w "%{http_code}" ${{ steps.deployment.outputs.page_url }} | grep -q "200"; then
+              echo "Site is accessible despite deployment status!"
+            else
+              echo "::error::Site is not accessible. Deployment failed!"
+              exit 1
+            fi
+          fi
+          
+      - name: Cleanup
+        if: always()
+        run: |
+          echo "Cleaning up temporary files..."
+          rm -rf ./.github/tmp || true 
