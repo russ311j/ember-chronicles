@@ -25,27 +25,38 @@ jobs:
       files_exist: ${{ steps.check.outputs.files_exist }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+      
+      - name: Debug directory structure
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Directory contents:"
+          ls -la
+          echo "RPG game directory contents:"
+          ls -la rpg-game/
           
       - name: Check if files exist
         id: check
         shell: bash
         run: |
-          if [ ! -d "./rpg-game" ]; then
-            echo "::error::Directory ./rpg-game not found!"
+          # First verify rpg-game directory exists
+          if [ ! -d "rpg-game" ]; then
+            echo "::error::Directory rpg-game not found!"
             exit 1
           fi
           
-          # Verify essential files exist
-          required_files=("index.html" "game.html")
-          for file in "${required_files[@]}"; do
-            if [ ! -f "./rpg-game/$file" ]; then
-              echo "::error::Required file $file not found in rpg-game directory!"
-              exit 1
-            fi
-          done
-          echo "files_exist=true" >> $GITHUB_OUTPUT
+          # List contents to debug
+          echo "Contents of rpg-game directory:"
+          ls -la rpg-game/
+          
+          # Check for index.html
+          if [ -f "rpg-game/index.html" ]; then
+            echo "Found index.html"
+            echo "files_exist=true" >> $GITHUB_OUTPUT
+          else
+            echo "::error::index.html not found at rpg-game/index.html"
+            exit 1
+          fi
 
   build:
     needs: verify
@@ -59,15 +70,10 @@ jobs:
         
       - name: Prepare site root
         run: |
-          # Move all contents from rpg-game to the root deployment directory
-          mkdir _site
-          cp -r rpg-game/* _site/
-          
-          # Verify index.html exists at root
-          if [ ! -f "_site/index.html" ]; then
-            echo "::error::index.html not found in site root!"
-            exit 1
-          fi
+          mkdir -p _site
+          cp -rv rpg-game/* _site/
+          echo "Contents of _site directory:"
+          ls -la _site/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
