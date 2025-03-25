@@ -66,19 +66,45 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
         
       - name: Prepare site root
+        id: prepare
         run: |
           mkdir -p _site
           cp -rv rpg-game/* _site/
           echo "Contents of _site directory:"
           ls -la _site/
+          if [ ! -f "_site/index.html" ]; then
+            echo "::error::Failed to copy index.html to _site"
+            exit 1
+          fi
           
       - name: Upload artifact
+        id: upload
         uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
         with:
           path: '_site'
+          retention-days: 1
+          
+      - name: Retry upload on failure
+        if: steps.upload.outcome == 'failure'
+        run: |
+          echo "First upload attempt failed, waiting 10 seconds before retry..."
+          sleep 10
+          for i in {1..3}; do
+            echo "Retry attempt $i..."
+            if actions/upload-pages-artifact@v3 --path _site --retention-days 1; then
+              echo "Upload succeeded on retry $i"
+              exit 0
+            fi
+            echo "Retry $i failed, waiting 10 seconds..."
+            sleep 10
+          done
+          echo "::error::All upload retries failed"
+          exit 1
           
   deploy:
     environment:
