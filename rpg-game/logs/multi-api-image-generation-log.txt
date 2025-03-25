@@ -1,0 +1,184 @@
+[2025-03-24T00:27:43.011Z] 
+=== STARTING MULTI-API IMAGE GENERATION ===
+
+[2025-03-24T00:27:43.011Z] Checking API keys...
+[2025-03-24T00:27:43.012Z] AIML_API_KEY exists: true
+[2025-03-24T00:27:43.012Z] AIML_API_KEY value: ba40...e915
+[2025-03-24T00:27:43.012Z] FLUX_API_KEY exists: true
+[2025-03-24T00:27:43.012Z] FLUX_API_KEY value: flux...MT7o
+[2025-03-24T00:27:43.012Z] STABILITY_API_KEY exists: true
+[2025-03-24T00:27:43.012Z] STABILITY_API_KEY value: sk-5...KNrq
+[2025-03-24T00:27:43.012Z] 
+Generating 4 images...
+
+[2025-03-24T00:27:43.013Z] 
+================ Processing Loading Page ================
+
+[2025-03-24T00:27:43.013Z] Attempting AIML API for Loading Page...
+[2025-03-24T00:27:43.013Z] AIML_API_KEY exists: true
+[2025-03-24T00:27:43.013Z] AIML_API_KEY value: ba40...e915
+[2025-03-24T00:27:43.013Z] Generating "Loading Page" using AIML API with stable-diffusion-v3-medium...
+[2025-03-24T00:27:43.013Z] Prompt: Fantasy loading screen, minimal design
+[2025-03-24T00:27:43.014Z] Making API request to: https://api.aiml.services/v1/images/generations
+[2025-03-24T00:27:43.014Z] Using authentication method: Bearer token
+[2025-03-24T00:27:43.155Z] Error with API request for Loading Page: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:43.155Z] AIML API failed for Loading Page: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:43.156Z] Attempting Flux API for Loading Page...
+[2025-03-24T00:27:43.156Z] FLUX_API_KEY exists: true
+[2025-03-24T00:27:43.156Z] FLUX_API_KEY value: flux...MT7o
+[2025-03-24T00:27:43.156Z] Generating "Loading Page" using Flux API...
+[2025-03-24T00:27:43.156Z] Prompt: Fantasy loading screen, minimal design
+[2025-03-24T00:27:43.157Z] Making API request to: https://api.flux.ai/v1/image
+[2025-03-24T00:27:43.157Z] Using authentication method: Bearer token
+[2025-03-24T00:27:43.349Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:27:43.350Z] Headers: {"x-guploader-uploadid":"AKDAyIttQouEq1o8ZeNWhPQolYZVGUjuyJNWrlRrt43HbwomWbVOD9ejxjMYQWRTX4Mb4OM","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:27:44 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:27:43.350Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:27:43.351Z] Flux API failed for Loading Page: API returned status 401 for Loading Page
+[2025-03-24T00:27:43.351Z] Attempting Stability API for Loading Page...
+[2025-03-24T00:27:43.351Z] STABILITY_API_KEY exists: true
+[2025-03-24T00:27:43.351Z] STABILITY_API_KEY value: sk-5...KNrq
+[2025-03-24T00:27:43.351Z] Generating "Loading Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:27:43.351Z] Prompt: Fantasy loading screen, minimal design
+[2025-03-24T00:27:43.351Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:27:43.351Z] Using authentication method: Bearer token
+[2025-03-24T00:27:43.643Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:27:43.643Z] Headers: {"date":"Mon, 24 Mar 2025 00:27:44 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520b62a902aaf5-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:27:43.643Z] API Error: {
+  "id": "3d24518338a651a9173f9f46453aa178",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:27:43.644Z] Stability API failed for Loading Page: API returned status 401 for Loading Page
+[2025-03-24T00:27:43.644Z] ❌ All APIs failed for Loading Page: All APIs failed for Loading Page
+[2025-03-24T00:27:45.647Z] 
+================ Processing Landing Page ================
+
+[2025-03-24T00:27:45.648Z] Attempting AIML API for Landing Page...
+[2025-03-24T00:27:45.648Z] AIML_API_KEY exists: true
+[2025-03-24T00:27:45.648Z] AIML_API_KEY value: ba40...e915
+[2025-03-24T00:27:45.648Z] Generating "Landing Page" using AIML API with stable-diffusion-v3-medium...
+[2025-03-24T00:27:45.648Z] Prompt: Fantasy RPG landing page, magical
+[2025-03-24T00:27:45.648Z] Making API request to: https://api.aiml.services/v1/images/generations
+[2025-03-24T00:27:45.648Z] Using authentication method: Bearer token
+[2025-03-24T00:27:45.650Z] Error with API request for Landing Page: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:45.650Z] AIML API failed for Landing Page: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:45.650Z] Attempting Flux API for Landing Page...
+[2025-03-24T00:27:45.651Z] FLUX_API_KEY exists: true
+[2025-03-24T00:27:45.651Z] FLUX_API_KEY value: flux...MT7o
+[2025-03-24T00:27:45.651Z] Generating "Landing Page" using Flux API...
+[2025-03-24T00:27:45.651Z] Prompt: Fantasy RPG landing page, magical
+[2025-03-24T00:27:45.651Z] Making API request to: https://api.flux.ai/v1/image
+[2025-03-24T00:27:45.651Z] Using authentication method: Bearer token
+[2025-03-24T00:27:45.953Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:27:45.953Z] Headers: {"x-guploader-uploadid":"AKDAyIvqwWl7wUkCj5oLlDyOMQvgNiX3Su5QVk_1qMknuS5HGVdcAhP7Q6OYWbOtcU6pmIlF","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:27:46 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:27:45.953Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:27:45.953Z] Flux API failed for Landing Page: API returned status 401 for Landing Page
+[2025-03-24T00:27:45.954Z] Attempting Stability API for Landing Page...
+[2025-03-24T00:27:45.954Z] STABILITY_API_KEY exists: true
+[2025-03-24T00:27:45.954Z] STABILITY_API_KEY value: sk-5...KNrq
+[2025-03-24T00:27:45.954Z] Generating "Landing Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:27:45.954Z] Prompt: Fantasy RPG landing page, magical
+[2025-03-24T00:27:45.954Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:27:45.954Z] Using authentication method: Bearer token
+[2025-03-24T00:27:46.256Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:27:46.257Z] Headers: {"date":"Mon, 24 Mar 2025 00:27:47 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520b72e8e9e7d4-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:27:46.257Z] API Error: {
+  "id": "df31893426996b53d90d27ebad04f462",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:27:46.257Z] Stability API failed for Landing Page: API returned status 401 for Landing Page
+[2025-03-24T00:27:46.257Z] ❌ All APIs failed for Landing Page: All APIs failed for Landing Page
+[2025-03-24T00:27:48.261Z] 
+================ Processing Main Menu Background ================
+
+[2025-03-24T00:27:48.262Z] Attempting AIML API for Main Menu Background...
+[2025-03-24T00:27:48.262Z] AIML_API_KEY exists: true
+[2025-03-24T00:27:48.262Z] AIML_API_KEY value: ba40...e915
+[2025-03-24T00:27:48.262Z] Generating "Main Menu Background" using AIML API with stable-diffusion-v3-medium...
+[2025-03-24T00:27:48.262Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:27:48.262Z] Making API request to: https://api.aiml.services/v1/images/generations
+[2025-03-24T00:27:48.263Z] Using authentication method: Bearer token
+[2025-03-24T00:27:48.273Z] Error with API request for Main Menu Background: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:48.273Z] AIML API failed for Main Menu Background: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:48.273Z] Attempting Flux API for Main Menu Background...
+[2025-03-24T00:27:48.273Z] FLUX_API_KEY exists: true
+[2025-03-24T00:27:48.273Z] FLUX_API_KEY value: flux...MT7o
+[2025-03-24T00:27:48.273Z] Generating "Main Menu Background" using Flux API...
+[2025-03-24T00:27:48.273Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:27:48.273Z] Making API request to: https://api.flux.ai/v1/image
+[2025-03-24T00:27:48.273Z] Using authentication method: Bearer token
+[2025-03-24T00:27:48.583Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:27:48.583Z] Headers: {"x-guploader-uploadid":"AKDAyIu_fbUtgDwDOjHkDH3A0xSBxh0lGomvkZlEUH380T38uIwFCkHm3KrBLdpoQWXAMqI","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:27:49 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:27:48.583Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:27:48.583Z] Flux API failed for Main Menu Background: API returned status 401 for Main Menu Background
+[2025-03-24T00:27:48.584Z] Attempting Stability API for Main Menu Background...
+[2025-03-24T00:27:48.584Z] STABILITY_API_KEY exists: true
+[2025-03-24T00:27:48.584Z] STABILITY_API_KEY value: sk-5...KNrq
+[2025-03-24T00:27:48.584Z] Generating "Main Menu Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:27:48.584Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:27:48.584Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:27:48.584Z] Using authentication method: Bearer token
+[2025-03-24T00:27:48.883Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:27:48.883Z] Headers: {"date":"Mon, 24 Mar 2025 00:27:49 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520b835a94e7d0-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:27:48.884Z] API Error: {
+  "id": "91c0bc84714390aa6762cc7243c32f43",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:27:48.884Z] Stability API failed for Main Menu Background: API returned status 401 for Main Menu Background
+[2025-03-24T00:27:48.884Z] ❌ All APIs failed for Main Menu Background: All APIs failed for Main Menu Background
+[2025-03-24T00:27:50.895Z] 
+================ Processing Character Creation Background ================
+
+[2025-03-24T00:27:50.896Z] Attempting AIML API for Character Creation Background...
+[2025-03-24T00:27:50.896Z] AIML_API_KEY exists: true
+[2025-03-24T00:27:50.896Z] AIML_API_KEY value: ba40...e915
+[2025-03-24T00:27:50.896Z] Generating "Character Creation Background" using AIML API with stable-diffusion-v3-medium...
+[2025-03-24T00:27:50.896Z] Prompt: Mystical chamber with artifacts
+[2025-03-24T00:27:50.896Z] Making API request to: https://api.aiml.services/v1/images/generations
+[2025-03-24T00:27:50.896Z] Using authentication method: Bearer token
+[2025-03-24T00:27:50.906Z] Error with API request for Character Creation Background: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:50.907Z] AIML API failed for Character Creation Background: getaddrinfo ENOTFOUND api.aiml.services
+[2025-03-24T00:27:50.907Z] Attempting Flux API for Character Creation Background...
+[2025-03-24T00:27:50.907Z] FLUX_API_KEY exists: true
+[2025-03-24T00:27:50.907Z] FLUX_API_KEY value: flux...MT7o
+[2025-03-24T00:27:50.907Z] Generating "Character Creation Background" using Flux API...
+[2025-03-24T00:27:50.907Z] Prompt: Mystical chamber with artifacts
+[2025-03-24T00:27:50.907Z] Making API request to: https://api.flux.ai/v1/image
+[2025-03-24T00:27:50.907Z] Using authentication method: Bearer token
+[2025-03-24T00:27:51.178Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:27:51.178Z] Headers: {"x-guploader-uploadid":"AKDAyIsY6PFSCQaSH2xelLW_nNlw8CDnsyQ1RAdgE0g8IFdSpvgInxbxphJRIfeWSU-v1Xc","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:27:52 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:27:51.179Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:27:51.179Z] Flux API failed for Character Creation Background: API returned status 401 for Character Creation Background
+[2025-03-24T00:27:51.179Z] Attempting Stability API for Character Creation Background...
+[2025-03-24T00:27:51.179Z] STABILITY_API_KEY exists: true
+[2025-03-24T00:27:51.179Z] STABILITY_API_KEY value: sk-5...KNrq
+[2025-03-24T00:27:51.179Z] Generating "Character Creation Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:27:51.180Z] Prompt: Mystical chamber with artifacts
+[2025-03-24T00:27:51.180Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:27:51.180Z] Using authentication method: Bearer token
+[2025-03-24T00:27:51.507Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:27:51.507Z] Headers: {"date":"Mon, 24 Mar 2025 00:27:52 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520b939ba9aafc-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:27:51.508Z] API Error: {
+  "id": "a1b800a3857e2e48c4f7f96bbd476295",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:27:51.508Z] Stability API failed for Character Creation Background: API returned status 401 for Character Creation Background
+[2025-03-24T00:27:51.508Z] ❌ All APIs failed for Character Creation Background: All APIs failed for Character Creation Background
+[2025-03-24T00:27:53.512Z] 
+
+================ GENERATION SUMMARY ================
+
+[2025-03-24T00:27:53.513Z] Total: 4
+[2025-03-24T00:27:53.513Z] Successful: 0
+[2025-03-24T00:27:53.513Z] Failed: 4
+[2025-03-24T00:27:53.513Z] 
+Failed assets:
+[2025-03-24T00:27:53.514Z] - loading_page: All APIs failed for Loading Page
+[2025-03-24T00:27:53.514Z] - landing_page: All APIs failed for Landing Page
+[2025-03-24T00:27:53.514Z] - main_menu_background: All APIs failed for Main Menu Background
+[2025-03-24T00:27:53.514Z] - character_creation_background: All APIs failed for Character Creation Background
+[2025-03-24T00:27:53.514Z] 
+Image generation process complete!

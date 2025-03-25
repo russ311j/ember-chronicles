@@ -1,0 +1,260 @@
+[2025-03-23T12:20:49.382Z] Starting Flux AI static image generation process...
+[2025-03-23T12:20:49.382Z] Generating 7 images...
+[2025-03-23T12:20:49.383Z] Generating "Landing Page" using Flux AI via AIML API...
+[2025-03-23T12:20:49.383Z] Prompt: Fantasy RPG landing page, magical scene with fantasy elements, epic adventure, high quality fantasy art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:20:49.383Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:20:49.384Z] Using authentication method: Bearer token
+[2025-03-23T12:20:49.384Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:20:49.384Z] Request payload: {"prompt":"Fantasy RPG landing page, magical scene with fantasy elements, epic adventure, high quality fantasy art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:20:50.039Z] Error generating Landing Page: HTTP 400
+[2025-03-23T12:20:50.040Z] Headers: {"date":"Sun, 23 Mar 2025 12:20:50 GMT","content-type":"application/json; charset=utf-8","content-length":"314","connection":"close","access-control-allow-credentials":"true","etag":"W/\"13a-ekE1yghxE9pcbUe40hwGXz0kTzg\"","vary":"Origin","x-powered-by":"Express","x-request-id":"f09a7ae3-b269-4af6-bf65-bbb4dc6ce6fb","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=jVZ9Xvfe7N1b7F3bY4v9zd7Sy4s0guW6lrKicWxLvFrY4N1NIfcb1UBiJf20n9MNyHrYVVUbDNuishr3Fi9SalMk7T%2Bij%2FvLE4I40P59%2BzNbdhIBjd%2Bm4ytC0SKKbwtlj3g%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2933b76b11e-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=8486&min_rtt=7830&rtt_var=3411&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2987&recv_bytes=1042&delivery_rate=307497&cwnd=252&unsent_bytes=0&cid=e79908cfb974abc2&ts=593&x=0\""}
+[2025-03-23T12:20:50.040Z] API Error: {
+  "requestId": "f09a7ae3-b269-4af6-bf65-bbb4dc6ce6fb",
+  "statusCode": 400,
+  "timestamp": "2025-03-23T12:20:50.269Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: This request takes more than 512 tokens to complete. Get AI/ML Subscription to use API without limits, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:20:50.041Z] Failed to generate Landing Page: API returned status 400 for Landing Page
+[2025-03-23T12:20:52.050Z] Generating "Main Menu Background" using Flux AI via AIML API...
+[2025-03-23T12:20:52.051Z] Prompt: Fantasy landscape, epic medieval castle on a mountain, starry night sky, fantasy world, cinematic lighting, high quality concept art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:20:52.051Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:20:52.051Z] Using authentication method: Bearer token
+[2025-03-23T12:20:52.051Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:20:52.051Z] Request payload: {"prompt":"Fantasy landscape, epic medieval castle on a mountain, starry night sky, fantasy world, cinematic lighting, high quality concept art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:20:52.645Z] Error generating Main Menu Background: HTTP 400
+[2025-03-23T12:20:52.645Z] Headers: {"date":"Sun, 23 Mar 2025 12:20:52 GMT","content-type":"application/json; charset=utf-8","content-length":"314","connection":"close","access-control-allow-credentials":"true","etag":"W/\"13a-UAnLArMrvam4VefAB/DlCtAVthc\"","vary":"Origin","x-powered-by":"Express","x-request-id":"296b6b5e-bf3e-4a0f-a697-afd7253cf3bd","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Gh6NPo2HVrGwE09v7hcEMA1PMFxrAHtYrICj9vMMwKk7wmzYIh5NABLoIWp%2FKtcEJFxgmwKpTHVUJZn5OJXjITDJHg1L8%2B0SdKjRkHsoFwEDl42uAZwb9WUQFTKmhBWsZHs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2a38adca81d-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7268&min_rtt=6993&rtt_var=3172&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1221&delivery_rate=158799&cwnd=250&unsent_bytes=0&cid=137df416e58a1adf&ts=574&x=0\""}
+[2025-03-23T12:20:52.646Z] API Error: {
+  "requestId": "296b6b5e-bf3e-4a0f-a697-afd7253cf3bd",
+  "statusCode": 400,
+  "timestamp": "2025-03-23T12:20:52.877Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: This request takes more than 512 tokens to complete. Get AI/ML Subscription to use API without limits, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:20:52.646Z] Failed to generate Main Menu Background: API returned status 400 for Main Menu Background
+[2025-03-23T12:20:54.655Z] Generating "Character Creation Background" using Flux AI via AIML API...
+[2025-03-23T12:20:54.655Z] Prompt: Mystical chamber with magical artifacts, fantasy character creation room, glowing runes, atmospheric lighting, fantasy concept art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:20:54.655Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:20:54.655Z] Using authentication method: Bearer token
+[2025-03-23T12:20:54.656Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:20:54.656Z] Request payload: {"prompt":"Mystical chamber with magical artifacts, fantasy character creation room, glowing runes, atmospheric lighting, fantasy concept art, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:20:55.230Z] Error generating Character Creation Background: HTTP 429
+[2025-03-23T12:20:55.230Z] Headers: {"date":"Sun, 23 Mar 2025 12:20:55 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-Oqp6j6GPETDWHVk8NonZsJJMxcI\"","vary":"Origin","x-powered-by":"Express","x-request-id":"88ef9e01-78da-4a80-aff8-cd35a0570088","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=PnCY0Cm2VZ4QsThPtpzL%2F4VfhRx%2B%2BHLQ6mmifLcl7Grs8aSXSBeSNmogZXP1HLxx%2FRSBq28kiJg66EHSMMjgaHUbD4ensdFY5h%2BAaOrC4PIwPwlfRS%2BWYZ516s8ZKkfWRlo%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2b3ca8f5d28-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7147&min_rtt=6989&rtt_var=2938&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1219&delivery_rate=176798&cwnd=250&unsent_bytes=0&cid=d18086f98af7953a&ts=556&x=0\""}
+[2025-03-23T12:20:55.230Z] API Error: {
+  "requestId": "88ef9e01-78da-4a80-aff8-cd35a0570088",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:20:55.460Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:20:55.230Z] Failed to generate Character Creation Background: API returned status 429 for Character Creation Background
+[2025-03-23T12:20:57.240Z] Generating "Mysterious Letter" using Flux AI via AIML API...
+[2025-03-23T12:20:57.241Z] Prompt: Ancient parchment with fantasy symbols, old weathered paper, mysterious fantasy letter, magical seal, detailed fantasy illustration, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:20:57.241Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:20:57.241Z] Using authentication method: Bearer token
+[2025-03-23T12:20:57.241Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:20:57.241Z] Request payload: {"prompt":"Ancient parchment with fantasy symbols, old weathered paper, mysterious fantasy letter, magical seal, detailed fantasy illustration, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:20:57.848Z] Error generating Mysterious Letter: HTTP 429
+[2025-03-23T12:20:57.848Z] Headers: {"date":"Sun, 23 Mar 2025 12:20:58 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-Vrr5dOU0RzWX8ZSPhFTZgw3xc5k\"","vary":"Origin","x-powered-by":"Express","x-request-id":"511e2342-152e-4c31-afb6-5eeacac112d7","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=vTdr71YjGvdiWKr554yYaN2Fs%2B%2B%2B%2B5RG0WSPV8WW8MeWqaeUZzUVxxQlpJdkCc%2BPkYYw0gPUp3yEAP7XgDgZf3HAg1hik%2FiF2WdPg4seWnWvF1ZksF85Yz2s4Ksflb6KXsg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2c3fc59e7e5-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7173&min_rtt=6967&rtt_var=3025&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1220&delivery_rate=169452&cwnd=250&unsent_bytes=0&cid=0c23ba8311116420&ts=587&x=0\""}
+[2025-03-23T12:20:57.848Z] API Error: {
+  "requestId": "511e2342-152e-4c31-afb6-5eeacac112d7",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:20:58.079Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:20:57.849Z] Failed to generate Mysterious Letter: API returned status 429 for Mysterious Letter
+[2025-03-23T12:20:59.854Z] Generating "Forest Path (Ghost)" using Flux AI via AIML API...
+[2025-03-23T12:20:59.854Z] Prompt: Spooky forest path with ghostly apparition, misty fantasy forest, eerie atmosphere, fantasy game scene, foggy trail, high quality digital illustration, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:20:59.855Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:20:59.855Z] Using authentication method: Bearer token
+[2025-03-23T12:20:59.855Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:20:59.855Z] Request payload: {"prompt":"Spooky forest path with ghostly apparition, misty fantasy forest, eerie atmosphere, fantasy game scene, foggy trail, high quality digital illustration, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:21:00.077Z] Error generating Forest Path (Ghost): HTTP 429
+[2025-03-23T12:21:00.077Z] Headers: {"date":"Sun, 23 Mar 2025 12:21:00 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-AqM4X34YqrLZHvbJWV3DRFway5U\"","vary":"Origin","x-powered-by":"Express","x-request-id":"e0832727-c03b-4eef-9f16-2e0e54331d02","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=CFN21%2FGqIImRSw7OYSsigCBArGPRAcuLiDQ4ZbOwRcVUBY3vWswhvh4y735dVudi9vNI0Ma%2BJ4Es6WqWxaSKaadysfQl3VEeywQyOds7j3ts6Zx4TJVjJ4is5AhRqypbwBs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2d44c765c0b-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7278&min_rtt=7011&rtt_var=3163&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1239&delivery_rate=159580&cwnd=250&unsent_bytes=0&cid=7dd354723d635025&ts=203&x=0\""}
+[2025-03-23T12:21:00.077Z] API Error: {
+  "requestId": "e0832727-c03b-4eef-9f16-2e0e54331d02",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:21:00.309Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:21:00.077Z] Failed to generate Forest Path (Ghost): API returned status 429 for Forest Path (Ghost)
+[2025-03-23T12:21:02.087Z] Generating "Mountain Pass" using Flux AI via AIML API...
+[2025-03-23T12:21:02.087Z] Prompt: Dangerous mountain pass with rope bridge, fantasy mountain scene, treacherous crossing, epic landscape, dramatic lighting, adventure game background, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:21:02.088Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:21:02.088Z] Using authentication method: Bearer token
+[2025-03-23T12:21:02.088Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:21:02.088Z] Request payload: {"prompt":"Dangerous mountain pass with rope bridge, fantasy mountain scene, treacherous crossing, epic landscape, dramatic lighting, adventure game background, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:21:02.681Z] Error generating Mountain Pass: HTTP 429
+[2025-03-23T12:21:02.681Z] Headers: {"date":"Sun, 23 Mar 2025 12:21:02 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-vvbY7NlzIIfTABGJO+yJCjC9hlg\"","vary":"Origin","x-powered-by":"Express","x-request-id":"2c8f1653-5b76-4c34-8e35-378d826972dd","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=A%2FrDc84Ds9DNlTHJeAo8VLg0%2FY%2FjwOx0zXDqa570hLPpDA%2F%2B4v468BEW5a4hYATkI80Lkmu88yL8dtMLVPC3fUn7wN13j1ZjdQd4OHdGKAHK4Pla0rKpkTQAMCg5XOLpDeY%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2e248afa947-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7195&min_rtt=7021&rtt_var=2981&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1237&delivery_rate=173499&cwnd=250&unsent_bytes=0&cid=fdb13552d82fde65&ts=565&x=0\""}
+[2025-03-23T12:21:02.681Z] API Error: {
+  "requestId": "2c8f1653-5b76-4c34-8e35-378d826972dd",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:21:02.905Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:21:02.682Z] Failed to generate Mountain Pass: API returned status 429 for Mountain Pass
+[2025-03-23T12:21:04.688Z] Generating "Village Tavern" using Flux AI via AIML API...
+[2025-03-23T12:21:04.689Z] Prompt: Fantasy medieval tavern interior, cozy inn with fireplace, wooden tables, fantasy RPG location, warm lighting, detailed environment, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements
+[2025-03-23T12:21:04.689Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:21:04.689Z] Using authentication method: Bearer token
+[2025-03-23T12:21:04.689Z] Using model: flux-pro/v1.1-ultra
+[2025-03-23T12:21:04.689Z] Request payload: {"prompt":"Fantasy medieval tavern interior, cozy inn with fireplace, wooden tables, fantasy RPG location, warm lighting, detailed environment, no text, high-resolution, cinematic, detailed fantasy illustration by professional artist, epic lighting, atmospheric, no text overlays, no watermarks, no UI elements","model":"flux-pro/v1.1-ultra","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:21:05.286Z] Error generating Village Tavern: HTTP 429
+[2025-03-23T12:21:05.286Z] Headers: {"date":"Sun, 23 Mar 2025 12:21:05 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-9ZJHahWm4Xq79w64L87y6Oy6n+4\"","vary":"Origin","x-powered-by":"Express","x-request-id":"e8254e0f-6908-4057-a3e5-dc19faeb9586","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=7Uz%2FTG6z%2BGW%2BBGwMPwb95gSAJnNlFqbed0wlFGrerRBPMkcgV1rQHVZEkYu7wlHHcoyvNm2z9Ab4ygHdch0kVL2CgVhf758alsEL6iQICU3kDciTEtYt3TkeFoOzZh1xVAQ%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de2f28a54358b-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=8069&min_rtt=7959&rtt_var=3204&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1220&delivery_rate=165177&cwnd=250&unsent_bytes=0&cid=710d20e34c3ca374&ts=577&x=0\""}
+[2025-03-23T12:21:05.287Z] API Error: {
+  "requestId": "e8254e0f-6908-4057-a3e5-dc19faeb9586",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:21:05.517Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:21:05.287Z] Failed to generate Village Tavern: API returned status 429 for Village Tavern
+[2025-03-23T12:21:07.292Z] 
+=== GENERATION SUMMARY ===
+[2025-03-23T12:21:07.292Z] Total: 7
+[2025-03-23T12:21:07.293Z] Successful: 0
+[2025-03-23T12:21:07.293Z] Failed: 7
+[2025-03-23T12:21:07.293Z] 
+Failed assets:
+[2025-03-23T12:21:07.293Z] - landing_page: API returned status 400 for Landing Page
+[2025-03-23T12:21:07.293Z] - main_menu_background: API returned status 400 for Main Menu Background
+[2025-03-23T12:21:07.293Z] - character_creation_background: API returned status 429 for Character Creation Background
+[2025-03-23T12:21:07.293Z] - mysterious_letter: API returned status 429 for Mysterious Letter
+[2025-03-23T12:21:07.293Z] - forest_path_ghost: API returned status 429 for Forest Path (Ghost)
+[2025-03-23T12:21:07.293Z] - mountain_pass: API returned status 429 for Mountain Pass
+[2025-03-23T12:21:07.294Z] - village_tavern: API returned status 429 for Village Tavern
+[2025-03-23T12:21:07.294Z] 
+Flux static image generation complete!
+[2025-03-23T12:22:20.918Z] Starting Flux AI static image generation process...
+[2025-03-23T12:22:20.918Z] Generating 7 images...
+[2025-03-23T12:22:20.918Z] Generating "Landing Page" using Flux AI via AIML API...
+[2025-03-23T12:22:20.918Z] Prompt: Fantasy RPG landing page, magical scene with fantasy elements, epic adventure, high quality fantasy art, no text
+[2025-03-23T12:22:20.918Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:20.918Z] Using authentication method: Bearer token
+[2025-03-23T12:22:20.919Z] Using model: flux/dev
+[2025-03-23T12:22:20.919Z] Request payload: {"prompt":"Fantasy RPG landing page, magical scene with fantasy elements, epic adventure, high quality fantasy art, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:21.580Z] Error generating Landing Page: HTTP 429
+[2025-03-23T12:22:21.581Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:21 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-C80X94rn9saiV01xjXQZtzYzfi0\"","vary":"Origin","x-powered-by":"Express","x-request-id":"7bb33ff7-fb44-4db1-a092-51fd09d38c32","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=3Ge%2BqtDcPHhHJI2WX69GlEquRCgErqF%2FYhADunENic63d%2BTIZzIdNJy6Kb91Ygy7qVfYtbe2Epc%2B6RDc2ztmaP8tcA5nXDh%2BDGcIv4oz9574U3J470pPsroKhKCBS%2FyViSs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de4cf8b5f5719-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=9790&min_rtt=8468&rtt_var=3094&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2988&recv_bytes=872&delivery_rate=344827&cwnd=252&unsent_bytes=0&cid=44daba17b76ef247&ts=564&x=0\""}
+[2025-03-23T12:22:21.581Z] API Error: {
+  "requestId": "7bb33ff7-fb44-4db1-a092-51fd09d38c32",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:21.811Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:21.582Z] Failed to generate Landing Page: API returned status 429 for Landing Page
+[2025-03-23T12:22:23.593Z] Generating "Main Menu Background" using Flux AI via AIML API...
+[2025-03-23T12:22:23.593Z] Prompt: Fantasy landscape, epic medieval castle on a mountain, starry night sky, fantasy world, cinematic lighting, high quality concept art, no text
+[2025-03-23T12:22:23.594Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:23.594Z] Using authentication method: Bearer token
+[2025-03-23T12:22:23.594Z] Using model: flux/dev
+[2025-03-23T12:22:23.594Z] Request payload: {"prompt":"Fantasy landscape, epic medieval castle on a mountain, starry night sky, fantasy world, cinematic lighting, high quality concept art, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:24.191Z] Error generating Main Menu Background: HTTP 429
+[2025-03-23T12:22:24.191Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:24 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-AMaujvGcZF552gv5hAmUlWWjYzM\"","vary":"Origin","x-powered-by":"Express","x-request-id":"77557ec9-128e-4ca6-bf64-2163b6627dba","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=LqFKeschQL6ZsDa%2BfwT%2BuO1AIiKu%2Ft%2BoSjOA5it3A5NaBf%2FoLZnM%2B8R1CZUBYzPJFb51sBYE%2B4rwlplEJrL%2B2jXYuGofUEQOQVLoB3%2Fj6caFZ78a%2FiKW8dgCAAgIavuZjdo%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de4dfa9a5e7e9-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7117&min_rtt=6981&rtt_var=2890&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1051&delivery_rate=180939&cwnd=250&unsent_bytes=0&cid=552650f71df5ec1d&ts=577&x=0\""}
+[2025-03-23T12:22:24.192Z] API Error: {
+  "requestId": "77557ec9-128e-4ca6-bf64-2163b6627dba",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:24.424Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:24.192Z] Failed to generate Main Menu Background: API returned status 429 for Main Menu Background
+[2025-03-23T12:22:26.194Z] Generating "Character Creation Background" using Flux AI via AIML API...
+[2025-03-23T12:22:26.195Z] Prompt: Mystical chamber with magical artifacts, fantasy character creation room, glowing runes, atmospheric lighting, fantasy concept art, no text
+[2025-03-23T12:22:26.195Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:26.195Z] Using authentication method: Bearer token
+[2025-03-23T12:22:26.195Z] Using model: flux/dev
+[2025-03-23T12:22:26.195Z] Request payload: {"prompt":"Mystical chamber with magical artifacts, fantasy character creation room, glowing runes, atmospheric lighting, fantasy concept art, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:26.795Z] Error generating Character Creation Background: HTTP 429
+[2025-03-23T12:22:26.795Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:27 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-lKDpO+Hk75iePaE/LtvjTyP0IzE\"","vary":"Origin","x-powered-by":"Express","x-request-id":"84fafa43-33ec-4ad3-bcec-4deaa242a678","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ZTTzQd77QeSFdo4CubHCA7YFcu5p33vhvYlJx2ynuVYt8BQeqtx%2F9sdMwcNvvyH1ldo1X%2BjJIBlvZxWqeCfdBM0qdynZ3TRuId%2B719yFxSHqHI8jVFkGg14ts9Meys3Bh9s%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de4efee605d2e-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7072&min_rtt=6767&rtt_var=3148&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1049&delivery_rate=158506&cwnd=250&unsent_bytes=0&cid=84c333e191f025f4&ts=582&x=0\""}
+[2025-03-23T12:22:26.796Z] API Error: {
+  "requestId": "84fafa43-33ec-4ad3-bcec-4deaa242a678",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:27.027Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:26.796Z] Failed to generate Character Creation Background: API returned status 429 for Character Creation Background
+[2025-03-23T12:22:28.797Z] Generating "Mysterious Letter" using Flux AI via AIML API...
+[2025-03-23T12:22:28.798Z] Prompt: Ancient parchment with fantasy symbols, old weathered paper, mysterious fantasy letter, magical seal, detailed fantasy illustration, no text
+[2025-03-23T12:22:28.798Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:28.798Z] Using authentication method: Bearer token
+[2025-03-23T12:22:28.799Z] Using model: flux/dev
+[2025-03-23T12:22:28.799Z] Request payload: {"prompt":"Ancient parchment with fantasy symbols, old weathered paper, mysterious fantasy letter, magical seal, detailed fantasy illustration, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:29.024Z] Error generating Mysterious Letter: HTTP 429
+[2025-03-23T12:22:29.025Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:29 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-nZZpNFewctBLRuZ2A5H7LVNkzkc\"","vary":"Origin","x-powered-by":"Express","x-request-id":"7e922e7d-5d51-467f-8dfc-40b9a6d4341a","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=yYKiiIqb4cZ%2FlqqgYFfY%2FFiVw0o2LVc5U2stOaTsM6N5PZcCAX1xbFr6lhsSkBd1345KlxMBQah15j%2Bmkews4%2BIacBFYg6bO97fswN1SCV3PA88migZuv2zeTS2Bh0yuWYg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de50049ff572d-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=11988&min_rtt=11795&rtt_var=4809&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1050&delivery_rate=109445&cwnd=250&unsent_bytes=0&cid=27aa676b8ca7e890&ts=202&x=0\""}
+[2025-03-23T12:22:29.025Z] API Error: {
+  "requestId": "7e922e7d-5d51-467f-8dfc-40b9a6d4341a",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:29.255Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:29.025Z] Failed to generate Mysterious Letter: API returned status 429 for Mysterious Letter
+[2025-03-23T12:22:31.030Z] Generating "Forest Path (Ghost)" using Flux AI via AIML API...
+[2025-03-23T12:22:31.031Z] Prompt: Spooky forest path with ghostly apparition, misty fantasy forest, eerie atmosphere, fantasy game scene, foggy trail, high quality digital illustration, no text
+[2025-03-23T12:22:31.031Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:31.031Z] Using authentication method: Bearer token
+[2025-03-23T12:22:31.031Z] Using model: flux/dev
+[2025-03-23T12:22:31.031Z] Request payload: {"prompt":"Spooky forest path with ghostly apparition, misty fantasy forest, eerie atmosphere, fantasy game scene, foggy trail, high quality digital illustration, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:31.615Z] Error generating Forest Path (Ghost): HTTP 429
+[2025-03-23T12:22:31.616Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:31 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-jWRe9zIIU4Q615Ppay1i3tCAShk\"","vary":"Origin","x-powered-by":"Express","x-request-id":"129bd773-68f3-479e-b407-b1f6bc920047","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=IlrY%2B1WTTX0EBaCXXq%2FxF0yjRWXB%2Bh8xiWSoOe5uESrrh5rY1t%2Fegpf4%2BH8pCrwgmHYwbKFpoKkrIVgeycmQGpiF5d6iQLjVlkWHCL0cLTHU%2BHCk3XZzHMlolc4MP4l2b%2BI%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de50e2f90a955-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7211&min_rtt=6974&rtt_var=3090&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1069&delivery_rate=164544&cwnd=250&unsent_bytes=0&cid=cdaf4c4d0c727cb6&ts=565&x=0\""}
+[2025-03-23T12:22:31.616Z] API Error: {
+  "requestId": "129bd773-68f3-479e-b407-b1f6bc920047",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:31.846Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:31.616Z] Failed to generate Forest Path (Ghost): API returned status 429 for Forest Path (Ghost)
+[2025-03-23T12:22:33.629Z] Generating "Mountain Pass" using Flux AI via AIML API...
+[2025-03-23T12:22:33.630Z] Prompt: Dangerous mountain pass with rope bridge, fantasy mountain scene, treacherous crossing, epic landscape, dramatic lighting, adventure game background, no text
+[2025-03-23T12:22:33.630Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:33.630Z] Using authentication method: Bearer token
+[2025-03-23T12:22:33.630Z] Using model: flux/dev
+[2025-03-23T12:22:33.630Z] Request payload: {"prompt":"Dangerous mountain pass with rope bridge, fantasy mountain scene, treacherous crossing, epic landscape, dramatic lighting, adventure game background, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:33.860Z] Error generating Mountain Pass: HTTP 429
+[2025-03-23T12:22:33.860Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:34 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-VIfW3BQwMdYtYi5J78a1sVIPQrk\"","vary":"Origin","x-powered-by":"Express","x-request-id":"1f215744-ab11-423c-9a58-1c2804d6c894","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=nUxy4cRXuA5RsR0zip5OA2nBPwanXTBXzO5wKJE5SRqO1V172XWT6AmlMMpLmMtLDtV3AiYef%2BQHIoyP21qa17LTQnl5yaLzfHvc9%2B%2Fg7Ek4vDFMJaS7IYvE4P7dElpks8Q%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de51e6bba5747-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7216&min_rtt=7003&rtt_var=3052&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1067&delivery_rate=167681&cwnd=250&unsent_bytes=0&cid=e55230bb6112fc90&ts=205&x=0\""}
+[2025-03-23T12:22:33.861Z] API Error: {
+  "requestId": "1f215744-ab11-423c-9a58-1c2804d6c894",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:34.091Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:33.861Z] Failed to generate Mountain Pass: API returned status 429 for Mountain Pass
+[2025-03-23T12:22:35.875Z] Generating "Village Tavern" using Flux AI via AIML API...
+[2025-03-23T12:22:35.876Z] Prompt: Fantasy medieval tavern interior, cozy inn with fireplace, wooden tables, fantasy RPG location, warm lighting, detailed environment, no text
+[2025-03-23T12:22:35.876Z] Making API request to: https://api.aimlapi.com/v1/images/generations/
+[2025-03-23T12:22:35.876Z] Using authentication method: Bearer token
+[2025-03-23T12:22:35.876Z] Using model: flux/dev
+[2025-03-23T12:22:35.876Z] Request payload: {"prompt":"Fantasy medieval tavern interior, cozy inn with fireplace, wooden tables, fantasy RPG location, warm lighting, detailed environment, no text","model":"flux/dev","num_images":1,"width":1024,"height":768}
+[2025-03-23T12:22:36.102Z] Error generating Village Tavern: HTTP 429
+[2025-03-23T12:22:36.102Z] Headers: {"date":"Sun, 23 Mar 2025 12:22:36 GMT","content-type":"application/json; charset=utf-8","content-length":"291","connection":"close","access-control-allow-credentials":"true","etag":"W/\"123-lKDIm9ixhb+DouHH8Gsy61eN/8k\"","vary":"Origin","x-powered-by":"Express","x-request-id":"d4ce5cd2-8f9e-4444-b2e1-9bacda9f2dbf","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=qnhFYjmJI4y9WuQllwYvJRVKtnKjBMXZ47efX2xFHK6s8B0X9nzJkoShNto1pIX7rKlCtFROclmdphLHbkj0qtV9n%2BgBvdQtqZI%2F9OSmmTTHADiDbCDZL6DN6lMl%2FbOw34A%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"924de52c796ca808-SYD","alt-svc":"h3=\":443\"; ma=86400","server-timing":"cfL4;desc=\"?proto=TCP&rtt=7200&min_rtt=7008&rtt_var=3012&sent=3&recv=4&lost=0&retrans=0&sent_bytes=147&recv_bytes=1050&delivery_rate=170880&cwnd=250&unsent_bytes=0&cid=84c14bbc0f894a1d&ts=205&x=0\""}
+[2025-03-23T12:22:36.102Z] API Error: {
+  "requestId": "d4ce5cd2-8f9e-4444-b2e1-9bacda9f2dbf",
+  "statusCode": 429,
+  "timestamp": "2025-03-23T12:22:36.335Z",
+  "path": "/v1/images/generations/",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-23T12:22:36.102Z] Failed to generate Village Tavern: API returned status 429 for Village Tavern
+[2025-03-23T12:22:38.110Z] 
+=== GENERATION SUMMARY ===
+[2025-03-23T12:22:38.110Z] Total: 7
+[2025-03-23T12:22:38.110Z] Successful: 0
+[2025-03-23T12:22:38.110Z] Failed: 7
+[2025-03-23T12:22:38.111Z] 
+Failed assets:
+[2025-03-23T12:22:38.111Z] - landing_page: API returned status 429 for Landing Page
+[2025-03-23T12:22:38.111Z] - main_menu_background: API returned status 429 for Main Menu Background
+[2025-03-23T12:22:38.111Z] - character_creation_background: API returned status 429 for Character Creation Background
+[2025-03-23T12:22:38.111Z] - mysterious_letter: API returned status 429 for Mysterious Letter
+[2025-03-23T12:22:38.111Z] - forest_path_ghost: API returned status 429 for Forest Path (Ghost)
+[2025-03-23T12:22:38.111Z] - mountain_pass: API returned status 429 for Mountain Pass
+[2025-03-23T12:22:38.111Z] - village_tavern: API returned status 429 for Village Tavern
+[2025-03-23T12:22:38.111Z] 
+Flux static image generation complete!

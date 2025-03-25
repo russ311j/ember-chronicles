@@ -1,0 +1,100 @@
+[2025-03-24T00:23:26.297Z] Starting image generation process with Flux API...
+[2025-03-24T00:23:26.297Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:26.298Z] Generating 8 images...
+[2025-03-24T00:23:26.298Z] Generating "Loading Page" using Flux API...
+[2025-03-24T00:23:26.298Z] Prompt: Fantasy loading screen, minimal design, mystical
+[2025-03-24T00:23:26.298Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:26.298Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:26.299Z] Using authentication method: Bearer token
+[2025-03-24T00:23:26.299Z] Request payload: {"prompt":"Fantasy loading screen, minimal design, mystical","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:26.562Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:23:26.563Z] Headers: {"x-guploader-uploadid":"AKDAyIuzhjhFda0AQzhraDTy_vxzoBR9epok4iFe0xkkzuXYhQOUWbcPTxfOTHdNr14wqrA","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:27 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:26.563Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:26.564Z] Failed to generate Loading Page: API returned status 401 for Loading Page
+[2025-03-24T00:23:28.579Z] Generating "Landing Page" using Flux API...
+[2025-03-24T00:23:28.579Z] Prompt: Fantasy RPG landing page, magical scene
+[2025-03-24T00:23:28.579Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:28.579Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:28.580Z] Using authentication method: Bearer token
+[2025-03-24T00:23:28.580Z] Request payload: {"prompt":"Fantasy RPG landing page, magical scene","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:28.883Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:23:28.883Z] Headers: {"x-guploader-uploadid":"AKDAyIvxGlJi3JJ_6KkV3Ao6J5SQxB3Nb9adqF94oLjbCJiRH9ch2itaXE1Hl5GYixdQM_eS","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:29 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:28.884Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:28.884Z] Failed to generate Landing Page: API returned status 401 for Landing Page
+[2025-03-24T00:23:30.888Z] Generating "Main Menu Background" using Flux API...
+[2025-03-24T00:23:30.888Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:23:30.888Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:30.889Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:30.889Z] Using authentication method: Bearer token
+[2025-03-24T00:23:30.889Z] Request payload: {"prompt":"Fantasy castle on mountain, starry night","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:31.159Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:23:31.159Z] Headers: {"x-guploader-uploadid":"AKDAyIu2VpG19-gUY3mvdIRkChr9NWpPyuHk3FG87J4WZ9JUzBczOk1_yQQSMuh6R5Q6ckIye1yaob8","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:32 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:31.160Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:31.160Z] Failed to generate Main Menu Background: API returned status 401 for Main Menu Background
+[2025-03-24T00:23:33.167Z] Generating "Character Creation Background" using Flux API...
+[2025-03-24T00:23:33.167Z] Prompt: Mystical chamber with artifacts, glowing runes
+[2025-03-24T00:23:33.168Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:33.168Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:33.168Z] Using authentication method: Bearer token
+[2025-03-24T00:23:33.168Z] Request payload: {"prompt":"Mystical chamber with artifacts, glowing runes","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:33.448Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:23:33.449Z] Headers: {"x-guploader-uploadid":"AKDAyIv31bn7UtHXXDqqKmtcPnvMSa4K3zrVM2INol62IoW9H3EHh999AQe6XtjpnIZokXCla5mfwz4","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:34 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:33.449Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:33.449Z] Failed to generate Character Creation Background: API returned status 401 for Character Creation Background
+[2025-03-24T00:23:35.461Z] Generating "Mysterious Letter" using Flux API...
+[2025-03-24T00:23:35.462Z] Prompt: Ancient parchment, fantasy symbols, old paper
+[2025-03-24T00:23:35.462Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:35.462Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:35.462Z] Using authentication method: Bearer token
+[2025-03-24T00:23:35.462Z] Request payload: {"prompt":"Ancient parchment, fantasy symbols, old paper","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:35.732Z] Error generating Mysterious Letter: HTTP 401
+[2025-03-24T00:23:35.732Z] Headers: {"x-guploader-uploadid":"AKDAyIt_jliPBPmOp_U3UwnlFFodSVJvv-UP5X96KT69b2QIOfl8q6PiPbXW2H2H_ysqFe8","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:36 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:35.732Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:35.732Z] Failed to generate Mysterious Letter: API returned status 401 for Mysterious Letter
+[2025-03-24T00:23:37.739Z] Generating "Forest Path (Ghost)" using Flux API...
+[2025-03-24T00:23:37.739Z] Prompt: Spooky forest path, ghostly apparition, misty
+[2025-03-24T00:23:37.740Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:37.740Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:37.740Z] Using authentication method: Bearer token
+[2025-03-24T00:23:37.740Z] Request payload: {"prompt":"Spooky forest path, ghostly apparition, misty","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:38.016Z] Error generating Forest Path (Ghost): HTTP 401
+[2025-03-24T00:23:38.017Z] Headers: {"x-guploader-uploadid":"AKDAyIs2eGkDROxMTkrUE9jlrw8dX7OTC0HwcMOar5bui_DdvGQrNXjw16BpSDbvcTVWoVWT","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:38 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:38.017Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:38.017Z] Failed to generate Forest Path (Ghost): API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:23:40.018Z] Generating "Mountain Pass" using Flux API...
+[2025-03-24T00:23:40.019Z] Prompt: Mountain pass, rope bridge, fantasy scene
+[2025-03-24T00:23:40.019Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:40.019Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:40.019Z] Using authentication method: Bearer token
+[2025-03-24T00:23:40.019Z] Request payload: {"prompt":"Mountain pass, rope bridge, fantasy scene","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:40.304Z] Error generating Mountain Pass: HTTP 401
+[2025-03-24T00:23:40.304Z] Headers: {"x-guploader-uploadid":"AKDAyIuOswMNAD4ZQUuhO0or-HnWDVpzi4ktJZ2_W-Dz1c3Rk4vD5-I_teEOJuHLNDpdUNk","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:41 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:40.304Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:40.305Z] Failed to generate Mountain Pass: API returned status 401 for Mountain Pass
+[2025-03-24T00:23:42.312Z] Generating "Village Tavern" using Flux API...
+[2025-03-24T00:23:42.312Z] Prompt: Medieval tavern interior, cozy inn, fireplace
+[2025-03-24T00:23:42.312Z] Using Flux API key: flux...MT7o
+[2025-03-24T00:23:42.312Z] Making API request to: https://api.flux.ai/v1/images/generations
+[2025-03-24T00:23:42.312Z] Using authentication method: Bearer token
+[2025-03-24T00:23:42.313Z] Request payload: {"prompt":"Medieval tavern interior, cozy inn, fireplace","negative_prompt":"blurry, text, watermark, signature","width":1024,"height":768,"num_images":1,"model":"stable-diffusion-xl"}
+[2025-03-24T00:23:42.587Z] Error generating Village Tavern: HTTP 401
+[2025-03-24T00:23:42.587Z] Headers: {"x-guploader-uploadid":"AKDAyIta4w9x-GF9rzRqiIEoIc_CHIyzvuD6aSOMy51o9w4yTU-0wHRZXmDLzKwZ82Q3jiEJZNue37s","content-type":"application/xml; charset=UTF-8","content-length":"131","www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"Origin","date":"Mon, 24 Mar 2025 00:23:43 GMT","server":"UploadServer","via":"1.1 google","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","connection":"close"}
+[2025-03-24T00:23:42.587Z] Raw response: <?xml version='1.0' encoding='UTF-8'?><Error><Code>AuthenticationRequired</Code><Message>Authentication required.</Message></Error>
+[2025-03-24T00:23:42.588Z] Failed to generate Village Tavern: API returned status 401 for Village Tavern
+[2025-03-24T00:23:44.591Z] 
+=== GENERATION SUMMARY ===
+[2025-03-24T00:23:44.591Z] Total: 8
+[2025-03-24T00:23:44.591Z] Successful: 0
+[2025-03-24T00:23:44.592Z] Failed: 8
+[2025-03-24T00:23:44.592Z] 
+Failed assets:
+[2025-03-24T00:23:44.592Z] - loading_page: API returned status 401 for Loading Page
+[2025-03-24T00:23:44.592Z] - landing_page: API returned status 401 for Landing Page
+[2025-03-24T00:23:44.592Z] - main_menu_background: API returned status 401 for Main Menu Background
+[2025-03-24T00:23:44.592Z] - character_creation_background: API returned status 401 for Character Creation Background
+[2025-03-24T00:23:44.592Z] - mysterious_letter: API returned status 401 for Mysterious Letter
+[2025-03-24T00:23:44.592Z] - forest_path_ghost: API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:23:44.592Z] - mountain_pass: API returned status 401 for Mountain Pass
+[2025-03-24T00:23:44.592Z] - village_tavern: API returned status 401 for Village Tavern
+[2025-03-24T00:23:44.592Z] 
+Image generation process complete!

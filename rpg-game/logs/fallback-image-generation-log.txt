@@ -1,0 +1,157 @@
+[2025-03-24T00:40:33.703Z] Starting image generation with API + fallback...
+[2025-03-24T00:40:33.703Z] 
+===== Processing: Loading Page =====
+[2025-03-24T00:40:33.704Z] Attempting API generation for "Loading Page" using AIML...
+[2025-03-24T00:40:33.704Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:33.980Z] API Error: Received status code 429
+[2025-03-24T00:40:33.980Z] API Error: {
+  "requestId": "aaf23006-4b99-45a2-91c7-5508480d51ba",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:34.938Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:33.981Z] API generation failed for Loading Page: API request failed with status 429
+[2025-03-24T00:40:33.981Z] Falling back to placeholder generation...
+[2025-03-24T00:40:33.981Z] Generating placeholder image for Loading Page...
+[2025-03-24T00:40:34.057Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\loading_page.png
+[2025-03-24T00:40:34.058Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:35.066Z] 
+===== Processing: Landing Page =====
+[2025-03-24T00:40:35.066Z] Attempting API generation for "Landing Page" using AIML...
+[2025-03-24T00:40:35.066Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:35.293Z] API Error: Received status code 429
+[2025-03-24T00:40:35.293Z] API Error: {
+  "requestId": "a8b89c02-1b3b-4a2c-8bec-90b3839df264",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:36.245Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:35.293Z] API generation failed for Landing Page: API request failed with status 429
+[2025-03-24T00:40:35.293Z] Falling back to placeholder generation...
+[2025-03-24T00:40:35.293Z] Generating placeholder image for Landing Page...
+[2025-03-24T00:40:35.335Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\landing_page.png
+[2025-03-24T00:40:35.335Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:36.342Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T00:40:36.342Z] Attempting API generation for "Main Menu Background" using AIML...
+[2025-03-24T00:40:36.343Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:36.579Z] API Error: Received status code 429
+[2025-03-24T00:40:36.579Z] API Error: {
+  "requestId": "6b95cfdb-6078-4c70-aff9-d55744a547a5",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:37.539Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:36.580Z] API generation failed for Main Menu Background: API request failed with status 429
+[2025-03-24T00:40:36.580Z] Falling back to placeholder generation...
+[2025-03-24T00:40:36.580Z] Generating placeholder image for Main Menu Background...
+[2025-03-24T00:40:36.618Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\main_menu_background.png
+[2025-03-24T00:40:36.619Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:37.631Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T00:40:37.631Z] Attempting API generation for "Character Creation Background" using AIML...
+[2025-03-24T00:40:37.631Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:37.857Z] API Error: Received status code 429
+[2025-03-24T00:40:37.857Z] API Error: {
+  "requestId": "a404db36-9955-450f-987c-70753c17e57a",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:38.815Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:37.857Z] API generation failed for Character Creation Background: API request failed with status 429
+[2025-03-24T00:40:37.857Z] Falling back to placeholder generation...
+[2025-03-24T00:40:37.857Z] Generating placeholder image for Character Creation Background...
+[2025-03-24T00:40:37.896Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\character_creation_background.png
+[2025-03-24T00:40:37.896Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:38.911Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T00:40:38.911Z] Attempting API generation for "Mysterious Letter" using AIML...
+[2025-03-24T00:40:38.911Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:39.519Z] API Error: Received status code 429
+[2025-03-24T00:40:39.519Z] API Error: {
+  "requestId": "6629710a-d70d-4296-8558-a57bb199004a",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:40.478Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:39.519Z] API generation failed for Mysterious Letter: API request failed with status 429
+[2025-03-24T00:40:39.519Z] Falling back to placeholder generation...
+[2025-03-24T00:40:39.520Z] Generating placeholder image for Mysterious Letter...
+[2025-03-24T00:40:39.558Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\mysterious_letter.png
+[2025-03-24T00:40:39.558Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:40.573Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T00:40:40.574Z] Attempting API generation for "Forest Path (Ghost)" using AIML...
+[2025-03-24T00:40:40.574Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:41.177Z] API Error: Received status code 429
+[2025-03-24T00:40:41.177Z] API Error: {
+  "requestId": "52ab34e8-eb1c-41a6-921b-75ce9f7e5778",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:42.136Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:41.178Z] API generation failed for Forest Path (Ghost): API request failed with status 429
+[2025-03-24T00:40:41.178Z] Falling back to placeholder generation...
+[2025-03-24T00:40:41.178Z] Generating placeholder image for Forest Path (Ghost)...
+[2025-03-24T00:40:41.216Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\forest_path_ghost.png
+[2025-03-24T00:40:41.216Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:42.221Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T00:40:42.221Z] Attempting API generation for "Mountain Pass" using AIML...
+[2025-03-24T00:40:42.221Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:42.458Z] API Error: Received status code 429
+[2025-03-24T00:40:42.459Z] API Error: {
+  "requestId": "98f1769b-4fd0-49cf-81d9-89b14b57f16f",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:43.413Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:42.459Z] API generation failed for Mountain Pass: API request failed with status 429
+[2025-03-24T00:40:42.459Z] Falling back to placeholder generation...
+[2025-03-24T00:40:42.459Z] Generating placeholder image for Mountain Pass...
+[2025-03-24T00:40:42.498Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\mountain_pass.png
+[2025-03-24T00:40:42.499Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:43.513Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T00:40:43.514Z] Attempting API generation for "Village Tavern" using AIML...
+[2025-03-24T00:40:43.514Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:40:43.737Z] API Error: Received status code 429
+[2025-03-24T00:40:43.737Z] API Error: {
+  "requestId": "bd749638-0115-444e-a96e-8a6f7508a7f2",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:40:44.695Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:40:43.737Z] API generation failed for Village Tavern: API request failed with status 429
+[2025-03-24T00:40:43.737Z] Falling back to placeholder generation...
+[2025-03-24T00:40:43.738Z] Generating placeholder image for Village Tavern...
+[2025-03-24T00:40:43.776Z] ✅ Created placeholder image: C:\gameX\rpg-game\media\images\generated\village_tavern.png
+[2025-03-24T00:40:43.776Z] Waiting 1 second before next asset...
+[2025-03-24T00:40:44.790Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T00:40:44.790Z] Total assets: 8
+[2025-03-24T00:40:44.791Z] Generated with API: 0
+[2025-03-24T00:40:44.791Z] Generated as placeholders: 8
+[2025-03-24T00:40:44.791Z] Failed: 0
+[2025-03-24T00:40:44.791Z] 
+Assets generated as placeholders:
+[2025-03-24T00:40:44.791Z] - Loading Page
+[2025-03-24T00:40:44.791Z] - Landing Page
+[2025-03-24T00:40:44.791Z] - Main Menu Background
+[2025-03-24T00:40:44.791Z] - Character Creation Background
+[2025-03-24T00:40:44.791Z] - Mysterious Letter
+[2025-03-24T00:40:44.791Z] - Forest Path (Ghost)
+[2025-03-24T00:40:44.791Z] - Mountain Pass
+[2025-03-24T00:40:44.791Z] - Village Tavern
+[2025-03-24T00:40:44.805Z] Created documentation at: C:\gameX\rpg-game\media\images\generated\README.md
+[2025-03-24T00:40:44.806Z] 
+Image generation process complete!

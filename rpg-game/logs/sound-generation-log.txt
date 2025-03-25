@@ -1,0 +1,161 @@
+[2025-03-24T05:25:45.239Z] Starting sound asset generation process...
+[2025-03-24T05:25:45.241Z] Created placeholder for intro_narration at C:\gameX\rpg-game\media\audio\voice\intro_narration.mp3
+[2025-03-24T05:25:45.242Z] Created placeholder for village_elder_greeting at C:\gameX\rpg-game\media\audio\voice\village_elder_greeting.mp3
+[2025-03-24T05:25:45.243Z] Created placeholder for mysterious_messenger at C:\gameX\rpg-game\media\audio\voice\mysterious_messenger.mp3
+[2025-03-24T05:25:45.245Z] Created placeholder for button_click at C:\gameX\rpg-game\media\audio\sfx\button_click.mp3
+[2025-03-24T05:25:45.245Z] Created placeholder for page_turn at C:\gameX\rpg-game\media\audio\sfx\page_turn.mp3
+[2025-03-24T05:25:45.246Z] Created placeholder for item_pickup at C:\gameX\rpg-game\media\audio\sfx\item_pickup.mp3
+[2025-03-24T05:25:45.247Z] Created placeholder for door_open at C:\gameX\rpg-game\media\audio\sfx\door_open.mp3
+[2025-03-24T05:25:45.247Z] Created placeholder for footsteps at C:\gameX\rpg-game\media\audio\sfx\footsteps.mp3
+[2025-03-24T05:25:45.248Z] Created placeholder for magic_spell at C:\gameX\rpg-game\media\audio\sfx\magic_spell.mp3
+[2025-03-24T05:25:45.249Z] Created placeholder for sword_slash at C:\gameX\rpg-game\media\audio\sfx\sword_slash.mp3
+[2025-03-24T05:25:45.250Z] Created placeholder for treasure_found at C:\gameX\rpg-game\media\audio\sfx\treasure_found.mp3
+[2025-03-24T05:25:45.251Z] Created placeholder for forest_ambience at C:\gameX\rpg-game\media\audio\ambient\forest_ambience.mp3
+[2025-03-24T05:25:45.252Z] Created placeholder for village_ambience at C:\gameX\rpg-game\media\audio\ambient\village_ambience.mp3
+[2025-03-24T05:25:45.252Z] Created placeholder for cave_ambience at C:\gameX\rpg-game\media\audio\ambient\cave_ambience.mp3
+[2025-03-24T05:25:45.253Z] Created placeholder for temple_ambience at C:\gameX\rpg-game\media\audio\ambient\temple_ambience.mp3
+[2025-03-24T05:25:45.254Z] Created placeholder for mountain_wind at C:\gameX\rpg-game\media\audio\ambient\mountain_wind.mp3
+[2025-03-24T05:25:45.254Z] Created placeholder for title_theme at C:\gameX\rpg-game\media\audio\music\title_theme.mp3
+[2025-03-24T05:25:45.255Z] Created placeholder for village_theme at C:\gameX\rpg-game\media\audio\music\village_theme.mp3
+[2025-03-24T05:25:45.256Z] Created placeholder for forest_theme at C:\gameX\rpg-game\media\audio\music\forest_theme.mp3
+[2025-03-24T05:25:45.256Z] Created placeholder for mountain_theme at C:\gameX\rpg-game\media\audio\music\mountain_theme.mp3
+[2025-03-24T05:25:45.257Z] Created placeholder for temple_theme at C:\gameX\rpg-game\media\audio\music\temple_theme.mp3
+[2025-03-24T05:25:45.257Z] Created placeholder for battle_theme at C:\gameX\rpg-game\media\audio\music\battle_theme.mp3
+[2025-03-24T05:25:45.258Z] Created placeholder for victory_theme at C:\gameX\rpg-game\media\audio\music\victory_theme.mp3
+[2025-03-24T05:25:45.258Z] Created placeholder for game_over at C:\gameX\rpg-game\media\audio\music\game_over.mp3
+[2025-03-24T05:26:07.495Z] Starting sound asset generation process...
+[2025-03-24T05:26:07.498Z] Created placeholder for intro_narration at C:\gameX\rpg-game\media\audio\voice\intro_narration.mp3
+[2025-03-24T05:26:07.498Z] Created placeholder for village_elder_greeting at C:\gameX\rpg-game\media\audio\voice\village_elder_greeting.mp3
+[2025-03-24T05:26:07.499Z] Created placeholder for mysterious_messenger at C:\gameX\rpg-game\media\audio\voice\mysterious_messenger.mp3
+[2025-03-24T05:26:07.500Z] Created placeholder for button_click at C:\gameX\rpg-game\media\audio\sfx\button_click.mp3
+[2025-03-24T05:26:07.500Z] Created placeholder for page_turn at C:\gameX\rpg-game\media\audio\sfx\page_turn.mp3
+[2025-03-24T05:26:07.501Z] Created placeholder for item_pickup at C:\gameX\rpg-game\media\audio\sfx\item_pickup.mp3
+[2025-03-24T05:26:07.501Z] Created placeholder for door_open at C:\gameX\rpg-game\media\audio\sfx\door_open.mp3
+[2025-03-24T05:26:07.502Z] Created placeholder for footsteps at C:\gameX\rpg-game\media\audio\sfx\footsteps.mp3
+[2025-03-24T05:26:07.503Z] Created placeholder for magic_spell at C:\gameX\rpg-game\media\audio\sfx\magic_spell.mp3
+[2025-03-24T05:26:07.503Z] Created placeholder for sword_slash at C:\gameX\rpg-game\media\audio\sfx\sword_slash.mp3
+[2025-03-24T05:26:07.504Z] Created placeholder for treasure_found at C:\gameX\rpg-game\media\audio\sfx\treasure_found.mp3
+[2025-03-24T05:26:07.505Z] Created placeholder for forest_ambience at C:\gameX\rpg-game\media\audio\ambient\forest_ambience.mp3
+[2025-03-24T05:26:07.505Z] Created placeholder for village_ambience at C:\gameX\rpg-game\media\audio\ambient\village_ambience.mp3
+[2025-03-24T05:26:07.506Z] Created placeholder for cave_ambience at C:\gameX\rpg-game\media\audio\ambient\cave_ambience.mp3
+[2025-03-24T05:26:07.506Z] Created placeholder for temple_ambience at C:\gameX\rpg-game\media\audio\ambient\temple_ambience.mp3
+[2025-03-24T05:26:07.507Z] Created placeholder for mountain_wind at C:\gameX\rpg-game\media\audio\ambient\mountain_wind.mp3
+[2025-03-24T05:26:07.507Z] Created placeholder for title_theme at C:\gameX\rpg-game\media\audio\music\title_theme.mp3
+[2025-03-24T05:26:07.507Z] Created placeholder for village_theme at C:\gameX\rpg-game\media\audio\music\village_theme.mp3
+[2025-03-24T05:26:07.508Z] Created placeholder for forest_theme at C:\gameX\rpg-game\media\audio\music\forest_theme.mp3
+[2025-03-24T05:26:07.509Z] Created placeholder for mountain_theme at C:\gameX\rpg-game\media\audio\music\mountain_theme.mp3
+[2025-03-24T05:26:07.509Z] Created placeholder for temple_theme at C:\gameX\rpg-game\media\audio\music\temple_theme.mp3
+[2025-03-24T05:26:07.510Z] Created placeholder for battle_theme at C:\gameX\rpg-game\media\audio\music\battle_theme.mp3
+[2025-03-24T05:26:07.510Z] Created placeholder for victory_theme at C:\gameX\rpg-game\media\audio\music\victory_theme.mp3
+[2025-03-24T05:26:07.511Z] Created placeholder for game_over at C:\gameX\rpg-game\media\audio\music\game_over.mp3
+[2025-03-24T05:26:07.511Z] 
+=== SOUND GENERATION SUMMARY ===
+[2025-03-24T05:26:07.511Z] Total assets: 24
+[2025-03-24T05:26:07.511Z] Successfully generated/placeholder: 24
+[2025-03-24T05:26:07.511Z] Failed: 0
+[2025-03-24T05:26:07.523Z] 
+Documentation written to: C:\gameX\rpg-game\media\audio\README.md
+[2025-03-24T05:26:07.524Z] 
+Sound generation process complete!
+[2025-03-24T06:24:10.551Z] Starting sound asset generation process...
+[2025-03-24T06:24:10.553Z] Created placeholder for intro_narration at C:\gameX\rpg-game\media\audio\voice\intro_narration.mp3
+[2025-03-24T06:24:10.554Z] Created placeholder for village_elder_greeting at C:\gameX\rpg-game\media\audio\voice\village_elder_greeting.mp3
+[2025-03-24T06:24:10.555Z] Created placeholder for mysterious_messenger at C:\gameX\rpg-game\media\audio\voice\mysterious_messenger.mp3
+[2025-03-24T06:24:10.555Z] Created placeholder for button_click at C:\gameX\rpg-game\media\audio\sfx\button_click.mp3
+[2025-03-24T06:24:10.556Z] Created placeholder for page_turn at C:\gameX\rpg-game\media\audio\sfx\page_turn.mp3
+[2025-03-24T06:24:10.557Z] Created placeholder for item_pickup at C:\gameX\rpg-game\media\audio\sfx\item_pickup.mp3
+[2025-03-24T06:24:10.557Z] Created placeholder for door_open at C:\gameX\rpg-game\media\audio\sfx\door_open.mp3
+[2025-03-24T06:24:10.558Z] Created placeholder for footsteps at C:\gameX\rpg-game\media\audio\sfx\footsteps.mp3
+[2025-03-24T06:24:10.558Z] Created placeholder for magic_spell at C:\gameX\rpg-game\media\audio\sfx\magic_spell.mp3
+[2025-03-24T06:24:10.559Z] Created placeholder for sword_slash at C:\gameX\rpg-game\media\audio\sfx\sword_slash.mp3
+[2025-03-24T06:24:10.560Z] Created placeholder for treasure_found at C:\gameX\rpg-game\media\audio\sfx\treasure_found.mp3
+[2025-03-24T06:24:10.560Z] Created placeholder for forest_ambience at C:\gameX\rpg-game\media\audio\ambient\forest_ambience.mp3
+[2025-03-24T06:24:10.561Z] Created placeholder for village_ambience at C:\gameX\rpg-game\media\audio\ambient\village_ambience.mp3
+[2025-03-24T06:24:10.562Z] Created placeholder for cave_ambience at C:\gameX\rpg-game\media\audio\ambient\cave_ambience.mp3
+[2025-03-24T06:24:10.562Z] Created placeholder for temple_ambience at C:\gameX\rpg-game\media\audio\ambient\temple_ambience.mp3
+[2025-03-24T06:24:10.562Z] Created placeholder for mountain_wind at C:\gameX\rpg-game\media\audio\ambient\mountain_wind.mp3
+[2025-03-24T06:24:10.563Z] Created placeholder for title_theme at C:\gameX\rpg-game\media\audio\music\title_theme.mp3
+[2025-03-24T06:24:10.564Z] Created placeholder for village_theme at C:\gameX\rpg-game\media\audio\music\village_theme.mp3
+[2025-03-24T06:24:10.564Z] Created placeholder for forest_theme at C:\gameX\rpg-game\media\audio\music\forest_theme.mp3
+[2025-03-24T06:24:10.565Z] Created placeholder for mountain_theme at C:\gameX\rpg-game\media\audio\music\mountain_theme.mp3
+[2025-03-24T06:24:10.565Z] Created placeholder for temple_theme at C:\gameX\rpg-game\media\audio\music\temple_theme.mp3
+[2025-03-24T06:24:10.566Z] Created placeholder for battle_theme at C:\gameX\rpg-game\media\audio\music\battle_theme.mp3
+[2025-03-24T06:24:10.566Z] Created placeholder for victory_theme at C:\gameX\rpg-game\media\audio\music\victory_theme.mp3
+[2025-03-24T06:24:10.567Z] Created placeholder for game_over at C:\gameX\rpg-game\media\audio\music\game_over.mp3
+[2025-03-24T06:24:10.567Z] 
+=== SOUND GENERATION SUMMARY ===
+[2025-03-24T06:24:10.567Z] Total assets: 24
+[2025-03-24T06:24:10.567Z] Successfully generated/placeholder: 24
+[2025-03-24T06:24:10.567Z] Failed: 0
+[2025-03-24T06:24:10.615Z] 
+Documentation written to: C:\gameX\rpg-game\media\audio\README.md
+[2025-03-24T06:24:10.616Z] 
+Sound generation process complete!
+[2025-03-24T06:24:53.358Z] Starting sound asset generation process...
+[2025-03-24T06:24:53.361Z] Created placeholder for intro_narration at C:\gameX\rpg-game\media\audio\voice\intro_narration.mp3
+[2025-03-24T06:24:53.361Z] Created placeholder for village_elder_greeting at C:\gameX\rpg-game\media\audio\voice\village_elder_greeting.mp3
+[2025-03-24T06:24:53.362Z] Created placeholder for mysterious_messenger at C:\gameX\rpg-game\media\audio\voice\mysterious_messenger.mp3
+[2025-03-24T06:24:53.363Z] Created placeholder for button_click at C:\gameX\rpg-game\media\audio\sfx\button_click.mp3
+[2025-03-24T06:24:53.363Z] Created placeholder for page_turn at C:\gameX\rpg-game\media\audio\sfx\page_turn.mp3
+[2025-03-24T06:24:53.364Z] Created placeholder for item_pickup at C:\gameX\rpg-game\media\audio\sfx\item_pickup.mp3
+[2025-03-24T06:24:53.365Z] Created placeholder for door_open at C:\gameX\rpg-game\media\audio\sfx\door_open.mp3
+[2025-03-24T06:24:53.365Z] Created placeholder for footsteps at C:\gameX\rpg-game\media\audio\sfx\footsteps.mp3
+[2025-03-24T06:24:53.366Z] Created placeholder for magic_spell at C:\gameX\rpg-game\media\audio\sfx\magic_spell.mp3
+[2025-03-24T06:24:53.366Z] Created placeholder for sword_slash at C:\gameX\rpg-game\media\audio\sfx\sword_slash.mp3
+[2025-03-24T06:24:53.367Z] Created placeholder for treasure_found at C:\gameX\rpg-game\media\audio\sfx\treasure_found.mp3
+[2025-03-24T06:24:53.367Z] Created placeholder for forest_ambience at C:\gameX\rpg-game\media\audio\ambient\forest_ambience.mp3
+[2025-03-24T06:24:53.368Z] Created placeholder for village_ambience at C:\gameX\rpg-game\media\audio\ambient\village_ambience.mp3
+[2025-03-24T06:24:53.369Z] Created placeholder for cave_ambience at C:\gameX\rpg-game\media\audio\ambient\cave_ambience.mp3
+[2025-03-24T06:24:53.369Z] Created placeholder for temple_ambience at C:\gameX\rpg-game\media\audio\ambient\temple_ambience.mp3
+[2025-03-24T06:24:53.370Z] Created placeholder for mountain_wind at C:\gameX\rpg-game\media\audio\ambient\mountain_wind.mp3
+[2025-03-24T06:24:53.370Z] Created placeholder for title_theme at C:\gameX\rpg-game\media\audio\music\title_theme.mp3
+[2025-03-24T06:24:53.371Z] Created placeholder for village_theme at C:\gameX\rpg-game\media\audio\music\village_theme.mp3
+[2025-03-24T06:24:53.371Z] Created placeholder for forest_theme at C:\gameX\rpg-game\media\audio\music\forest_theme.mp3
+[2025-03-24T06:24:53.372Z] Created placeholder for mountain_theme at C:\gameX\rpg-game\media\audio\music\mountain_theme.mp3
+[2025-03-24T06:24:53.372Z] Created placeholder for temple_theme at C:\gameX\rpg-game\media\audio\music\temple_theme.mp3
+[2025-03-24T06:24:53.373Z] Created placeholder for battle_theme at C:\gameX\rpg-game\media\audio\music\battle_theme.mp3
+[2025-03-24T06:24:53.373Z] Created placeholder for victory_theme at C:\gameX\rpg-game\media\audio\music\victory_theme.mp3
+[2025-03-24T06:24:53.374Z] Created placeholder for game_over at C:\gameX\rpg-game\media\audio\music\game_over.mp3
+[2025-03-24T06:24:53.374Z] 
+=== SOUND GENERATION SUMMARY ===
+[2025-03-24T06:24:53.374Z] Total assets: 24
+[2025-03-24T06:24:53.374Z] Successfully generated/placeholder: 24
+[2025-03-24T06:24:53.374Z] Failed: 0
+[2025-03-24T06:24:53.387Z] 
+Documentation written to: C:\gameX\rpg-game\media\audio\README.md
+[2025-03-24T06:24:53.387Z] 
+Sound generation process complete!
+[2025-03-24T06:36:03.895Z] Starting sound asset generation process...
+[2025-03-24T06:36:03.897Z] Created placeholder for intro_narration at C:\gameX\rpg-game\media\audio\voice\intro_narration.mp3
+[2025-03-24T06:36:03.898Z] Created placeholder for village_elder_greeting at C:\gameX\rpg-game\media\audio\voice\village_elder_greeting.mp3
+[2025-03-24T06:36:03.898Z] Created placeholder for mysterious_messenger at C:\gameX\rpg-game\media\audio\voice\mysterious_messenger.mp3
+[2025-03-24T06:36:03.899Z] Created placeholder for button_click at C:\gameX\rpg-game\media\audio\sfx\button_click.mp3
+[2025-03-24T06:36:03.900Z] Created placeholder for page_turn at C:\gameX\rpg-game\media\audio\sfx\page_turn.mp3
+[2025-03-24T06:36:03.900Z] Created placeholder for item_pickup at C:\gameX\rpg-game\media\audio\sfx\item_pickup.mp3
+[2025-03-24T06:36:03.901Z] Created placeholder for door_open at C:\gameX\rpg-game\media\audio\sfx\door_open.mp3
+[2025-03-24T06:36:03.901Z] Created placeholder for footsteps at C:\gameX\rpg-game\media\audio\sfx\footsteps.mp3
+[2025-03-24T06:36:03.902Z] Created placeholder for magic_spell at C:\gameX\rpg-game\media\audio\sfx\magic_spell.mp3
+[2025-03-24T06:36:03.903Z] Created placeholder for sword_slash at C:\gameX\rpg-game\media\audio\sfx\sword_slash.mp3
+[2025-03-24T06:36:03.903Z] Created placeholder for treasure_found at C:\gameX\rpg-game\media\audio\sfx\treasure_found.mp3
+[2025-03-24T06:36:03.904Z] Created placeholder for forest_ambience at C:\gameX\rpg-game\media\audio\ambient\forest_ambience.mp3
+[2025-03-24T06:36:03.904Z] Created placeholder for village_ambience at C:\gameX\rpg-game\media\audio\ambient\village_ambience.mp3
+[2025-03-24T06:36:03.905Z] Created placeholder for cave_ambience at C:\gameX\rpg-game\media\audio\ambient\cave_ambience.mp3
+[2025-03-24T06:36:03.905Z] Created placeholder for temple_ambience at C:\gameX\rpg-game\media\audio\ambient\temple_ambience.mp3
+[2025-03-24T06:36:03.906Z] Created placeholder for mountain_wind at C:\gameX\rpg-game\media\audio\ambient\mountain_wind.mp3
+[2025-03-24T06:36:03.906Z] Created placeholder for title_theme at C:\gameX\rpg-game\media\audio\music\title_theme.mp3
+[2025-03-24T06:36:03.907Z] Created placeholder for village_theme at C:\gameX\rpg-game\media\audio\music\village_theme.mp3
+[2025-03-24T06:36:03.907Z] Created placeholder for forest_theme at C:\gameX\rpg-game\media\audio\music\forest_theme.mp3
+[2025-03-24T06:36:03.908Z] Created placeholder for mountain_theme at C:\gameX\rpg-game\media\audio\music\mountain_theme.mp3
+[2025-03-24T06:36:03.908Z] Created placeholder for temple_theme at C:\gameX\rpg-game\media\audio\music\temple_theme.mp3
+[2025-03-24T06:36:03.909Z] Created placeholder for battle_theme at C:\gameX\rpg-game\media\audio\music\battle_theme.mp3
+[2025-03-24T06:36:03.909Z] Created placeholder for victory_theme at C:\gameX\rpg-game\media\audio\music\victory_theme.mp3
+[2025-03-24T06:36:03.910Z] Created placeholder for game_over at C:\gameX\rpg-game\media\audio\music\game_over.mp3
+[2025-03-24T06:36:03.910Z] 
+=== SOUND GENERATION SUMMARY ===
+[2025-03-24T06:36:03.910Z] Total assets: 24
+[2025-03-24T06:36:03.910Z] Successfully generated/placeholder: 24
+[2025-03-24T06:36:03.910Z] Failed: 0
+[2025-03-24T06:36:03.944Z] 
+Documentation written to: C:\gameX\rpg-game\media\audio\README.md
+[2025-03-24T06:36:03.944Z] 
+Sound generation process complete!

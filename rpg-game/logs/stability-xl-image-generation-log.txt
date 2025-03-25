@@ -1,0 +1,132 @@
+[2025-03-24T00:26:08.034Z] Starting image generation process with Stability API XL model...
+[2025-03-24T00:26:08.034Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:08.034Z] Generating 8 images...
+[2025-03-24T00:26:08.034Z] Generating "Loading Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:08.035Z] Prompt: Fantasy loading screen, minimal design, mystical
+[2025-03-24T00:26:08.035Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:08.035Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:08.035Z] Using authentication method: Bearer token
+[2025-03-24T00:26:08.035Z] Request payload: {"text_prompts":[{"text":"Fantasy loading screen, minimal design, mystical","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:08.411Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:26:08.412Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:09 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252090f4fc6e7c8-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:08.412Z] API Error: {
+  "id": "7882976b41e03d7175f521dd80c592dc",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:08.413Z] Failed to generate Loading Page: API returned status 401 for Loading Page
+[2025-03-24T00:26:10.418Z] Generating "Landing Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:10.419Z] Prompt: Fantasy RPG landing page, magical scene
+[2025-03-24T00:26:10.419Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:10.419Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:10.419Z] Using authentication method: Bearer token
+[2025-03-24T00:26:10.419Z] Request payload: {"text_prompts":[{"text":"Fantasy RPG landing page, magical scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:10.715Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:26:10.715Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:11 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252091dcf35e7e0-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:10.716Z] API Error: {
+  "id": "5e262cb6d8bf6d8aec8e85ede873ef31",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:10.716Z] Failed to generate Landing Page: API returned status 401 for Landing Page
+[2025-03-24T00:26:12.726Z] Generating "Main Menu Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:12.726Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:26:12.726Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:12.726Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:12.727Z] Using authentication method: Bearer token
+[2025-03-24T00:26:12.727Z] Request payload: {"text_prompts":[{"text":"Fantasy castle on mountain, starry night","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:13.027Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:26:13.027Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:14 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252092c3d5d182f-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:13.028Z] API Error: {
+  "id": "0fa3820388a28d3cb69cbaa4ddbf5347",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:13.028Z] Failed to generate Main Menu Background: API returned status 401 for Main Menu Background
+[2025-03-24T00:26:15.033Z] Generating "Character Creation Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:15.034Z] Prompt: Mystical chamber with artifacts, glowing runes
+[2025-03-24T00:26:15.034Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:15.034Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:15.034Z] Using authentication method: Bearer token
+[2025-03-24T00:26:15.035Z] Request payload: {"text_prompts":[{"text":"Mystical chamber with artifacts, glowing runes","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:15.324Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:26:15.325Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:16 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252093a9882e7e0-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:15.325Z] API Error: {
+  "id": "b0932ce01ec3688aacdd65c3fd9d20db",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:15.325Z] Failed to generate Character Creation Background: API returned status 401 for Character Creation Background
+[2025-03-24T00:26:17.342Z] Generating "Mysterious Letter" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:17.342Z] Prompt: Ancient parchment, fantasy symbols, old paper
+[2025-03-24T00:26:17.343Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:17.343Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:17.343Z] Using authentication method: Bearer token
+[2025-03-24T00:26:17.343Z] Request payload: {"text_prompts":[{"text":"Ancient parchment, fantasy symbols, old paper","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:17.644Z] Error generating Mysterious Letter: HTTP 401
+[2025-03-24T00:26:17.644Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:18 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925209491e7d5744-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:17.644Z] API Error: {
+  "id": "b51dbf078c4319534c118720e5416c5a",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:17.645Z] Failed to generate Mysterious Letter: API returned status 401 for Mysterious Letter
+[2025-03-24T00:26:19.649Z] Generating "Forest Path (Ghost)" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:19.650Z] Prompt: Spooky forest path, ghostly apparition, misty
+[2025-03-24T00:26:19.650Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:19.650Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:19.650Z] Using authentication method: Bearer token
+[2025-03-24T00:26:19.650Z] Request payload: {"text_prompts":[{"text":"Spooky forest path, ghostly apparition, misty","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:19.956Z] Error generating Forest Path (Ghost): HTTP 401
+[2025-03-24T00:26:19.956Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:20 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925209577e0caacf-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:19.957Z] API Error: {
+  "id": "29ac4076b17a1a87a46064a656a7f2a0",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:19.957Z] Failed to generate Forest Path (Ghost): API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:26:21.957Z] Generating "Mountain Pass" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:21.958Z] Prompt: Mountain pass, rope bridge, fantasy scene
+[2025-03-24T00:26:21.959Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:21.959Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:21.959Z] Using authentication method: Bearer token
+[2025-03-24T00:26:21.959Z] Request payload: {"text_prompts":[{"text":"Mountain pass, rope bridge, fantasy scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:22.270Z] Error generating Mountain Pass: HTTP 401
+[2025-03-24T00:26:22.270Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:23 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925209660a79a979-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:22.270Z] API Error: {
+  "id": "8b717ad2576d0cba868d319e3c5397e8",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:22.270Z] Failed to generate Mountain Pass: API returned status 401 for Mountain Pass
+[2025-03-24T00:26:24.279Z] Generating "Village Tavern" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:26:24.279Z] Prompt: Medieval tavern interior, cozy inn, fireplace
+[2025-03-24T00:26:24.279Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:26:24.280Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:26:24.280Z] Using authentication method: Bearer token
+[2025-03-24T00:26:24.280Z] Request payload: {"text_prompts":[{"text":"Medieval tavern interior, cozy inn, fireplace","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1344,"samples":1,"steps":30}
+[2025-03-24T00:26:24.578Z] Error generating Village Tavern: HTTP 401
+[2025-03-24T00:26:24.578Z] Headers: {"date":"Mon, 24 Mar 2025 00:26:25 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925209746f3fa949-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:26:24.578Z] API Error: {
+  "id": "de322ff94a12124a4127d047262a9fd7",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:26:24.579Z] Failed to generate Village Tavern: API returned status 401 for Village Tavern
+[2025-03-24T00:26:26.587Z] 
+=== GENERATION SUMMARY ===
+[2025-03-24T00:26:26.588Z] Total: 8
+[2025-03-24T00:26:26.588Z] Successful: 0
+[2025-03-24T00:26:26.588Z] Failed: 8
+[2025-03-24T00:26:26.588Z] 
+Failed assets:
+[2025-03-24T00:26:26.588Z] - loading_page: API returned status 401 for Loading Page
+[2025-03-24T00:26:26.588Z] - landing_page: API returned status 401 for Landing Page
+[2025-03-24T00:26:26.588Z] - main_menu_background: API returned status 401 for Main Menu Background
+[2025-03-24T00:26:26.588Z] - character_creation_background: API returned status 401 for Character Creation Background
+[2025-03-24T00:26:26.588Z] - mysterious_letter: API returned status 401 for Mysterious Letter
+[2025-03-24T00:26:26.589Z] - forest_path_ghost: API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:26:26.589Z] - mountain_pass: API returned status 401 for Mountain Pass
+[2025-03-24T00:26:26.589Z] - village_tavern: API returned status 401 for Village Tavern
+[2025-03-24T00:26:26.589Z] 
+Image generation process complete!

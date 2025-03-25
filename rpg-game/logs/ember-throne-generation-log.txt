@@ -1,0 +1,532 @@
+[2025-03-23T23:00:32.765Z] Starting Ember Throne asset generation process with Stability AI...
+[2025-03-23T23:00:32.766Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:32.766Z] Generating 37 images...
+[2025-03-23T23:00:32.766Z] 
+===== Processing Batch 1/8 (5 assets) =====
+
+[2025-03-23T23:00:32.766Z] Generating "A Mysterious Invitation" using Stability AI...
+[2025-03-23T23:00:32.767Z] Prompt: Ancient parchment with fantasy symbols and a royal seal, mysterious invitation letter with glowing runes on weathered paper, fantasy RPG game art, detailed illustration
+[2025-03-23T23:00:32.767Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:32.767Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:00:33.627Z] Error generating A Mysterious Invitation: HTTP 404
+[2025-03-23T23:00:33.628Z] API Error: {
+  "id": "9533e6cf0723a59bf8d53ce1d1b8c3d6",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:00:33.629Z] Failed to generate A Mysterious Invitation: API returned status 404 for A Mysterious Invitation
+[2025-03-23T23:00:36.634Z] Generating "Village Farewell" using Stability AI...
+[2025-03-23T23:00:36.634Z] Prompt: Fantasy village at dawn, small cottages with thatched roofs, villagers saying farewell to a traveler at the edge of town, warm morning light, fantasy RPG game art, detailed illustration
+[2025-03-23T23:00:36.634Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:36.634Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:00:37.585Z] Error generating Village Farewell: HTTP 404
+[2025-03-23T23:00:37.585Z] API Error: {
+  "id": "fc7179bacde499404103dbd0df184d4c",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:00:37.586Z] Failed to generate Village Farewell: API returned status 404 for Village Farewell
+[2025-03-23T23:00:40.600Z] Generating "Crossroads Choice" using Stability AI...
+[2025-03-23T23:00:40.601Z] Prompt: Fantasy crossroads in a clearing, weathered signpost pointing in different directions, one path leads to dark forest, another to mountains, fantasy RPG game art, atmospheric lighting
+[2025-03-23T23:00:40.601Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:40.601Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:00:41.450Z] Error generating Crossroads Choice: HTTP 404
+[2025-03-23T23:00:41.451Z] API Error: {
+  "id": "7c21bcb47f232fe2132e87062ff96983",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:00:41.452Z] Failed to generate Crossroads Choice: API returned status 404 for Crossroads Choice
+[2025-03-23T23:00:44.458Z] Generating "Forest Depths" using Stability AI...
+[2025-03-23T23:00:44.459Z] Prompt: Deep mystical forest with ancient trees, glowing mushrooms, dappled light filtering through dense canopy, misty atmosphere, fantasy RPG game art, eerie beauty
+[2025-03-23T23:00:44.459Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:44.460Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:00:44.810Z] Error generating Forest Depths: HTTP 404
+[2025-03-23T23:00:44.811Z] API Error: {
+  "id": "6d5239065d400bd2b1c1a2c41546ff8e",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:00:44.811Z] Failed to generate Forest Depths: API returned status 404 for Forest Depths
+[2025-03-23T23:00:47.826Z] Generating "Mountain Cave" using Stability AI...
+[2025-03-23T23:00:47.827Z] Prompt: Imposing cave entrance in rugged mountain face, ancient stone carvings around entrance, ominous atmosphere, fantasy RPG game art, dramatic lighting with shadows
+[2025-03-23T23:00:47.827Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:00:47.827Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:00:48.459Z] Error generating Mountain Cave: HTTP 404
+[2025-03-23T23:00:48.459Z] API Error: {
+  "id": "0ee2fd5a3f186f84841d12aabc28e4e9",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:00:48.459Z] Failed to generate Mountain Cave: API returned status 404 for Mountain Cave
+[2025-03-23T23:00:51.471Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:01:01.482Z] 
+===== Processing Batch 2/8 (5 assets) =====
+
+[2025-03-23T23:01:01.482Z] Generating "Castle Gate" using Stability AI...
+[2025-03-23T23:01:01.482Z] Prompt: Massive fantasy castle gate with imposing stone towers, royal banners, armored guards, approaching from a winding path, fantasy RPG game art, majestic scale
+[2025-03-23T23:01:01.482Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:01.482Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:02.100Z] Error generating Castle Gate: HTTP 404
+[2025-03-23T23:01:02.100Z] API Error: {
+  "id": "c50fc06500164f417f692cc0977f0ac7",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:02.100Z] Failed to generate Castle Gate: API returned status 404 for Castle Gate
+[2025-03-23T23:01:05.111Z] Generating "Throne Room" using Stability AI...
+[2025-03-23T23:01:05.112Z] Prompt: Magnificent fantasy throne room with ember-infused throne, ornate pillars, magical runes on floor, stained glass windows, fantasy RPG game art, royal atmosphere
+[2025-03-23T23:01:05.112Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:05.112Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:05.555Z] Error generating Throne Room: HTTP 404
+[2025-03-23T23:01:05.555Z] API Error: {
+  "id": "1d2fbb7680e49d744e66a48abb92ac84",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:05.556Z] Failed to generate Throne Room: API returned status 404 for Throne Room
+[2025-03-23T23:01:08.571Z] Generating "Bold Acceptance" using Stability AI...
+[2025-03-23T23:01:08.571Z] Prompt: Character packing adventure gear in a rustic home, determined expression, preparing for journey, fantasy RPG game art, warm interior lighting
+[2025-03-23T23:01:08.572Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:08.572Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:09.672Z] Error generating Bold Acceptance: HTTP 404
+[2025-03-23T23:01:09.673Z] API Error: {
+  "id": "19d18c2cd3ec371122b8beed30296641",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:09.673Z] Failed to generate Bold Acceptance: API returned status 404 for Bold Acceptance
+[2025-03-23T23:01:12.676Z] Generating "Cautious Consideration" using Stability AI...
+[2025-03-23T23:01:12.676Z] Prompt: Character consulting with village elder, ancient scroll spread on table, candlelight, concerned expressions, fantasy RPG game art, intimate scene
+[2025-03-23T23:01:12.676Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:12.676Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:13.071Z] Error generating Cautious Consideration: HTTP 404
+[2025-03-23T23:01:13.071Z] API Error: {
+  "id": "b983ef6d2b5897c59f00d13507e80c7c",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:13.071Z] Failed to generate Cautious Consideration: API returned status 404 for Cautious Consideration
+[2025-03-23T23:01:16.077Z] Generating "Forest Path" using Stability AI...
+[2025-03-23T23:01:16.078Z] Prompt: Winding path entering dark enchanted forest, twisted trees, mist curling around roots, fantasy RPG game art, foreboding atmosphere
+[2025-03-23T23:01:16.078Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:16.078Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:16.617Z] Error generating Forest Path: HTTP 404
+[2025-03-23T23:01:16.618Z] API Error: {
+  "id": "2bd158360a534882db5140751393f6d8",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:16.618Z] Failed to generate Forest Path: API returned status 404 for Forest Path
+[2025-03-23T23:01:19.620Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:01:29.624Z] 
+===== Processing Batch 3/8 (5 assets) =====
+
+[2025-03-23T23:01:29.625Z] Generating "Mountain Trail" using Stability AI...
+[2025-03-23T23:01:29.625Z] Prompt: Steep mountain trail with rope bridges spanning chasms, distant peaks, eagle soaring, fantasy RPG game art, vertigo-inducing heights
+[2025-03-23T23:01:29.625Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:29.625Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:30.231Z] Error generating Mountain Trail: HTTP 404
+[2025-03-23T23:01:30.231Z] API Error: {
+  "id": "6e0e0cc2b69a4d19fac490a4da8d4a70",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:30.232Z] Failed to generate Mountain Trail: API returned status 404 for Mountain Trail
+[2025-03-23T23:01:33.237Z] Generating "Forest Encounter" using Stability AI...
+[2025-03-23T23:01:33.238Z] Prompt: Ghostly apparition in misty forest clearing, translucent female figure with flowing garments, beckoning gesture, fantasy RPG game art, ethereal lighting
+[2025-03-23T23:01:33.238Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:33.238Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:33.591Z] Error generating Forest Encounter: HTTP 404
+[2025-03-23T23:01:33.592Z] API Error: {
+  "id": "a06df0726a84fffa51566beb201433f0",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:33.592Z] Failed to generate Forest Encounter: API returned status 404 for Forest Encounter
+[2025-03-23T23:01:36.594Z] Generating "Forest Shrine" using Stability AI...
+[2025-03-23T23:01:36.594Z] Prompt: Ancient stone shrine in forest clearing, magical runes glowing, offerings of flowers and crystals, fantasy RPG game art, mystical atmosphere
+[2025-03-23T23:01:36.595Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:36.595Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:37.157Z] Error generating Forest Shrine: HTTP 404
+[2025-03-23T23:01:37.158Z] API Error: {
+  "id": "d39204e1cfa4f2efa8c0ff9639c44823",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:37.158Z] Failed to generate Forest Shrine: API returned status 404 for Forest Shrine
+[2025-03-23T23:01:40.161Z] Generating "Mountain Guardian" using Stability AI...
+[2025-03-23T23:01:40.162Z] Prompt: Massive stone golem guardian blocking mountain pass, ancient runes carved into its body, intimidating pose, fantasy RPG game art, imposing scale
+[2025-03-23T23:01:40.162Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:40.162Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:40.891Z] Error generating Mountain Guardian: HTTP 404
+[2025-03-23T23:01:40.892Z] API Error: {
+  "id": "ee5f306c00c7303f59a13de8f2faa6bc",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:40.892Z] Failed to generate Mountain Guardian: API returned status 404 for Mountain Guardian
+[2025-03-23T23:01:43.900Z] Generating "Trap Room" using Stability AI...
+[2025-03-23T23:01:43.900Z] Prompt: Castle corridor with triggered traps, swinging blades, floor panels opening to pits, character dodging, fantasy RPG game art, dynamic action
+[2025-03-23T23:01:43.901Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:43.901Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:44.445Z] Error generating Trap Room: HTTP 404
+[2025-03-23T23:01:44.445Z] API Error: {
+  "id": "757a9a42a074f15a65f98f997eabd8b6",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:44.445Z] Failed to generate Trap Room: API returned status 404 for Trap Room
+[2025-03-23T23:01:47.450Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:01:57.462Z] 
+===== Processing Batch 4/8 (5 assets) =====
+
+[2025-03-23T23:01:57.462Z] Generating "Castle Library" using Stability AI...
+[2025-03-23T23:01:57.462Z] Prompt: Vast fantasy library with towering bookshelves, floating magical lights, ancient tomes, study areas, fantasy RPG game art, scholarly atmosphere
+[2025-03-23T23:01:57.462Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:01:57.462Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:01:58.363Z] Error generating Castle Library: HTTP 404
+[2025-03-23T23:01:58.363Z] API Error: {
+  "id": "9562073e57d5148e78f24c3296ac80c7",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:01:58.363Z] Failed to generate Castle Library: API returned status 404 for Castle Library
+[2025-03-23T23:02:01.373Z] Generating "Hidden Passage" using Stability AI...
+[2025-03-23T23:02:01.373Z] Prompt: Secret stone passage revealed behind rotating bookshelf, cobwebs, dust, torch light, fantasy RPG game art, mysterious atmosphere
+[2025-03-23T23:02:01.373Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:01.373Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:01.827Z] Error generating Hidden Passage: HTTP 404
+[2025-03-23T23:02:01.827Z] API Error: {
+  "id": "6a8ac81cd2fa464b85baf09257b82c30",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:01.828Z] Failed to generate Hidden Passage: API returned status 404 for Hidden Passage
+[2025-03-23T23:02:04.834Z] Generating "Dungeon Cells" using Stability AI...
+[2025-03-23T23:02:04.834Z] Prompt: Dark fantasy dungeon with iron-barred cells, torches, chains, damp stone walls, fantasy RPG game art, oppressive atmosphere
+[2025-03-23T23:02:04.834Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:04.835Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:05.382Z] Error generating Dungeon Cells: HTTP 404
+[2025-03-23T23:02:05.382Z] API Error: {
+  "id": "15334a34811d9f5afd13a545b9be380a",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:05.382Z] Failed to generate Dungeon Cells: API returned status 404 for Dungeon Cells
+[2025-03-23T23:02:08.383Z] Generating "Kitchen Disguise" using Stability AI...
+[2025-03-23T23:02:08.384Z] Prompt: Busy castle kitchen with cooks, servants, steam, food preparation, character in disguise, fantasy RPG game art, hectic activity
+[2025-03-23T23:02:08.384Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:08.384Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:08.725Z] Error generating Kitchen Disguise: HTTP 404
+[2025-03-23T23:02:08.725Z] API Error: {
+  "id": "8f31119326dbdd0140175d4e8ac8e06a",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:08.725Z] Failed to generate Kitchen Disguise: API returned status 404 for Kitchen Disguise
+[2025-03-23T23:02:11.734Z] Generating "Confrontation" using Stability AI...
+[2025-03-23T23:02:11.734Z] Prompt: Dramatic confrontation with royal usurper near fantasy throne, guards watching, magical energy sparking, fantasy RPG game art, tense standoff
+[2025-03-23T23:02:11.734Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:11.734Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:12.282Z] Error generating Confrontation: HTTP 404
+[2025-03-23T23:02:12.282Z] API Error: {
+  "id": "3896597be88d20273ec4b9dbc77f56a0",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:12.283Z] Failed to generate Confrontation: API returned status 404 for Confrontation
+[2025-03-23T23:02:15.288Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:02:25.300Z] 
+===== Processing Batch 5/8 (5 assets) =====
+
+[2025-03-23T23:02:25.300Z] Generating "Peaceful Resolution" using Stability AI...
+[2025-03-23T23:02:25.300Z] Prompt: Diplomatic scene in throne room, handshake between characters, witnesses nodding approval, magical ember throne glowing softly, fantasy RPG game art
+[2025-03-23T23:02:25.301Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:25.301Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:25.907Z] Error generating Peaceful Resolution: HTTP 404
+[2025-03-23T23:02:25.907Z] API Error: {
+  "id": "7e060a7ab4db0e8044451eb881120f41",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:25.908Z] Failed to generate Peaceful Resolution: API returned status 404 for Peaceful Resolution
+[2025-03-23T23:02:28.915Z] Generating "Combat Finale" using Stability AI...
+[2025-03-23T23:02:28.915Z] Prompt: Epic battle in throne room, magical attacks, flying debris, guards taking sides, fantasy RPG game art, dynamic action poses
+[2025-03-23T23:02:28.916Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:28.916Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:29.357Z] Error generating Combat Finale: HTTP 404
+[2025-03-23T23:02:29.358Z] API Error: {
+  "id": "019486c4638beb70b04e18004e8d1c24",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:29.358Z] Failed to generate Combat Finale: API returned status 404 for Combat Finale
+[2025-03-23T23:02:32.364Z] Generating "Victory Ending" using Stability AI...
+[2025-03-23T23:02:32.364Z] Prompt: Character seated on magical ember throne, coronation ceremony, loyal subjects kneeling, stained glass windows casting colored light, fantasy RPG game art
+[2025-03-23T23:02:32.364Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:32.364Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:32.952Z] Error generating Victory Ending: HTTP 404
+[2025-03-23T23:02:32.952Z] API Error: {
+  "id": "a93747cb50f693cf80143fb0d44bbd64",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:32.952Z] Failed to generate Victory Ending: API returned status 404 for Victory Ending
+[2025-03-23T23:02:35.964Z] Generating "Escape Ending" using Stability AI...
+[2025-03-23T23:02:35.964Z] Prompt: Character riding away from burning castle at night, looking back over shoulder, moonlight, fantasy RPG game art, bittersweet mood
+[2025-03-23T23:02:35.965Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:35.965Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:36.509Z] Error generating Escape Ending: HTTP 404
+[2025-03-23T23:02:36.509Z] API Error: {
+  "id": "7c1e4bd8dbec176de698ab04416c9d58",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:36.509Z] Failed to generate Escape Ending: API returned status 404 for Escape Ending
+[2025-03-23T23:02:39.522Z] Generating "Sacrifice Ending" using Stability AI...
+[2025-03-23T23:02:39.523Z] Prompt: Character merging with magical ember throne, energy swirling, transformation, witnesses in awe, fantasy RPG game art, mystical transcendence
+[2025-03-23T23:02:39.523Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:39.523Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:39.985Z] Error generating Sacrifice Ending: HTTP 404
+[2025-03-23T23:02:39.986Z] API Error: {
+  "id": "e2e8001065e438eb599b51cf1886e6a5",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:39.986Z] Failed to generate Sacrifice Ending: API returned status 404 for Sacrifice Ending
+[2025-03-23T23:02:42.994Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:02:53.009Z] 
+===== Processing Batch 6/8 (5 assets) =====
+
+[2025-03-23T23:02:53.009Z] Generating "Warrior Portrait" using Stability AI...
+[2025-03-23T23:02:53.009Z] Prompt: Fantasy warrior portrait, determined expression, plate armor with ember insignia, battle-worn, fantasy RPG character art, detailed illustration, head and shoulders view
+[2025-03-23T23:02:53.009Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:53.009Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:53.567Z] Error generating Warrior Portrait: HTTP 404
+[2025-03-23T23:02:53.567Z] API Error: {
+  "id": "3f4556c319435bc2106ac548f3765262",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:53.568Z] Failed to generate Warrior Portrait: API returned status 404 for Warrior Portrait
+[2025-03-23T23:02:56.578Z] Generating "Mage Portrait" using Stability AI...
+[2025-03-23T23:02:56.579Z] Prompt: Fantasy mage portrait, wise expression, ornate robes with magical ember symbols, glowing staff, fantasy RPG character art, detailed illustration, head and shoulders view
+[2025-03-23T23:02:56.579Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:56.579Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:02:56.941Z] Error generating Mage Portrait: HTTP 404
+[2025-03-23T23:02:56.941Z] API Error: {
+  "id": "eaf0fdb70e7550d75110d805f307ffb5",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:02:56.941Z] Failed to generate Mage Portrait: API returned status 404 for Mage Portrait
+[2025-03-23T23:02:59.948Z] Generating "Rogue Portrait" using Stability AI...
+[2025-03-23T23:02:59.948Z] Prompt: Fantasy rogue portrait, cunning expression, leather armor with hood, ember-hilted daggers visible, fantasy RPG character art, detailed illustration, head and shoulders view
+[2025-03-23T23:02:59.949Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:02:59.949Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:00.557Z] Error generating Rogue Portrait: HTTP 404
+[2025-03-23T23:03:00.557Z] API Error: {
+  "id": "5c1d1a75c60946e85254d4966da8c8af",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:03:00.557Z] Failed to generate Rogue Portrait: API returned status 404 for Rogue Portrait
+[2025-03-23T23:03:03.560Z] Generating "Cleric Portrait" using Stability AI...
+[2025-03-23T23:03:03.561Z] Prompt: Fantasy cleric portrait, serene expression, religious vestments with ember symbol amulet, healing aura, fantasy RPG character art, detailed illustration, head and shoulders view
+[2025-03-23T23:03:03.561Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:03.561Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:03.902Z] Error generating Cleric Portrait: HTTP 404
+[2025-03-23T23:03:03.902Z] API Error: {
+  "id": "dc2180795e6a6d95761e0adb4064f6d1",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:03:03.902Z] Failed to generate Cleric Portrait: API returned status 404 for Cleric Portrait
+[2025-03-23T23:03:06.914Z] Generating "Button Frame" using Stability AI...
+[2025-03-23T23:03:06.914Z] Prompt: Fantasy UI button frame with ornate ember-themed border, medieval design, bronze and gold, fantasy game interface, transparent background, isolated element
+[2025-03-23T23:03:06.914Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:06.914Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:07.151Z] Error generating Button Frame: HTTP 400
+[2025-03-23T23:03:07.151Z] API Error: {
+  "id": "5cb8dbc003885e863af442df6af37c37",
+  "message": "height: must be no less than 128.",
+  "name": "bad_request"
+}
+[2025-03-23T23:03:07.152Z] Failed to generate Button Frame: API returned status 400 for Button Frame
+[2025-03-23T23:03:10.158Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:03:20.168Z] 
+===== Processing Batch 7/8 (5 assets) =====
+
+[2025-03-23T23:03:20.169Z] Generating "Panel Background" using Stability AI...
+[2025-03-23T23:03:20.169Z] Prompt: Fantasy UI panel background, worn parchment with ember-themed decorative border, medieval design, fantasy game interface, semi-transparent, isolated element
+[2025-03-23T23:03:20.169Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:20.169Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:20.464Z] Error generating Panel Background: HTTP 400
+[2025-03-23T23:03:20.464Z] API Error: {
+  "id": "9bf3974500baf9c13e5f269b87febda2",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-23T23:03:20.465Z] Failed to generate Panel Background: API returned status 400 for Panel Background
+[2025-03-23T23:03:23.476Z] Generating "Inventory Slot" using Stability AI...
+[2025-03-23T23:03:23.477Z] Prompt: Fantasy UI inventory slot, ornate square frame with ember-themed corners, medieval design, fantasy game interface, transparent background, isolated element
+[2025-03-23T23:03:23.477Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:23.477Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:23.780Z] Error generating Inventory Slot: HTTP 400
+[2025-03-23T23:03:23.780Z] API Error: {
+  "id": "0bdaeee8da1a0e6b3ec046091a34fd18",
+  "message": "height: must be no less than 128; width: must be no less than 128.",
+  "name": "bad_request"
+}
+[2025-03-23T23:03:23.780Z] Failed to generate Inventory Slot: API returned status 400 for Inventory Slot
+[2025-03-23T23:03:26.781Z] Generating "Health Bar" using Stability AI...
+[2025-03-23T23:03:26.782Z] Prompt: Fantasy UI health bar, ember-themed energy container, glowing red interior, medieval design, fantasy game interface, transparent background, isolated element
+[2025-03-23T23:03:26.782Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:26.782Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:27.073Z] Error generating Health Bar: HTTP 400
+[2025-03-23T23:03:27.074Z] API Error: {
+  "id": "48a836fdf2072774e5caf2e9583a9957",
+  "message": "height: must be no less than 128.",
+  "name": "bad_request"
+}
+[2025-03-23T23:03:27.074Z] Failed to generate Health Bar: API returned status 400 for Health Bar
+[2025-03-23T23:03:30.088Z] Generating "Mana Bar" using Stability AI...
+[2025-03-23T23:03:30.089Z] Prompt: Fantasy UI mana bar, ember-themed energy container, glowing blue interior, medieval design, fantasy game interface, transparent background, isolated element
+[2025-03-23T23:03:30.089Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:30.089Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:30.376Z] Error generating Mana Bar: HTTP 400
+[2025-03-23T23:03:30.377Z] API Error: {
+  "id": "1f2a414993af8d4352f77aac55f50bc2",
+  "message": "height: must be no less than 128.",
+  "name": "bad_request"
+}
+[2025-03-23T23:03:30.377Z] Failed to generate Mana Bar: API returned status 400 for Mana Bar
+[2025-03-23T23:03:33.377Z] Generating "The Ember Throne Chronicles Logo" using Stability AI...
+[2025-03-23T23:03:33.378Z] Prompt: Fantasy game logo for The Ember Throne Chronicles, ornate text with fiery ember effects, royal crown motif, fantasy RPG title art, transparent background, isolated element
+[2025-03-23T23:03:33.378Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:33.378Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:33.668Z] Error generating The Ember Throne Chronicles Logo: HTTP 400
+[2025-03-23T23:03:33.668Z] API Error: {
+  "id": "10b8a394afa949946dc0d1106aedbef7",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-23T23:03:33.668Z] Failed to generate The Ember Throne Chronicles Logo: API returned status 400 for The Ember Throne Chronicles Logo
+[2025-03-23T23:03:36.670Z] 
+Waiting 10 seconds before next batch...
+
+[2025-03-23T23:03:46.672Z] 
+===== Processing Batch 8/8 (2 assets) =====
+
+[2025-03-23T23:03:46.672Z] Generating "Loading Screen" using Stability AI...
+[2025-03-23T23:03:46.672Z] Prompt: Fantasy loading screen with ember throne at center, magical particles, dark atmospheric background, fantasy RPG game art, mysterious mood
+[2025-03-23T23:03:46.673Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:46.673Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:46.973Z] Error generating Loading Screen: HTTP 400
+[2025-03-23T23:03:46.974Z] API Error: {
+  "id": "411dcda9261f2635901609891f76cbd4",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-23T23:03:46.974Z] Failed to generate Loading Screen: API returned status 400 for Loading Screen
+[2025-03-23T23:03:49.980Z] Generating "Fantasy Dice Set" using Stability AI...
+[2025-03-23T23:03:49.981Z] Prompt: Fantasy RPG dice set (d4, d6, d8, d10, d12, d20) with glowing ember runes, translucent with internal fire effect, fantasy game items, transparent background, isolated elements
+[2025-03-23T23:03:49.981Z] Using Stability API key: sk-3...5pfh
+[2025-03-23T23:03:49.981Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1.0/text-to-image
+[2025-03-23T23:03:50.587Z] Error generating Fantasy Dice Set: HTTP 404
+[2025-03-23T23:03:50.587Z] API Error: {
+  "id": "020ac20aa7e09239c3ab3370c2b598ab",
+  "message": "The specified engine (ID stable-diffusion-xl-1.0) was not found.",
+  "name": "not_found"
+}
+[2025-03-23T23:03:50.587Z] Failed to generate Fantasy Dice Set: API returned status 404 for Fantasy Dice Set
+[2025-03-23T23:03:53.598Z] 
+=== GENERATION SUMMARY ===
+[2025-03-23T23:03:53.598Z] Total: 37
+[2025-03-23T23:03:53.599Z] Successful: 0
+[2025-03-23T23:03:53.599Z] Failed: 37
+[2025-03-23T23:03:53.599Z] 
+Failed assets:
+[2025-03-23T23:03:53.599Z] - page_1_mysterious_invitation: API returned status 404 for A Mysterious Invitation
+[2025-03-23T23:03:53.599Z] - page_3_village_farewell: API returned status 404 for Village Farewell
+[2025-03-23T23:03:53.599Z] - page_5_crossroads_choice: API returned status 404 for Crossroads Choice
+[2025-03-23T23:03:53.599Z] - page_7_forest_depths: API returned status 404 for Forest Depths
+[2025-03-23T23:03:53.599Z] - page_9_mountain_cave: API returned status 404 for Mountain Cave
+[2025-03-23T23:03:53.599Z] - page_13_castle_gate: API returned status 404 for Castle Gate
+[2025-03-23T23:03:53.599Z] - page_19_throne_room: API returned status 404 for Throne Room
+[2025-03-23T23:03:53.600Z] - page_2_bold_acceptance: API returned status 404 for Bold Acceptance
+[2025-03-23T23:03:53.600Z] - page_4_cautious_consideration: API returned status 404 for Cautious Consideration
+[2025-03-23T23:03:53.600Z] - page_6_forest_path: API returned status 404 for Forest Path
+[2025-03-23T23:03:53.600Z] - page_8_mountain_trail: API returned status 404 for Mountain Trail
+[2025-03-23T23:03:53.600Z] - page_10_forest_encounter: API returned status 404 for Forest Encounter
+[2025-03-23T23:03:53.600Z] - page_11_forest_shrine: API returned status 404 for Forest Shrine
+[2025-03-23T23:03:53.600Z] - page_12_mountain_guardian: API returned status 404 for Mountain Guardian
+[2025-03-23T23:03:53.600Z] - page_14_trap_room: API returned status 404 for Trap Room
+[2025-03-23T23:03:53.600Z] - page_15_castle_library: API returned status 404 for Castle Library
+[2025-03-23T23:03:53.600Z] - page_16_hidden_passage: API returned status 404 for Hidden Passage
+[2025-03-23T23:03:53.600Z] - page_17_dungeon_cells: API returned status 404 for Dungeon Cells
+[2025-03-23T23:03:53.600Z] - page_18_kitchen_disguise: API returned status 404 for Kitchen Disguise
+[2025-03-23T23:03:53.601Z] - page_20_confrontation: API returned status 404 for Confrontation
+[2025-03-23T23:03:53.601Z] - page_21_peaceful_resolution: API returned status 404 for Peaceful Resolution
+[2025-03-23T23:03:53.601Z] - page_22_combat_finale: API returned status 404 for Combat Finale
+[2025-03-23T23:03:53.601Z] - page_23_victory_ending: API returned status 404 for Victory Ending
+[2025-03-23T23:03:53.601Z] - page_24_escape_ending: API returned status 404 for Escape Ending
+[2025-03-23T23:03:53.601Z] - page_25_sacrifice_ending: API returned status 404 for Sacrifice Ending
+[2025-03-23T23:03:53.601Z] - warrior_portrait: API returned status 404 for Warrior Portrait
+[2025-03-23T23:03:53.601Z] - mage_portrait: API returned status 404 for Mage Portrait
+[2025-03-23T23:03:53.601Z] - rogue_portrait: API returned status 404 for Rogue Portrait
+[2025-03-23T23:03:53.601Z] - cleric_portrait: API returned status 404 for Cleric Portrait
+[2025-03-23T23:03:53.601Z] - button_frame: API returned status 400 for Button Frame
+[2025-03-23T23:03:53.602Z] - panel_background: API returned status 400 for Panel Background
+[2025-03-23T23:03:53.602Z] - inventory_slot: API returned status 400 for Inventory Slot
+[2025-03-23T23:03:53.602Z] - health_bar: API returned status 400 for Health Bar
+[2025-03-23T23:03:53.602Z] - mana_bar: API returned status 400 for Mana Bar
+[2025-03-23T23:03:53.602Z] - game_logo: API returned status 400 for The Ember Throne Chronicles Logo
+[2025-03-23T23:03:53.602Z] - loading_screen: API returned status 400 for Loading Screen
+[2025-03-23T23:03:53.602Z] - dice_set: API returned status 404 for Fantasy Dice Set
+[2025-03-23T23:03:53.618Z] 
+Asset registry documentation written to: C:\gameX\rpg-game\docs\ember-throne-asset-registry.md
+[2025-03-23T23:03:53.618Z] 
+Creating HTML files for each page...
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 1 (A Mysterious Invitation) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 3 (Village Farewell) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 5 (Crossroads Choice) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 7 (Forest Depths) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 9 (Mountain Cave) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 13 (Castle Gate) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 19 (Throne Room) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 2 (Bold Acceptance) - asset generation failed
+[2025-03-23T23:03:53.619Z] Skipping HTML for page 4 (Cautious Consideration) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 6 (Forest Path) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 8 (Mountain Trail) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 10 (Forest Encounter) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 11 (Forest Shrine) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 12 (Mountain Guardian) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 14 (Trap Room) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 15 (Castle Library) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 16 (Hidden Passage) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 17 (Dungeon Cells) - asset generation failed
+[2025-03-23T23:03:53.620Z] Skipping HTML for page 18 (Kitchen Disguise) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 20 (Confrontation) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 21 (Peaceful Resolution) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 22 (Combat Finale) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 23 (Victory Ending) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 24 (Escape Ending) - asset generation failed
+[2025-03-23T23:03:53.621Z] Skipping HTML for page 25 (Sacrifice Ending) - asset generation failed
+[2025-03-23T23:03:53.621Z] Page files creation complete!
+[2025-03-23T23:03:53.622Z] 
+Asset generation process complete!
+[2025-03-23T23:03:53.622Z] Generated 0 of 37 assets.

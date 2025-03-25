@@ -1,0 +1,2112 @@
+[2025-03-24T00:24:41.499Z] Starting image generation process with Stability API...
+[2025-03-24T00:24:41.499Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:41.499Z] Generating 8 images...
+[2025-03-24T00:24:41.499Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:41.500Z] Generating "Loading Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:41.500Z] Prompt: Fantasy loading screen, minimal design, mystical
+[2025-03-24T00:24:41.500Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:41.500Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:41.500Z] Using authentication method: Bearer token
+[2025-03-24T00:24:41.501Z] Request payload: {"text_prompts":[{"text":"Fantasy loading screen, minimal design, mystical","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:41.861Z] Error generating Loading Page: HTTP 400
+[2025-03-24T00:24:41.861Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:42 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925206f26831a97d-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:41.862Z] API Error: {
+  "id": "15695546529391396fc685fa64ed635e",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:41.862Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Loading Page
+[2025-03-24T00:24:41.862Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:41.863Z] Generating "Loading Page" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:41.863Z] Prompt: Fantasy loading screen, minimal design, mystical
+[2025-03-24T00:24:41.863Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:41.863Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:41.863Z] Using authentication method: Bearer token
+[2025-03-24T00:24:41.863Z] Request payload: {"text_prompts":[{"text":"Fantasy loading screen, minimal design, mystical","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:42.260Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:24:42.260Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:43 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"105","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925206f4485f6c65-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:42.260Z] API Error: {
+  "id": "58f5d07444967e048ae3cb3a6e90dc32",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:42.260Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Loading Page
+[2025-03-24T00:24:42.260Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:42.261Z] Generating "Loading Page" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:42.261Z] Prompt: Fantasy loading screen, minimal design, mystical
+[2025-03-24T00:24:42.261Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:42.261Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:42.261Z] Using authentication method: Bearer token
+[2025-03-24T00:24:42.261Z] Request payload: {"text_prompts":[{"text":"Fantasy loading screen, minimal design, mystical","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:42.667Z] Error generating Loading Page: HTTP 401
+[2025-03-24T00:24:42.667Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:43 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"108","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925206f6d9bea961-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:42.667Z] API Error: {
+  "id": "51832614bbe01bbda5dfef9cb7a3a2f8",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:42.667Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Loading Page
+[2025-03-24T00:24:42.667Z] All engines failed for Loading Page
+[2025-03-24T00:24:44.678Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:44.678Z] Generating "Landing Page" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:44.678Z] Prompt: Fantasy RPG landing page, magical scene
+[2025-03-24T00:24:44.679Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:44.679Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:44.679Z] Using authentication method: Bearer token
+[2025-03-24T00:24:44.679Z] Request payload: {"text_prompts":[{"text":"Fantasy RPG landing page, magical scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:44.979Z] Error generating Landing Page: HTTP 400
+[2025-03-24T00:24:44.980Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:46 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520705e99ce7c5-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:44.980Z] API Error: {
+  "id": "5897602f87ad441b2039b785b1c9c143",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:44.980Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Landing Page
+[2025-03-24T00:24:44.980Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:44.980Z] Generating "Landing Page" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:44.980Z] Prompt: Fantasy RPG landing page, magical scene
+[2025-03-24T00:24:44.981Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:44.981Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:44.981Z] Using authentication method: Bearer token
+[2025-03-24T00:24:44.981Z] Request payload: {"text_prompts":[{"text":"Fantasy RPG landing page, magical scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:45.273Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:24:45.273Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:46 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520707cf49e7ee-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:45.273Z] API Error: {
+  "id": "bb1c5def2bfcda679971cf862dfe6887",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:45.273Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Landing Page
+[2025-03-24T00:24:45.274Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:45.274Z] Generating "Landing Page" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:45.274Z] Prompt: Fantasy RPG landing page, magical scene
+[2025-03-24T00:24:45.274Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:45.274Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:45.274Z] Using authentication method: Bearer token
+[2025-03-24T00:24:45.274Z] Request payload: {"text_prompts":[{"text":"Fantasy RPG landing page, magical scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:45.589Z] Error generating Landing Page: HTTP 401
+[2025-03-24T00:24:45.590Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:46 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520709ae9aa832-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:45.590Z] API Error: {
+  "id": "c068bb5cb7ce428611f245a5b18ce735",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:45.590Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Landing Page
+[2025-03-24T00:24:45.590Z] All engines failed for Landing Page
+[2025-03-24T00:24:47.603Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:47.604Z] Generating "Main Menu Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:47.604Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:24:47.604Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:47.604Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:47.604Z] Using authentication method: Bearer token
+[2025-03-24T00:24:47.604Z] Request payload: {"text_prompts":[{"text":"Fantasy castle on mountain, starry night","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:47.894Z] Error generating Main Menu Background: HTTP 400
+[2025-03-24T00:24:47.894Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:48 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207183b3de7c4-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:47.894Z] API Error: {
+  "id": "4b53eac5eb080e5e1ad57cd57d52ac04",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:47.895Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Main Menu Background
+[2025-03-24T00:24:47.895Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:47.895Z] Generating "Main Menu Background" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:47.895Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:24:47.895Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:47.895Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:47.895Z] Using authentication method: Bearer token
+[2025-03-24T00:24:47.895Z] Request payload: {"text_prompts":[{"text":"Fantasy castle on mountain, starry night","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:48.188Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:24:48.188Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:49 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252071a08b1e7c6-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:48.188Z] API Error: {
+  "id": "7af6af4660d55796756e57fdd4c12089",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:48.188Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Main Menu Background
+[2025-03-24T00:24:48.188Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:48.189Z] Generating "Main Menu Background" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:48.189Z] Prompt: Fantasy castle on mountain, starry night
+[2025-03-24T00:24:48.189Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:48.189Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:48.189Z] Using authentication method: Bearer token
+[2025-03-24T00:24:48.189Z] Request payload: {"text_prompts":[{"text":"Fantasy castle on mountain, starry night","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:48.515Z] Error generating Main Menu Background: HTTP 401
+[2025-03-24T00:24:48.516Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:49 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252071bd857a959-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:48.516Z] API Error: {
+  "id": "3ef8490748c76f3ac7b81cd5cd2b5961",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:48.516Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Main Menu Background
+[2025-03-24T00:24:48.516Z] All engines failed for Main Menu Background
+[2025-03-24T00:24:50.528Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:50.529Z] Generating "Character Creation Background" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:50.529Z] Prompt: Mystical chamber with artifacts, glowing runes
+[2025-03-24T00:24:50.529Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:50.529Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:50.529Z] Using authentication method: Bearer token
+[2025-03-24T00:24:50.529Z] Request payload: {"text_prompts":[{"text":"Mystical chamber with artifacts, glowing runes","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:50.834Z] Error generating Character Creation Background: HTTP 400
+[2025-03-24T00:24:50.835Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:51 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252072a78d5d5e2-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:50.835Z] API Error: {
+  "id": "6e5c7d524a5a0d2093aa590f147b8223",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:50.835Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Character Creation Background
+[2025-03-24T00:24:50.835Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:50.835Z] Generating "Character Creation Background" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:50.835Z] Prompt: Mystical chamber with artifacts, glowing runes
+[2025-03-24T00:24:50.836Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:50.836Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:50.836Z] Using authentication method: Bearer token
+[2025-03-24T00:24:50.836Z] Request payload: {"text_prompts":[{"text":"Mystical chamber with artifacts, glowing runes","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:51.129Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:24:51.130Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:52 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252072c6a1daae7-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:51.130Z] API Error: {
+  "id": "a09994966cacb78caad58ee6ac8d6f5d",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:51.130Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Character Creation Background
+[2025-03-24T00:24:51.130Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:51.130Z] Generating "Character Creation Background" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:51.130Z] Prompt: Mystical chamber with artifacts, glowing runes
+[2025-03-24T00:24:51.130Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:51.131Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:51.131Z] Using authentication method: Bearer token
+[2025-03-24T00:24:51.131Z] Request payload: {"text_prompts":[{"text":"Mystical chamber with artifacts, glowing runes","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:51.431Z] Error generating Character Creation Background: HTTP 401
+[2025-03-24T00:24:51.431Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:52 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252072e3bfeaaf6-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:51.431Z] API Error: {
+  "id": "694b2d14ce8a2e555b2a27702b5a6298",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:51.431Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Character Creation Background
+[2025-03-24T00:24:51.432Z] All engines failed for Character Creation Background
+[2025-03-24T00:24:53.433Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:53.433Z] Generating "Mysterious Letter" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:53.433Z] Prompt: Ancient parchment, fantasy symbols, old paper
+[2025-03-24T00:24:53.433Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:53.434Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:53.434Z] Using authentication method: Bearer token
+[2025-03-24T00:24:53.434Z] Request payload: {"text_prompts":[{"text":"Ancient parchment, fantasy symbols, old paper","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:53.727Z] Error generating Mysterious Letter: HTTP 400
+[2025-03-24T00:24:53.727Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:54 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252073c9ae3e7d4-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:53.727Z] API Error: {
+  "id": "f3a860d231c2871f98cf6a3b07779ba1",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:53.728Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Mysterious Letter
+[2025-03-24T00:24:53.728Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:53.728Z] Generating "Mysterious Letter" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:53.728Z] Prompt: Ancient parchment, fantasy symbols, old paper
+[2025-03-24T00:24:53.728Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:53.728Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:53.728Z] Using authentication method: Bearer token
+[2025-03-24T00:24:53.728Z] Request payload: {"text_prompts":[{"text":"Ancient parchment, fantasy symbols, old paper","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:54.070Z] Error generating Mysterious Letter: HTTP 401
+[2025-03-24T00:24:54.070Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:55 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252073e7e83a7f6-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:54.071Z] API Error: {
+  "id": "b4ae58a1a7eb112b5db739d424de9d6f",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:54.071Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Mysterious Letter
+[2025-03-24T00:24:54.071Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:54.071Z] Generating "Mysterious Letter" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:54.071Z] Prompt: Ancient parchment, fantasy symbols, old paper
+[2025-03-24T00:24:54.071Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:54.072Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:54.072Z] Using authentication method: Bearer token
+[2025-03-24T00:24:54.072Z] Request payload: {"text_prompts":[{"text":"Ancient parchment, fantasy symbols, old paper","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:54.368Z] Error generating Mysterious Letter: HTTP 401
+[2025-03-24T00:24:54.368Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:55 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"3","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207409dd2344e-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:54.369Z] API Error: {
+  "id": "d259a731ba7b0e286af427ccf8367b27",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:54.369Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Mysterious Letter
+[2025-03-24T00:24:54.369Z] All engines failed for Mysterious Letter
+[2025-03-24T00:24:56.383Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:56.383Z] Generating "Forest Path (Ghost)" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:56.383Z] Prompt: Spooky forest path, ghostly apparition, misty
+[2025-03-24T00:24:56.384Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:56.384Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:56.384Z] Using authentication method: Bearer token
+[2025-03-24T00:24:56.384Z] Request payload: {"text_prompts":[{"text":"Spooky forest path, ghostly apparition, misty","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:56.695Z] Error generating Forest Path (Ghost): HTTP 400
+[2025-03-24T00:24:56.696Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:57 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252074f2f09a807-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:56.696Z] API Error: {
+  "id": "0c8619481ad0fa30581a0cb124947e60",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:56.696Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Forest Path (Ghost)
+[2025-03-24T00:24:56.696Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:56.697Z] Generating "Forest Path (Ghost)" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:56.697Z] Prompt: Spooky forest path, ghostly apparition, misty
+[2025-03-24T00:24:56.697Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:56.697Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:56.697Z] Using authentication method: Bearer token
+[2025-03-24T00:24:56.697Z] Request payload: {"text_prompts":[{"text":"Spooky forest path, ghostly apparition, misty","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:56.995Z] Error generating Forest Path (Ghost): HTTP 401
+[2025-03-24T00:24:56.995Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:58 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207510e5dd5d6-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:56.995Z] API Error: {
+  "id": "eda9a8cf2e8e957a504102e694e048bc",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:56.995Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:24:56.996Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:56.996Z] Generating "Forest Path (Ghost)" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:56.996Z] Prompt: Spooky forest path, ghostly apparition, misty
+[2025-03-24T00:24:56.996Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:56.996Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:56.996Z] Using authentication method: Bearer token
+[2025-03-24T00:24:56.996Z] Request payload: {"text_prompts":[{"text":"Spooky forest path, ghostly apparition, misty","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:57.292Z] Error generating Forest Path (Ghost): HTTP 401
+[2025-03-24T00:24:57.292Z] Headers: {"date":"Mon, 24 Mar 2025 00:24:58 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520752eb435e4f-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:57.292Z] API Error: {
+  "id": "1fc9f2300ca64044ae585290a5a5472a",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:57.293Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:24:57.293Z] All engines failed for Forest Path (Ghost)
+[2025-03-24T00:24:59.295Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:24:59.295Z] Generating "Mountain Pass" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:24:59.296Z] Prompt: Mountain pass, rope bridge, fantasy scene
+[2025-03-24T00:24:59.296Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:59.296Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:24:59.296Z] Using authentication method: Bearer token
+[2025-03-24T00:24:59.296Z] Request payload: {"text_prompts":[{"text":"Mountain pass, rope bridge, fantasy scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:59.585Z] Error generating Mountain Pass: HTTP 400
+[2025-03-24T00:24:59.585Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:00 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207614b0197c5-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:59.586Z] API Error: {
+  "id": "903a7fb27741a99704d5aafb30127764",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:24:59.586Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Mountain Pass
+[2025-03-24T00:24:59.586Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:24:59.586Z] Generating "Mountain Pass" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:24:59.586Z] Prompt: Mountain pass, rope bridge, fantasy scene
+[2025-03-24T00:24:59.586Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:59.586Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:24:59.586Z] Using authentication method: Bearer token
+[2025-03-24T00:24:59.586Z] Request payload: {"text_prompts":[{"text":"Mountain pass, rope bridge, fantasy scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:24:59.887Z] Error generating Mountain Pass: HTTP 401
+[2025-03-24T00:24:59.888Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:00 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9252076319fbe7ed-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:24:59.888Z] API Error: {
+  "id": "55c4d31aa824f99c6d90fd1be51778fb",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:24:59.888Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Mountain Pass
+[2025-03-24T00:24:59.888Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:24:59.888Z] Generating "Mountain Pass" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:24:59.888Z] Prompt: Mountain pass, rope bridge, fantasy scene
+[2025-03-24T00:24:59.889Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:24:59.889Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:24:59.889Z] Using authentication method: Bearer token
+[2025-03-24T00:24:59.889Z] Request payload: {"text_prompts":[{"text":"Mountain pass, rope bridge, fantasy scene","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:25:00.178Z] Error generating Mountain Pass: HTTP 401
+[2025-03-24T00:25:00.178Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:01 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"92520764fe4575df-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:25:00.178Z] API Error: {
+  "id": "8633ec4cec13261b4e92cd6e5c5c8f42",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:25:00.178Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Mountain Pass
+[2025-03-24T00:25:00.179Z] All engines failed for Mountain Pass
+[2025-03-24T00:25:02.188Z] Attempting with engine: stable-diffusion-xl-1024-v1-0
+[2025-03-24T00:25:02.188Z] Generating "Village Tavern" using Stability API with stable-diffusion-xl-1024-v1-0...
+[2025-03-24T00:25:02.188Z] Prompt: Medieval tavern interior, cozy inn, fireplace
+[2025-03-24T00:25:02.189Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:25:02.189Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T00:25:02.189Z] Using authentication method: Bearer token
+[2025-03-24T00:25:02.189Z] Request payload: {"text_prompts":[{"text":"Medieval tavern interior, cozy inn, fireplace","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:25:02.487Z] Error generating Village Tavern: HTTP 400
+[2025-03-24T00:25:02.487Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:03 GMT","content-type":"application/json","content-length":"301","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"0","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207735f23a7ea-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:25:02.488Z] API Error: {
+  "id": "3e8c13a6e0e24aac9052d91bdd957c66",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T00:25:02.488Z] Failed with engine stable-diffusion-xl-1024-v1-0: API returned status 400 for Village Tavern
+[2025-03-24T00:25:02.488Z] Attempting with engine: stable-diffusion-v1-6
+[2025-03-24T00:25:02.488Z] Generating "Village Tavern" using Stability API with stable-diffusion-v1-6...
+[2025-03-24T00:25:02.488Z] Prompt: Medieval tavern interior, cozy inn, fireplace
+[2025-03-24T00:25:02.488Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:25:02.488Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T00:25:02.488Z] Using authentication method: Bearer token
+[2025-03-24T00:25:02.488Z] Request payload: {"text_prompts":[{"text":"Medieval tavern interior, cozy inn, fireplace","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:25:02.780Z] Error generating Village Tavern: HTTP 401
+[2025-03-24T00:25:02.781Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:03 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207753bf5e7c5-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:25:02.781Z] API Error: {
+  "id": "e3923608ea7a86c3e707caa2884ce190",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:25:02.781Z] Failed with engine stable-diffusion-v1-6: API returned status 401 for Village Tavern
+[2025-03-24T00:25:02.781Z] Attempting with engine: stable-diffusion-512-v2-1
+[2025-03-24T00:25:02.781Z] Generating "Village Tavern" using Stability API with stable-diffusion-512-v2-1...
+[2025-03-24T00:25:02.781Z] Prompt: Medieval tavern interior, cozy inn, fireplace
+[2025-03-24T00:25:02.782Z] Using Stability API key: sk-5...KNrq
+[2025-03-24T00:25:02.782Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T00:25:02.782Z] Using authentication method: Bearer token
+[2025-03-24T00:25:02.782Z] Request payload: {"text_prompts":[{"text":"Medieval tavern interior, cozy inn, fireplace","weight":1},{"text":"blurry, text, watermark, signature, bad quality","weight":-1}],"cfg_scale":7,"height":768,"width":1024,"samples":1,"steps":30}
+[2025-03-24T00:25:03.078Z] Error generating Village Tavern: HTTP 401
+[2025-03-24T00:25:03.078Z] Headers: {"date":"Mon, 24 Mar 2025 00:25:04 GMT","content-type":"application/json","content-length":"207","connection":"close","vary":"Origin","x-envoy-upstream-service-time":"1","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"925207770866a7f5-SYD","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-03-24T00:25:03.078Z] API Error: {
+  "id": "3905df9aee06d2988537e557b21679bf",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T00:25:03.078Z] Failed with engine stable-diffusion-512-v2-1: API returned status 401 for Village Tavern
+[2025-03-24T00:25:03.078Z] All engines failed for Village Tavern
+[2025-03-24T00:25:05.094Z] 
+=== GENERATION SUMMARY ===
+[2025-03-24T00:25:05.094Z] Total: 8
+[2025-03-24T00:25:05.094Z] Successful: 0
+[2025-03-24T00:25:05.094Z] Failed: 8
+[2025-03-24T00:25:05.095Z] 
+Failed assets:
+[2025-03-24T00:25:05.095Z] - loading_page: API returned status 401 for Loading Page
+[2025-03-24T00:25:05.095Z] - landing_page: API returned status 401 for Landing Page
+[2025-03-24T00:25:05.095Z] - main_menu_background: API returned status 401 for Main Menu Background
+[2025-03-24T00:25:05.095Z] - character_creation_background: API returned status 401 for Character Creation Background
+[2025-03-24T00:25:05.095Z] - mysterious_letter: API returned status 401 for Mysterious Letter
+[2025-03-24T00:25:05.095Z] - forest_path_ghost: API returned status 401 for Forest Path (Ghost)
+[2025-03-24T00:25:05.095Z] - mountain_pass: API returned status 401 for Mountain Pass
+[2025-03-24T00:25:05.095Z] - village_tavern: API returned status 401 for Village Tavern
+[2025-03-24T00:25:05.095Z] 
+Image generation process complete!
+[2025-03-24T01:05:29.747Z] Starting high-quality image generation with Stability API...
+[2025-03-24T01:05:29.747Z] 
+===== Processing: Loading Page =====
+[2025-03-24T01:05:29.748Z] Generating "Loading Page" using Stability SDXL 1.0...
+[2025-03-24T01:05:29.748Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:29.748Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 652190909
+[2025-03-24T01:05:29.748Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:30.128Z] Error: Received status code 400
+[2025-03-24T01:05:30.128Z] API Error: {
+  "id": "724ef979232ca91ec8c2ea8433e12ed9",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:30.129Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:30.129Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:30.129Z] Generating "Loading Page" using Stable Diffusion 1.6...
+[2025-03-24T01:05:30.129Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 1.6
+[2025-03-24T01:05:30.129Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:30.130Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:30.130Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 177503144
+[2025-03-24T01:05:30.130Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:30.445Z] Error: Received status code 401
+[2025-03-24T01:05:30.445Z] API Error: {
+  "id": "c844a910fa394568fd240fabcedcc68c",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:30.446Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:30.446Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:30.446Z] Generating "Loading Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:30.446Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:30.446Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:30.446Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:30.446Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 1341038022
+[2025-03-24T01:05:30.446Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:30.754Z] Error: Received status code 400
+[2025-03-24T01:05:30.754Z] API Error: {
+  "id": "5b94c5c05dae5f4d3b3f44bb4ab64002",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:30.755Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:30.755Z] ❌ Failed to generate Loading Page: All engines failed: API request failed with status 400
+[2025-03-24T01:05:30.755Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:33.763Z] 
+===== Processing: Landing Page =====
+[2025-03-24T01:05:33.763Z] Generating "Landing Page" using Stability SDXL 1.0...
+[2025-03-24T01:05:33.764Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:33.764Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 1241488664
+[2025-03-24T01:05:33.764Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:34.057Z] Error: Received status code 400
+[2025-03-24T01:05:34.057Z] API Error: {
+  "id": "9bf996cd05fe076aafa889c6c1824b5c",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:34.058Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:34.058Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:34.058Z] Generating "Landing Page" using Stable Diffusion 1.6...
+[2025-03-24T01:05:34.058Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 1.6
+[2025-03-24T01:05:34.058Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:34.059Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:34.059Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 884403300
+[2025-03-24T01:05:34.059Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:34.736Z] Error: Received status code 401
+[2025-03-24T01:05:34.736Z] API Error: {
+  "id": "570451eb7b0ef67facb28be643134ed1",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:34.736Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:34.736Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:34.737Z] Generating "Landing Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:34.737Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:34.737Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:34.737Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:34.737Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 1423528274
+[2025-03-24T01:05:34.737Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:35.040Z] Error: Received status code 400
+[2025-03-24T01:05:35.041Z] API Error: {
+  "id": "20ea1c2098c7a8bb500e3d23a9928d0a",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:35.041Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:35.041Z] ❌ Failed to generate Landing Page: All engines failed: API request failed with status 400
+[2025-03-24T01:05:35.041Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:38.052Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T01:05:38.052Z] Generating "Main Menu Background" using Stability SDXL 1.0...
+[2025-03-24T01:05:38.052Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:38.053Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 2138764093
+[2025-03-24T01:05:38.053Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:38.356Z] Error: Received status code 400
+[2025-03-24T01:05:38.356Z] API Error: {
+  "id": "141ddaf906b95be2daf49f5549fb4e40",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:38.356Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:38.356Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:38.356Z] Generating "Main Menu Background" using Stable Diffusion 1.6...
+[2025-03-24T01:05:38.357Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 1.6
+[2025-03-24T01:05:38.357Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:38.357Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:38.357Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 2115903914
+[2025-03-24T01:05:38.357Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:38.973Z] Error: Received status code 401
+[2025-03-24T01:05:38.973Z] API Error: {
+  "id": "70783ce0e0ff9248d2f311198c3f2bc9",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:38.973Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:38.973Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:38.973Z] Generating "Main Menu Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:38.974Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:38.974Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:38.974Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:38.974Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 17100800
+[2025-03-24T01:05:38.974Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:39.287Z] Error: Received status code 400
+[2025-03-24T01:05:39.287Z] API Error: {
+  "id": "832b795c648b10c0317fe8d1956184d9",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:39.287Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:39.287Z] ❌ Failed to generate Main Menu Background: All engines failed: API request failed with status 400
+[2025-03-24T01:05:39.287Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:42.299Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T01:05:42.299Z] Generating "Character Creation Background" using Stability SDXL 1.0...
+[2025-03-24T01:05:42.300Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:42.300Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 637365685
+[2025-03-24T01:05:42.300Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:42.593Z] Error: Received status code 400
+[2025-03-24T01:05:42.593Z] API Error: {
+  "id": "4d762727987908fb6980ba22f1852eee",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:42.593Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:42.593Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:42.594Z] Generating "Character Creation Background" using Stable Diffusion 1.6...
+[2025-03-24T01:05:42.594Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 1.6
+[2025-03-24T01:05:42.594Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:42.594Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:42.594Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 1553937392
+[2025-03-24T01:05:42.594Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:42.891Z] Error: Received status code 401
+[2025-03-24T01:05:42.891Z] API Error: {
+  "id": "6b2ddd29915981ff4ad77db7d60c3daa",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:42.891Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:42.891Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:42.892Z] Generating "Character Creation Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:42.892Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:42.892Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:42.892Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:42.892Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 81847290
+[2025-03-24T01:05:42.892Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:43.183Z] Error: Received status code 400
+[2025-03-24T01:05:43.184Z] API Error: {
+  "id": "9c722b0b0b574cc4fa734c541b635508",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:43.184Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:43.184Z] ❌ Failed to generate Character Creation Background: All engines failed: API request failed with status 400
+[2025-03-24T01:05:43.184Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:46.191Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T01:05:46.191Z] Generating "Mysterious Letter" using Stability SDXL 1.0...
+[2025-03-24T01:05:46.191Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:46.191Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 1219899425
+[2025-03-24T01:05:46.191Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:46.492Z] Error: Received status code 400
+[2025-03-24T01:05:46.493Z] API Error: {
+  "id": "b25f6235daeca7bc8416c7c4ee786110",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:46.493Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:46.493Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:46.493Z] Generating "Mysterious Letter" using Stable Diffusion 1.6...
+[2025-03-24T01:05:46.493Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 1.6
+[2025-03-24T01:05:46.493Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:46.493Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:46.493Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 1104528922
+[2025-03-24T01:05:46.493Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:46.790Z] Error: Received status code 401
+[2025-03-24T01:05:46.790Z] API Error: {
+  "id": "6efec2640bd8a94cc467996520893b41",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:46.791Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:46.791Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:46.791Z] Generating "Mysterious Letter" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:46.791Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:46.791Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:46.791Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:46.791Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 810169201
+[2025-03-24T01:05:46.791Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:47.023Z] Error: Received status code 400
+[2025-03-24T01:05:47.024Z] API Error: {
+  "id": "5bedf97ae7f6f2b865f8987e11b5be20",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:47.024Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:47.024Z] ❌ Failed to generate Mysterious Letter: All engines failed: API request failed with status 400
+[2025-03-24T01:05:47.024Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:50.036Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T01:05:50.037Z] Generating "Forest Path (Ghost)" using Stability SDXL 1.0...
+[2025-03-24T01:05:50.037Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:50.037Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 1327199100
+[2025-03-24T01:05:50.038Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:50.342Z] Error: Received status code 400
+[2025-03-24T01:05:50.342Z] API Error: {
+  "id": "cd020d8e0ec0e88b12242e4bd9f65c0b",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:50.342Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:50.342Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:50.343Z] Generating "Forest Path (Ghost)" using Stable Diffusion 1.6...
+[2025-03-24T01:05:50.343Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 1.6
+[2025-03-24T01:05:50.343Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:50.343Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:50.343Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 161367021
+[2025-03-24T01:05:50.343Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:50.644Z] Error: Received status code 401
+[2025-03-24T01:05:50.644Z] API Error: {
+  "id": "cb0a4600f0e399d691ba6dd1803ea69a",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:50.645Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:50.645Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:50.645Z] Generating "Forest Path (Ghost)" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:50.645Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:50.645Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:50.645Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:50.645Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 1480936764
+[2025-03-24T01:05:50.645Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:50.902Z] Error: Received status code 400
+[2025-03-24T01:05:50.903Z] API Error: {
+  "id": "1a3d5423bb0ca3c5966b38265cad7cb3",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:50.903Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:50.903Z] ❌ Failed to generate Forest Path (Ghost): All engines failed: API request failed with status 400
+[2025-03-24T01:05:50.903Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:53.916Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T01:05:53.916Z] Generating "Mountain Pass" using Stability SDXL 1.0...
+[2025-03-24T01:05:53.916Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:53.917Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 1048520670
+[2025-03-24T01:05:53.917Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:54.152Z] Error: Received status code 400
+[2025-03-24T01:05:54.153Z] API Error: {
+  "id": "ccb091fe1d827d6bd3ddd39056b34dde",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:54.153Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:54.153Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:54.154Z] Generating "Mountain Pass" using Stable Diffusion 1.6...
+[2025-03-24T01:05:54.154Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 1.6
+[2025-03-24T01:05:54.154Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:54.154Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:54.154Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 1611947531
+[2025-03-24T01:05:54.154Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:54.455Z] Error: Received status code 401
+[2025-03-24T01:05:54.456Z] API Error: {
+  "id": "3395f602b0c3e1a83661b6cae49d44a4",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:54.456Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:54.456Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:54.456Z] Generating "Mountain Pass" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:54.456Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:54.456Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:54.457Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:54.457Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 315008153
+[2025-03-24T01:05:54.457Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:54.773Z] Error: Received status code 400
+[2025-03-24T01:05:54.773Z] API Error: {
+  "id": "65d10eb40b62cb5e7ebb0430dffa6a01",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:54.773Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:54.773Z] ❌ Failed to generate Mountain Pass: All engines failed: API request failed with status 400
+[2025-03-24T01:05:54.774Z] Waiting 3 seconds before next request...
+[2025-03-24T01:05:57.774Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T01:05:57.775Z] Generating "Village Tavern" using Stability SDXL 1.0...
+[2025-03-24T01:05:57.775Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:05:57.775Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1024x768, Seed: 272137413
+[2025-03-24T01:05:57.775Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:58.077Z] Error: Received status code 400
+[2025-03-24T01:05:58.077Z] API Error: {
+  "id": "9b748a8687aa3259abad5d7f78b61ed0",
+  "message": "for stable-diffusion-xl-1024-v0-9 and stable-diffusion-xl-1024-v1-0 the allowed dimensions are 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640, 640x1536, 768x1344, 832x1216, 896x1152, but we received 1024x768",
+  "name": "invalid_sdxl_v1_dimensions"
+}
+[2025-03-24T01:05:58.078Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 400
+[2025-03-24T01:05:58.078Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:05:58.078Z] Generating "Village Tavern" using Stable Diffusion 1.6...
+[2025-03-24T01:05:58.078Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 1.6
+[2025-03-24T01:05:58.078Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:58.078Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:05:58.078Z] Engine: stable-diffusion-v1-6, Dimensions: 512x384, Seed: 229044766
+[2025-03-24T01:05:58.078Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:58.373Z] Error: Received status code 401
+[2025-03-24T01:05:58.373Z] API Error: {
+  "id": "b0858de79ad947e999a6ef94bc66bdd6",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:05:58.374Z] Failed with stable-diffusion-v1-6: API request failed with status 401
+[2025-03-24T01:05:58.374Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:58.374Z] Generating "Village Tavern" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:05:58.374Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:05:58.374Z] Adjusted dimensions: 1024x768 -> 512x384
+[2025-03-24T01:05:58.374Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:05:58.375Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x384, Seed: 1550806915
+[2025-03-24T01:05:58.375Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:05:58.688Z] Error: Received status code 400
+[2025-03-24T01:05:58.689Z] API Error: {
+  "id": "3591a8776809437936ca5e071480be0b",
+  "message": "height * width must result in at least 262,144 pixels, but got 196,608",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:05:58.689Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:05:58.689Z] ❌ Failed to generate Village Tavern: All engines failed: API request failed with status 400
+[2025-03-24T01:05:58.689Z] Waiting 3 seconds before next request...
+[2025-03-24T01:06:01.695Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T01:07:24.466Z] Starting high-quality image generation with Stability API...
+[2025-03-24T01:07:24.467Z] 
+===== Processing: Loading Page =====
+[2025-03-24T01:07:24.467Z] Generating "Loading Page" using Stability SDXL 1.0...
+[2025-03-24T01:07:24.467Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:24.467Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 2090856758
+[2025-03-24T01:07:24.468Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:24.802Z] Error: Received status code 401
+[2025-03-24T01:07:24.803Z] API Error: {
+  "id": "c080b3f275921b5e713f80171bae7bbe",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:24.804Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:24.805Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:24.805Z] Generating "Loading Page" using Stable Diffusion 1.6...
+[2025-03-24T01:07:24.805Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 1.6
+[2025-03-24T01:07:24.805Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:24.806Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:24.806Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 2135872554
+[2025-03-24T01:07:24.806Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:25.108Z] Error: Received status code 400
+[2025-03-24T01:07:25.108Z] API Error: {
+  "id": "0971f73c34a0507d72bdcbbbeab190ec",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:25.109Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:25.109Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:25.109Z] Generating "Loading Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:25.109Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:25.109Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:25.109Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:25.109Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 594078017
+[2025-03-24T01:07:25.109Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:25.348Z] Error: Received status code 400
+[2025-03-24T01:07:25.348Z] API Error: {
+  "id": "527c8b5028e4724aaac6a9926eacf298",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:25.348Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:25.348Z] ❌ Failed to generate Loading Page: All engines failed: API request failed with status 400
+[2025-03-24T01:07:25.349Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:28.357Z] 
+===== Processing: Landing Page =====
+[2025-03-24T01:07:28.358Z] Generating "Landing Page" using Stability SDXL 1.0...
+[2025-03-24T01:07:28.358Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:28.358Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 917163476
+[2025-03-24T01:07:28.358Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:28.664Z] Error: Received status code 401
+[2025-03-24T01:07:28.664Z] API Error: {
+  "id": "9bef56412acd04d53309193c71eaa24b",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:28.664Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:28.664Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:28.665Z] Generating "Landing Page" using Stable Diffusion 1.6...
+[2025-03-24T01:07:28.665Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 1.6
+[2025-03-24T01:07:28.665Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:28.665Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:28.665Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1763842808
+[2025-03-24T01:07:28.665Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:28.973Z] Error: Received status code 400
+[2025-03-24T01:07:28.973Z] API Error: {
+  "id": "5adea6031d1a71a3c1c69fc06c34e3d9",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:28.974Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:28.974Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:28.974Z] Generating "Landing Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:28.974Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:28.974Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:28.974Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:28.974Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1177177394
+[2025-03-24T01:07:28.975Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:29.265Z] Error: Received status code 400
+[2025-03-24T01:07:29.265Z] API Error: {
+  "id": "0d551a50c151e00a3e706045be7a2a54",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:29.265Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:29.265Z] ❌ Failed to generate Landing Page: All engines failed: API request failed with status 400
+[2025-03-24T01:07:29.266Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:32.279Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T01:07:32.279Z] Generating "Main Menu Background" using Stability SDXL 1.0...
+[2025-03-24T01:07:32.280Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:32.280Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 369352561
+[2025-03-24T01:07:32.280Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:32.596Z] Error: Received status code 401
+[2025-03-24T01:07:32.596Z] API Error: {
+  "id": "33747b631c2600a9eb5cf02fa44afc1e",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:32.596Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:32.596Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:32.597Z] Generating "Main Menu Background" using Stable Diffusion 1.6...
+[2025-03-24T01:07:32.597Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 1.6
+[2025-03-24T01:07:32.597Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:32.597Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:32.597Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 2025209680
+[2025-03-24T01:07:32.597Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:32.891Z] Error: Received status code 400
+[2025-03-24T01:07:32.891Z] API Error: {
+  "id": "0e8cc28df1c2adba5d3e42f682732e42",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:32.892Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:32.892Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:32.892Z] Generating "Main Menu Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:32.892Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:32.892Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:32.892Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:32.893Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1133785945
+[2025-03-24T01:07:32.893Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:33.128Z] Error: Received status code 400
+[2025-03-24T01:07:33.130Z] API Error: {
+  "id": "8e47649b9c124958867b1bde826f1ec4",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:33.130Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:33.131Z] ❌ Failed to generate Main Menu Background: All engines failed: API request failed with status 400
+[2025-03-24T01:07:33.131Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:36.137Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T01:07:36.138Z] Generating "Character Creation Background" using Stability SDXL 1.0...
+[2025-03-24T01:07:36.138Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:36.138Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 128021624
+[2025-03-24T01:07:36.138Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:36.431Z] Error: Received status code 401
+[2025-03-24T01:07:36.432Z] API Error: {
+  "id": "1fc8323def02f2abb1911fcf338e97ea",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:36.432Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:36.432Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:36.432Z] Generating "Character Creation Background" using Stable Diffusion 1.6...
+[2025-03-24T01:07:36.433Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 1.6
+[2025-03-24T01:07:36.433Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:36.433Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:36.433Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 2068817021
+[2025-03-24T01:07:36.433Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:36.733Z] Error: Received status code 400
+[2025-03-24T01:07:36.733Z] API Error: {
+  "id": "097896960a20ec8a479f399a7b2bfc5f",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:36.733Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:36.733Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:36.734Z] Generating "Character Creation Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:36.734Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:36.734Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:36.734Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:36.734Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 476464576
+[2025-03-24T01:07:36.734Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:37.035Z] Error: Received status code 400
+[2025-03-24T01:07:37.036Z] API Error: {
+  "id": "1113b773a8612c9a679c0bf9ac33e063",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:37.036Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:37.036Z] ❌ Failed to generate Character Creation Background: All engines failed: API request failed with status 400
+[2025-03-24T01:07:37.036Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:40.048Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T01:07:40.048Z] Generating "Mysterious Letter" using Stability SDXL 1.0...
+[2025-03-24T01:07:40.048Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:40.048Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1533999991
+[2025-03-24T01:07:40.049Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:40.350Z] Error: Received status code 401
+[2025-03-24T01:07:40.350Z] API Error: {
+  "id": "0bd08c009315b659c48104a4895ec0ea",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:40.350Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:40.350Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:40.350Z] Generating "Mysterious Letter" using Stable Diffusion 1.6...
+[2025-03-24T01:07:40.350Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 1.6
+[2025-03-24T01:07:40.351Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:40.351Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:40.351Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 2041498236
+[2025-03-24T01:07:40.351Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:40.652Z] Error: Received status code 400
+[2025-03-24T01:07:40.653Z] API Error: {
+  "id": "e130014cc936cd6b931f4d11c338ff9d",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:40.653Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:40.653Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:40.654Z] Generating "Mysterious Letter" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:40.654Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:40.654Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:40.654Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:40.654Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1317566935
+[2025-03-24T01:07:40.654Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:40.961Z] Error: Received status code 400
+[2025-03-24T01:07:40.961Z] API Error: {
+  "id": "7758d49b3520c3e9d150afec95e2ff65",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:40.961Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:40.962Z] ❌ Failed to generate Mysterious Letter: All engines failed: API request failed with status 400
+[2025-03-24T01:07:40.962Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:43.973Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T01:07:43.973Z] Generating "Forest Path (Ghost)" using Stability SDXL 1.0...
+[2025-03-24T01:07:43.974Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:43.974Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1741627553
+[2025-03-24T01:07:43.974Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:44.279Z] Error: Received status code 401
+[2025-03-24T01:07:44.279Z] API Error: {
+  "id": "9610fb0108511a05b8bc26a8d7b63959",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:44.280Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:44.280Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:44.280Z] Generating "Forest Path (Ghost)" using Stable Diffusion 1.6...
+[2025-03-24T01:07:44.280Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 1.6
+[2025-03-24T01:07:44.280Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:44.280Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:44.281Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 870852660
+[2025-03-24T01:07:44.281Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:44.578Z] Error: Received status code 400
+[2025-03-24T01:07:44.578Z] API Error: {
+  "id": "801a88d527097c91a7ef30d826f07130",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:44.578Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:44.578Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:44.578Z] Generating "Forest Path (Ghost)" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:44.578Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:44.579Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:44.579Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:44.579Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1460373509
+[2025-03-24T01:07:44.579Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:44.883Z] Error: Received status code 400
+[2025-03-24T01:07:44.884Z] API Error: {
+  "id": "e5673b6146559a68f704c797ad1bac0c",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:44.884Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:44.884Z] ❌ Failed to generate Forest Path (Ghost): All engines failed: API request failed with status 400
+[2025-03-24T01:07:44.884Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:47.896Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T01:07:47.897Z] Generating "Mountain Pass" using Stability SDXL 1.0...
+[2025-03-24T01:07:47.897Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:47.897Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 326179310
+[2025-03-24T01:07:47.897Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:48.194Z] Error: Received status code 401
+[2025-03-24T01:07:48.194Z] API Error: {
+  "id": "c294ccdd7c4530dea9658386f11bdc8c",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:48.195Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:48.195Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:48.195Z] Generating "Mountain Pass" using Stable Diffusion 1.6...
+[2025-03-24T01:07:48.195Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 1.6
+[2025-03-24T01:07:48.195Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:48.195Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:48.195Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 922928614
+[2025-03-24T01:07:48.196Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:48.512Z] Error: Received status code 400
+[2025-03-24T01:07:48.513Z] API Error: {
+  "id": "d2673995d0a5063672f5a5653cb5f9ae",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:48.513Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:48.513Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:48.513Z] Generating "Mountain Pass" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:48.513Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:48.513Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:48.513Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:48.514Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 499074163
+[2025-03-24T01:07:48.514Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:48.803Z] Error: Received status code 400
+[2025-03-24T01:07:48.804Z] API Error: {
+  "id": "c6fa8f6bdddeab459c65d0b0e5dd4879",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:48.804Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:48.804Z] ❌ Failed to generate Mountain Pass: All engines failed: API request failed with status 400
+[2025-03-24T01:07:48.805Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:51.808Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T01:07:51.808Z] Generating "Village Tavern" using Stability SDXL 1.0...
+[2025-03-24T01:07:51.808Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:07:51.808Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 777712393
+[2025-03-24T01:07:51.809Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:52.105Z] Error: Received status code 401
+[2025-03-24T01:07:52.105Z] API Error: {
+  "id": "8314ff6fb2d7814898eea4c393b2634f",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:07:52.106Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:07:52.106Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:07:52.106Z] Generating "Village Tavern" using Stable Diffusion 1.6...
+[2025-03-24T01:07:52.106Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 1.6
+[2025-03-24T01:07:52.106Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:52.106Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:07:52.106Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1703050668
+[2025-03-24T01:07:52.107Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:52.403Z] Error: Received status code 400
+[2025-03-24T01:07:52.403Z] API Error: {
+  "id": "adbaa7b89f435f945ca303bfce979713",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:52.404Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:07:52.404Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:52.404Z] Generating "Village Tavern" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:07:52.404Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:07:52.404Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:07:52.404Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:07:52.404Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1256727553
+[2025-03-24T01:07:52.404Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:07:52.702Z] Error: Received status code 400
+[2025-03-24T01:07:52.702Z] API Error: {
+  "id": "d5e18ee3b74116c07b6bdf425c919626",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:07:52.702Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:07:52.703Z] ❌ Failed to generate Village Tavern: All engines failed: API request failed with status 400
+[2025-03-24T01:07:52.703Z] Waiting 3 seconds before next request...
+[2025-03-24T01:07:55.704Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T01:15:12.618Z] Starting high-quality image generation with Stability API...
+[2025-03-24T01:15:12.619Z] 
+===== Processing: Loading Page =====
+[2025-03-24T01:15:12.619Z] Generating "Loading Page" using Stability SDXL 1.0...
+[2025-03-24T01:15:12.619Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:12.620Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 337043508
+[2025-03-24T01:15:12.620Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:13.547Z] Error: Received status code 401
+[2025-03-24T01:15:13.548Z] API Error: {
+  "id": "4bef97a102a2d0a7b0df5604ed2c537c",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:13.548Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:13.549Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:13.549Z] Generating "Loading Page" using Stable Diffusion 1.6...
+[2025-03-24T01:15:13.549Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 1.6
+[2025-03-24T01:15:13.549Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:13.549Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:13.549Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1869902353
+[2025-03-24T01:15:13.549Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:13.838Z] Error: Received status code 400
+[2025-03-24T01:15:13.838Z] API Error: {
+  "id": "6c492f656ef1036a2cda5f6b34ab896a",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:13.839Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:13.839Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:13.839Z] Generating "Loading Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:13.839Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:13.839Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:13.839Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:13.839Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1961252126
+[2025-03-24T01:15:13.839Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:14.135Z] Error: Received status code 400
+[2025-03-24T01:15:14.136Z] API Error: {
+  "id": "209082e2ddc57c68108fa1c8f590249c",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:14.136Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:14.136Z] ❌ Failed to generate Loading Page: All engines failed: API request failed with status 400
+[2025-03-24T01:15:14.136Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:17.149Z] 
+===== Processing: Landing Page =====
+[2025-03-24T01:15:17.149Z] Generating "Landing Page" using Stability SDXL 1.0...
+[2025-03-24T01:15:17.149Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:17.149Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1984741082
+[2025-03-24T01:15:17.149Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:17.498Z] Error: Received status code 401
+[2025-03-24T01:15:17.498Z] API Error: {
+  "id": "4bbca0657ece35795a2c52a1b6674e59",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:17.498Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:17.499Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:17.499Z] Generating "Landing Page" using Stable Diffusion 1.6...
+[2025-03-24T01:15:17.499Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 1.6
+[2025-03-24T01:15:17.499Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:17.499Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:17.499Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1804153041
+[2025-03-24T01:15:17.499Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:17.806Z] Error: Received status code 400
+[2025-03-24T01:15:17.806Z] API Error: {
+  "id": "b8869e16d22fb817fc2dafe586ea8722",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:17.806Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:17.806Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:17.807Z] Generating "Landing Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:17.807Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:17.807Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:17.807Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:17.807Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 2104399040
+[2025-03-24T01:15:17.807Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:18.618Z] Error: Received status code 400
+[2025-03-24T01:15:18.618Z] API Error: {
+  "id": "93c9ca933699abb0e4f6d0d25f23216f",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:18.619Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:18.619Z] ❌ Failed to generate Landing Page: All engines failed: API request failed with status 400
+[2025-03-24T01:15:18.619Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:21.625Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T01:15:21.626Z] Generating "Main Menu Background" using Stability SDXL 1.0...
+[2025-03-24T01:15:21.626Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:21.626Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 566299758
+[2025-03-24T01:15:21.626Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:21.924Z] Error: Received status code 401
+[2025-03-24T01:15:21.925Z] API Error: {
+  "id": "402f1579c7dedc067efcb62deec65efe",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:21.925Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:21.925Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:21.925Z] Generating "Main Menu Background" using Stable Diffusion 1.6...
+[2025-03-24T01:15:21.925Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 1.6
+[2025-03-24T01:15:21.926Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:21.926Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:21.926Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1689705583
+[2025-03-24T01:15:21.926Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:22.754Z] Error: Received status code 400
+[2025-03-24T01:15:22.754Z] API Error: {
+  "id": "b28ee6d940dc4877c0244ad086f74bb5",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:22.754Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:22.755Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:22.755Z] Generating "Main Menu Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:22.755Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:22.755Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:22.755Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:22.755Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 31920009
+[2025-03-24T01:15:22.755Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:23.066Z] Error: Received status code 400
+[2025-03-24T01:15:23.067Z] API Error: {
+  "id": "786bc2650b2e9c061690074a85df27cd",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:23.067Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:23.067Z] ❌ Failed to generate Main Menu Background: All engines failed: API request failed with status 400
+[2025-03-24T01:15:23.067Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:26.069Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T01:15:26.069Z] Generating "Character Creation Background" using Stability SDXL 1.0...
+[2025-03-24T01:15:26.069Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:26.069Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1556235122
+[2025-03-24T01:15:26.070Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:26.877Z] Error: Received status code 401
+[2025-03-24T01:15:26.878Z] API Error: {
+  "id": "167228cca61c22b35bf58d3a09bbe359",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:26.878Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:26.878Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:26.878Z] Generating "Character Creation Background" using Stable Diffusion 1.6...
+[2025-03-24T01:15:26.878Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 1.6
+[2025-03-24T01:15:26.878Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:26.878Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:26.879Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 783117030
+[2025-03-24T01:15:26.879Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:27.169Z] Error: Received status code 400
+[2025-03-24T01:15:27.170Z] API Error: {
+  "id": "81153c5c93ea0970cad205b50e407abf",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:27.170Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:27.170Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:27.171Z] Generating "Character Creation Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:27.171Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:27.171Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:27.171Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:27.171Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1468685643
+[2025-03-24T01:15:27.171Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:27.475Z] Error: Received status code 400
+[2025-03-24T01:15:27.476Z] API Error: {
+  "id": "1507c5c738cc81f62523bcc3dfeb4fcc",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:27.476Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:27.476Z] ❌ Failed to generate Character Creation Background: All engines failed: API request failed with status 400
+[2025-03-24T01:15:27.476Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:30.483Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T01:15:30.484Z] Generating "Mysterious Letter" using Stability SDXL 1.0...
+[2025-03-24T01:15:30.484Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:30.484Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1389399895
+[2025-03-24T01:15:30.484Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:30.772Z] Error: Received status code 401
+[2025-03-24T01:15:30.772Z] API Error: {
+  "id": "84f91ab3521a98208859bb027244e2e3",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:30.772Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:30.773Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:30.773Z] Generating "Mysterious Letter" using Stable Diffusion 1.6...
+[2025-03-24T01:15:30.773Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 1.6
+[2025-03-24T01:15:30.773Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:30.773Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:30.773Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1386389935
+[2025-03-24T01:15:30.773Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:31.069Z] Error: Received status code 400
+[2025-03-24T01:15:31.070Z] API Error: {
+  "id": "1e040f987d2d51790364347b97561dab",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:31.070Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:31.070Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:31.070Z] Generating "Mysterious Letter" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:31.070Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:31.070Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:31.071Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:31.071Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 2146827006
+[2025-03-24T01:15:31.071Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:31.361Z] Error: Received status code 400
+[2025-03-24T01:15:31.362Z] API Error: {
+  "id": "1ef3a9279844ecf6b5a7c049a0ac2efb",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:31.362Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:31.362Z] ❌ Failed to generate Mysterious Letter: All engines failed: API request failed with status 400
+[2025-03-24T01:15:31.362Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:34.372Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T01:15:34.372Z] Generating "Forest Path (Ghost)" using Stability SDXL 1.0...
+[2025-03-24T01:15:34.373Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:34.373Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1950240433
+[2025-03-24T01:15:34.373Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:34.674Z] Error: Received status code 401
+[2025-03-24T01:15:34.675Z] API Error: {
+  "id": "1a4346b224c82a376ca2089b13d75b27",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:34.675Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:34.675Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:34.675Z] Generating "Forest Path (Ghost)" using Stable Diffusion 1.6...
+[2025-03-24T01:15:34.675Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 1.6
+[2025-03-24T01:15:34.675Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:34.676Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:34.676Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 626238044
+[2025-03-24T01:15:34.676Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:34.990Z] Error: Received status code 400
+[2025-03-24T01:15:34.990Z] API Error: {
+  "id": "1d9ca7b769df3ece1b81cc20b9ad2780",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:34.990Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:34.991Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:34.991Z] Generating "Forest Path (Ghost)" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:34.991Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:34.991Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:34.991Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:34.991Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 154047664
+[2025-03-24T01:15:34.991Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:35.295Z] Error: Received status code 400
+[2025-03-24T01:15:35.296Z] API Error: {
+  "id": "f33556949d6ec642066160c73a08aa2c",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:35.296Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:35.296Z] ❌ Failed to generate Forest Path (Ghost): All engines failed: API request failed with status 400
+[2025-03-24T01:15:35.296Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:38.309Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T01:15:38.309Z] Generating "Mountain Pass" using Stability SDXL 1.0...
+[2025-03-24T01:15:38.310Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:38.310Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 639550740
+[2025-03-24T01:15:38.310Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:38.622Z] Error: Received status code 401
+[2025-03-24T01:15:38.623Z] API Error: {
+  "id": "8ae99e2b50fb813b38fd065b84a24f84",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:38.623Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:38.623Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:38.623Z] Generating "Mountain Pass" using Stable Diffusion 1.6...
+[2025-03-24T01:15:38.623Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 1.6
+[2025-03-24T01:15:38.624Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:38.624Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:38.624Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1250592458
+[2025-03-24T01:15:38.624Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:38.936Z] Error: Received status code 400
+[2025-03-24T01:15:38.937Z] API Error: {
+  "id": "335e808f5d0837147868361a5f3a2c50",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:38.937Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:38.938Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:38.938Z] Generating "Mountain Pass" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:38.938Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:38.938Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:38.938Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:38.938Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 997081519
+[2025-03-24T01:15:38.939Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:39.250Z] Error: Received status code 400
+[2025-03-24T01:15:39.250Z] API Error: {
+  "id": "54db94020f72670825d3aa103ed04346",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:39.251Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:39.251Z] ❌ Failed to generate Mountain Pass: All engines failed: API request failed with status 400
+[2025-03-24T01:15:39.251Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:42.263Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T01:15:42.263Z] Generating "Village Tavern" using Stability SDXL 1.0...
+[2025-03-24T01:15:42.263Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:15:42.263Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1217971570
+[2025-03-24T01:15:42.263Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:42.562Z] Error: Received status code 401
+[2025-03-24T01:15:42.562Z] API Error: {
+  "id": "b4a9afc4d783297d9ab49f2a0768947c",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:15:42.562Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:15:42.562Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:15:42.562Z] Generating "Village Tavern" using Stable Diffusion 1.6...
+[2025-03-24T01:15:42.562Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 1.6
+[2025-03-24T01:15:42.562Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:42.563Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:15:42.563Z] Engine: stable-diffusion-v1-6, Dimensions: 512x292, Seed: 1366582852
+[2025-03-24T01:15:42.563Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:42.852Z] Error: Received status code 400
+[2025-03-24T01:15:42.853Z] API Error: {
+  "id": "3e02393e7099ce6ed8f46a0785c2161b",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:42.853Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:15:42.853Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:42.853Z] Generating "Village Tavern" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:15:42.853Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:15:42.853Z] Adjusted dimensions: 1344x768 -> 512x292
+[2025-03-24T01:15:42.853Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:15:42.853Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x292, Seed: 1685526522
+[2025-03-24T01:15:42.854Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:15:43.154Z] Error: Received status code 400
+[2025-03-24T01:15:43.154Z] API Error: {
+  "id": "86f0a6ba7a89cea30d6608522bd22fc4",
+  "message": "height and width must be specified in increments of 64",
+  "name": "invalid_height_or_width"
+}
+[2025-03-24T01:15:43.154Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:15:43.154Z] ❌ Failed to generate Village Tavern: All engines failed: API request failed with status 400
+[2025-03-24T01:15:43.154Z] Waiting 3 seconds before next request...
+[2025-03-24T01:15:46.159Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T01:16:15.788Z] Starting high-quality image generation with Stability API...
+[2025-03-24T01:16:15.788Z] 
+===== Processing: Loading Page =====
+[2025-03-24T01:16:15.788Z] Generating "Loading Page" using Stability SDXL 1.0...
+[2025-03-24T01:16:15.789Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:15.789Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1101407494
+[2025-03-24T01:16:15.789Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:16.134Z] Error: Received status code 401
+[2025-03-24T01:16:16.134Z] API Error: {
+  "id": "7b10bb77d39972c365cef3218a68cea7",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:16.135Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:16.135Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:16.136Z] Generating "Loading Page" using Stable Diffusion 1.6...
+[2025-03-24T01:16:16.136Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 1.6
+[2025-03-24T01:16:16.136Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:16.136Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:16.136Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 1380774264
+[2025-03-24T01:16:16.136Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:16.448Z] Error: Received status code 400
+[2025-03-24T01:16:16.448Z] API Error: {
+  "id": "5ca033280503e23e9a16da717b7ecd6f",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:16.448Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:16.448Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:16.448Z] Generating "Loading Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:16.448Z] Adjusting dimensions for Loading Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:16.449Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:16.449Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:16.449Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1097614500
+[2025-03-24T01:16:16.449Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:16.748Z] Error: Received status code 400
+[2025-03-24T01:16:16.748Z] API Error: {
+  "id": "2bc4a6b4ae0e8b8ee47fbae3a89320d4",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:16.748Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:16.749Z] ❌ Failed to generate Loading Page: All engines failed: API request failed with status 400
+[2025-03-24T01:16:16.749Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:19.763Z] 
+===== Processing: Landing Page =====
+[2025-03-24T01:16:19.763Z] Generating "Landing Page" using Stability SDXL 1.0...
+[2025-03-24T01:16:19.763Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:19.763Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 362512141
+[2025-03-24T01:16:19.764Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:20.056Z] Error: Received status code 401
+[2025-03-24T01:16:20.057Z] API Error: {
+  "id": "81e1b2b5cb74568167a51132863b71eb",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:20.057Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:20.057Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:20.057Z] Generating "Landing Page" using Stable Diffusion 1.6...
+[2025-03-24T01:16:20.057Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 1.6
+[2025-03-24T01:16:20.057Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:20.058Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:20.058Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 671461881
+[2025-03-24T01:16:20.058Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:20.362Z] Error: Received status code 400
+[2025-03-24T01:16:20.363Z] API Error: {
+  "id": "6fe8ceabbf083c19e70c55816d8fa2b9",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:20.363Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:20.363Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:20.363Z] Generating "Landing Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:20.363Z] Adjusting dimensions for Landing Page to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:20.363Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:20.363Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:20.363Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 981829901
+[2025-03-24T01:16:20.363Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:20.605Z] Error: Received status code 400
+[2025-03-24T01:16:20.605Z] API Error: {
+  "id": "f34647b9620ee8533a4ac594dc87f54c",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:20.606Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:20.606Z] ❌ Failed to generate Landing Page: All engines failed: API request failed with status 400
+[2025-03-24T01:16:20.606Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:23.620Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T01:16:23.620Z] Generating "Main Menu Background" using Stability SDXL 1.0...
+[2025-03-24T01:16:23.621Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:23.621Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 2076284881
+[2025-03-24T01:16:23.621Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:23.912Z] Error: Received status code 401
+[2025-03-24T01:16:23.912Z] API Error: {
+  "id": "9ee4dbc22970d83c052a72c40da5130b",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:23.913Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:23.913Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:23.913Z] Generating "Main Menu Background" using Stable Diffusion 1.6...
+[2025-03-24T01:16:23.913Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 1.6
+[2025-03-24T01:16:23.913Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:23.913Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:23.913Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 755379160
+[2025-03-24T01:16:23.914Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:24.213Z] Error: Received status code 400
+[2025-03-24T01:16:24.213Z] API Error: {
+  "id": "9785d52afca6730b07b83f59fcf1cef1",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:24.214Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:24.214Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:24.214Z] Generating "Main Menu Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:24.214Z] Adjusting dimensions for Main Menu Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:24.214Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:24.214Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:24.214Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1647917417
+[2025-03-24T01:16:24.214Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:24.508Z] Error: Received status code 400
+[2025-03-24T01:16:24.508Z] API Error: {
+  "id": "5040bb56d8be89a504592180717181cb",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:24.508Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:24.509Z] ❌ Failed to generate Main Menu Background: All engines failed: API request failed with status 400
+[2025-03-24T01:16:24.509Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:27.516Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T01:16:27.516Z] Generating "Character Creation Background" using Stability SDXL 1.0...
+[2025-03-24T01:16:27.516Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:27.516Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1458906162
+[2025-03-24T01:16:27.516Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:27.761Z] Error: Received status code 401
+[2025-03-24T01:16:27.762Z] API Error: {
+  "id": "d7030468bd6a957542fe8875ac240f90",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:27.762Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:27.762Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:27.762Z] Generating "Character Creation Background" using Stable Diffusion 1.6...
+[2025-03-24T01:16:27.762Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 1.6
+[2025-03-24T01:16:27.762Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:27.763Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:27.763Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 1588475604
+[2025-03-24T01:16:27.763Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:28.093Z] Error: Received status code 400
+[2025-03-24T01:16:28.094Z] API Error: {
+  "id": "40a1349dff992b3095861f650da5d04b",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:28.094Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:28.094Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:28.094Z] Generating "Character Creation Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:28.094Z] Adjusting dimensions for Character Creation Background to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:28.095Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:28.095Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:28.095Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1506699170
+[2025-03-24T01:16:28.095Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:28.390Z] Error: Received status code 400
+[2025-03-24T01:16:28.391Z] API Error: {
+  "id": "05ad9f1544f2f6b77dd7e0982da893e1",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:28.391Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:28.391Z] ❌ Failed to generate Character Creation Background: All engines failed: API request failed with status 400
+[2025-03-24T01:16:28.391Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:31.397Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T01:16:31.398Z] Generating "Mysterious Letter" using Stability SDXL 1.0...
+[2025-03-24T01:16:31.398Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:31.398Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1654786762
+[2025-03-24T01:16:31.398Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:31.699Z] Error: Received status code 401
+[2025-03-24T01:16:31.700Z] API Error: {
+  "id": "54775044430383bf248780993c7ed81c",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:31.700Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:31.700Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:31.700Z] Generating "Mysterious Letter" using Stable Diffusion 1.6...
+[2025-03-24T01:16:31.700Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 1.6
+[2025-03-24T01:16:31.701Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:31.701Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:31.701Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 19417460
+[2025-03-24T01:16:31.701Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:32.324Z] Error: Received status code 400
+[2025-03-24T01:16:32.324Z] API Error: {
+  "id": "08b951ee785aea25206bd91afbd40693",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:32.325Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:32.325Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:32.325Z] Generating "Mysterious Letter" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:32.325Z] Adjusting dimensions for Mysterious Letter to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:32.325Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:32.325Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:32.325Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1380156514
+[2025-03-24T01:16:32.325Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:32.624Z] Error: Received status code 400
+[2025-03-24T01:16:32.624Z] API Error: {
+  "id": "cfb548fedb76ce57b97c6273002ca0b5",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:32.624Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:32.624Z] ❌ Failed to generate Mysterious Letter: All engines failed: API request failed with status 400
+[2025-03-24T01:16:32.625Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:35.637Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T01:16:35.638Z] Generating "Forest Path (Ghost)" using Stability SDXL 1.0...
+[2025-03-24T01:16:35.638Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:35.638Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1424463374
+[2025-03-24T01:16:35.639Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:35.929Z] Error: Received status code 401
+[2025-03-24T01:16:35.929Z] API Error: {
+  "id": "f89e9036beb03993f34b24d75114906f",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:35.929Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:35.930Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:35.930Z] Generating "Forest Path (Ghost)" using Stable Diffusion 1.6...
+[2025-03-24T01:16:35.930Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 1.6
+[2025-03-24T01:16:35.930Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:35.930Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:35.930Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 1417768355
+[2025-03-24T01:16:35.930Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:36.222Z] Error: Received status code 400
+[2025-03-24T01:16:36.222Z] API Error: {
+  "id": "e032ae891af5f1a82b0ef0963bc3d1d4",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:36.223Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:36.223Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:36.223Z] Generating "Forest Path (Ghost)" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:36.223Z] Adjusting dimensions for Forest Path (Ghost) to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:36.223Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:36.223Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:36.223Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 639441740
+[2025-03-24T01:16:36.223Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:36.535Z] Error: Received status code 400
+[2025-03-24T01:16:36.535Z] API Error: {
+  "id": "91589a7cef510d60ae79768247c1b572",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:36.535Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:36.535Z] ❌ Failed to generate Forest Path (Ghost): All engines failed: API request failed with status 400
+[2025-03-24T01:16:36.535Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:39.546Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T01:16:39.547Z] Generating "Mountain Pass" using Stability SDXL 1.0...
+[2025-03-24T01:16:39.547Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:39.547Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1433189199
+[2025-03-24T01:16:39.547Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:39.843Z] Error: Received status code 401
+[2025-03-24T01:16:39.843Z] API Error: {
+  "id": "5637708f1053baba79f89106ec897ac4",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:39.844Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:39.844Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:39.844Z] Generating "Mountain Pass" using Stable Diffusion 1.6...
+[2025-03-24T01:16:39.844Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 1.6
+[2025-03-24T01:16:39.844Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:39.844Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:39.844Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 1349996869
+[2025-03-24T01:16:39.844Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:40.135Z] Error: Received status code 400
+[2025-03-24T01:16:40.135Z] API Error: {
+  "id": "e2da888bcf05a04c83454762a8022e80",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:40.135Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:40.135Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:40.136Z] Generating "Mountain Pass" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:40.136Z] Adjusting dimensions for Mountain Pass to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:40.136Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:40.136Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:40.136Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1576884913
+[2025-03-24T01:16:40.136Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:40.430Z] Error: Received status code 400
+[2025-03-24T01:16:40.430Z] API Error: {
+  "id": "0ddbeba4a2df6d9f50d4bda7ab304e84",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:40.431Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:40.431Z] ❌ Failed to generate Mountain Pass: All engines failed: API request failed with status 400
+[2025-03-24T01:16:40.431Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:43.440Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T01:16:43.440Z] Generating "Village Tavern" using Stability SDXL 1.0...
+[2025-03-24T01:16:43.440Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:16:43.440Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1741559251
+[2025-03-24T01:16:43.440Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:43.729Z] Error: Received status code 401
+[2025-03-24T01:16:43.729Z] API Error: {
+  "id": "408000e60c67fffb9a4f7385d2838491",
+  "message": "Incorrect API key provided: sk-5yMv***************************************KNrq. You can find your API key at https://stability.ai.",
+  "name": "unauthorized"
+}
+[2025-03-24T01:16:43.730Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 401
+[2025-03-24T01:16:43.730Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:16:43.730Z] Generating "Village Tavern" using Stable Diffusion 1.6...
+[2025-03-24T01:16:43.730Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 1.6
+[2025-03-24T01:16:43.730Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:43.730Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:16:43.730Z] Engine: stable-diffusion-v1-6, Dimensions: 512x256, Seed: 510960456
+[2025-03-24T01:16:43.730Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:44.022Z] Error: Received status code 400
+[2025-03-24T01:16:44.022Z] API Error: {
+  "id": "5a8c3c0f83f3669129b7fa97610af99a",
+  "message": "for stable-diffusion-v1-6 no dimension can be less than 320 or greater than 1536, but we received 512x256",
+  "name": "invalid_sd_v1_6_dimensions"
+}
+[2025-03-24T01:16:44.022Z] Failed with stable-diffusion-v1-6: API request failed with status 400
+[2025-03-24T01:16:44.022Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:44.022Z] Generating "Village Tavern" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:16:44.022Z] Adjusting dimensions for Village Tavern to fit Stable Diffusion 512 v2.1
+[2025-03-24T01:16:44.023Z] Adjusted dimensions: 1344x768 -> 512x256
+[2025-03-24T01:16:44.023Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:16:44.023Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x256, Seed: 1542850115
+[2025-03-24T01:16:44.023Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:16:44.362Z] Error: Received status code 400
+[2025-03-24T01:16:44.362Z] API Error: {
+  "id": "e52f08616e08d6602da8481b4e7e1934",
+  "message": "height * width must result in at least 262,144 pixels, but got 131,072",
+  "name": "invalid_pixel_count"
+}
+[2025-03-24T01:16:44.363Z] Failed with stable-diffusion-512-v2-1: API request failed with status 400
+[2025-03-24T01:16:44.363Z] ❌ Failed to generate Village Tavern: All engines failed: API request failed with status 400
+[2025-03-24T01:16:44.363Z] Waiting 3 seconds before next request...
+[2025-03-24T01:16:47.376Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T01:18:19.144Z] Starting high-quality image generation with Stability API...
+[2025-03-24T01:18:19.144Z] 
+===== Processing: Loading Page =====
+[2025-03-24T01:18:19.145Z] Generating "Loading Page" using Stability SDXL 1.0...
+[2025-03-24T01:18:19.145Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:19.145Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:19.145Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 369412065
+[2025-03-24T01:18:19.146Z] Full prompt: "Fantasy loading screen, mystical portal, magical runes around the edges, minimal design. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:26.718Z] ✅ Successfully generated and saved Loading Page
+[2025-03-24T01:18:26.719Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:29.726Z] 
+===== Processing: Landing Page =====
+[2025-03-24T01:18:29.727Z] Generating "Landing Page" using Stability SDXL 1.0...
+[2025-03-24T01:18:29.727Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:29.727Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:29.727Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 747496430
+[2025-03-24T01:18:29.728Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:30.729Z] Error: Received status code 429
+[2025-03-24T01:18:30.730Z] API Error: {
+  "id": "986390e37ab7e1fb372d551f566f976a",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:30.730Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:30.730Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:30.730Z] Generating "Landing Page" using Stable Diffusion 1.6...
+[2025-03-24T01:18:30.730Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:30.730Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:30.731Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 1872789673
+[2025-03-24T01:18:30.731Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:31.033Z] Error: Received status code 429
+[2025-03-24T01:18:31.034Z] API Error: {
+  "id": "f5310466c0e75cd63d642810c6e701d4",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:31.034Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:31.034Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:31.034Z] Generating "Landing Page" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:31.034Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:31.034Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:31.034Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:31.035Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 1036485885
+[2025-03-24T01:18:31.035Z] Full prompt: "Fantasy RPG landing page, magical scene with castle in distance, hero silhouette. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:31.381Z] Error: Received status code 404
+[2025-03-24T01:18:31.381Z] API Error: {
+  "id": "067fde65c1e15e2ac879d93d20a041be",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:31.381Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:31.382Z] ❌ Failed to generate Landing Page: All engines failed: API request failed with status 404
+[2025-03-24T01:18:31.382Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:34.385Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T01:18:34.386Z] Generating "Main Menu Background" using Stability SDXL 1.0...
+[2025-03-24T01:18:34.386Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:34.386Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:34.386Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 722163954
+[2025-03-24T01:18:34.386Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:35.130Z] Error: Received status code 429
+[2025-03-24T01:18:35.131Z] API Error: {
+  "id": "1ba1925a114f2da1654df34589d8ef14",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:35.131Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:35.131Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:35.131Z] Generating "Main Menu Background" using Stable Diffusion 1.6...
+[2025-03-24T01:18:35.131Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:35.131Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:35.131Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 175380281
+[2025-03-24T01:18:35.132Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:35.433Z] Error: Received status code 429
+[2025-03-24T01:18:35.434Z] API Error: {
+  "id": "86005a37247e1cc627cea4452f460fc6",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:35.434Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:35.434Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:35.434Z] Generating "Main Menu Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:35.434Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:35.434Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:35.434Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:35.434Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 1533638131
+[2025-03-24T01:18:35.434Z] Full prompt: "Fantasy castle on mountain, starry night, dramatic lighting, torch flames. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:36.022Z] Error: Received status code 404
+[2025-03-24T01:18:36.022Z] API Error: {
+  "id": "706d4b18f3866eefef0b67501898273a",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:36.022Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:36.023Z] ❌ Failed to generate Main Menu Background: All engines failed: API request failed with status 404
+[2025-03-24T01:18:36.023Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:39.031Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T01:18:39.031Z] Generating "Character Creation Background" using Stability SDXL 1.0...
+[2025-03-24T01:18:39.031Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:39.032Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:39.032Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1823185786
+[2025-03-24T01:18:39.032Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:39.265Z] Error: Received status code 429
+[2025-03-24T01:18:39.265Z] API Error: {
+  "id": "174251acaa22310f2cc33b84a05b2413",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:39.266Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:39.266Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:39.266Z] Generating "Character Creation Background" using Stable Diffusion 1.6...
+[2025-03-24T01:18:39.266Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:39.266Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:39.266Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 1320534258
+[2025-03-24T01:18:39.266Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:39.579Z] Error: Received status code 429
+[2025-03-24T01:18:39.580Z] API Error: {
+  "id": "d1e81c76ae7defb0e0698f272a3b7189",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:39.580Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:39.580Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:39.580Z] Generating "Character Creation Background" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:39.580Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:39.580Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:39.580Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:39.580Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 303256415
+[2025-03-24T01:18:39.580Z] Full prompt: "Mystical chamber with artifacts, glowing runes on stone walls, character silhouettes. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:39.987Z] Error: Received status code 404
+[2025-03-24T01:18:39.987Z] API Error: {
+  "id": "b7d0ca68fc9328559404ec47351d1f66",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:39.988Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:39.988Z] ❌ Failed to generate Character Creation Background: All engines failed: API request failed with status 404
+[2025-03-24T01:18:39.988Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:43.000Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T01:18:43.000Z] Generating "Mysterious Letter" using Stability SDXL 1.0...
+[2025-03-24T01:18:43.000Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:43.000Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:43.000Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 344648336
+[2025-03-24T01:18:43.000Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:43.573Z] Error: Received status code 429
+[2025-03-24T01:18:43.574Z] API Error: {
+  "id": "a77ded0ad7f4e712bf269545d8c08c8e",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:43.574Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:43.574Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:43.574Z] Generating "Mysterious Letter" using Stable Diffusion 1.6...
+[2025-03-24T01:18:43.574Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:43.574Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:43.574Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 350119716
+[2025-03-24T01:18:43.575Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:43.878Z] Error: Received status code 429
+[2025-03-24T01:18:43.878Z] API Error: {
+  "id": "b54264c8f063e132c3dc78c04cc08715",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:43.879Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:43.879Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:43.879Z] Generating "Mysterious Letter" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:43.879Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:43.879Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:43.879Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:43.879Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 790981982
+[2025-03-24T01:18:43.879Z] Full prompt: "Ancient parchment, fantasy symbols, old paper with magical seal, fantasy RPG inventory item. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:44.239Z] Error: Received status code 404
+[2025-03-24T01:18:44.239Z] API Error: {
+  "id": "1aa06d906467c8ba12a489a5925ad6cb",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:44.240Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:44.240Z] ❌ Failed to generate Mysterious Letter: All engines failed: API request failed with status 404
+[2025-03-24T01:18:44.240Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:47.243Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T01:18:47.243Z] Generating "Forest Path (Ghost)" using Stability SDXL 1.0...
+[2025-03-24T01:18:47.243Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:47.244Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:47.244Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 31786100
+[2025-03-24T01:18:47.244Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:47.537Z] Error: Received status code 429
+[2025-03-24T01:18:47.537Z] API Error: {
+  "id": "65cf0be81ccf49ac5703a8900fb61844",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:47.538Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:47.538Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:47.538Z] Generating "Forest Path (Ghost)" using Stable Diffusion 1.6...
+[2025-03-24T01:18:47.538Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:47.538Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:47.538Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 22323039
+[2025-03-24T01:18:47.538Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:47.848Z] Error: Received status code 429
+[2025-03-24T01:18:47.848Z] API Error: {
+  "id": "b3b22b302c2955821cba97a2562d7ff3",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:47.849Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:47.849Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:47.849Z] Generating "Forest Path (Ghost)" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:47.849Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:47.849Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:47.849Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:47.850Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 1274775189
+[2025-03-24T01:18:47.850Z] Full prompt: "Spooky forest path, ghostly apparition between trees, misty, moonlight filtering through. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:48.217Z] Error: Received status code 404
+[2025-03-24T01:18:48.218Z] API Error: {
+  "id": "d36f38ae28b43f6ecddb9afb1d8ec5fe",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:48.218Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:48.218Z] ❌ Failed to generate Forest Path (Ghost): All engines failed: API request failed with status 404
+[2025-03-24T01:18:48.218Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:51.228Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T01:18:51.228Z] Generating "Mountain Pass" using Stability SDXL 1.0...
+[2025-03-24T01:18:51.229Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:51.229Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:51.229Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 106402713
+[2025-03-24T01:18:51.229Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:51.733Z] Error: Received status code 429
+[2025-03-24T01:18:51.733Z] API Error: {
+  "id": "d1b2d2ef37e26dd51e83d7df42f0efd0",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:51.734Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:51.734Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:51.734Z] Generating "Mountain Pass" using Stable Diffusion 1.6...
+[2025-03-24T01:18:51.734Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:51.734Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:51.734Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 2104526176
+[2025-03-24T01:18:51.734Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:52.041Z] Error: Received status code 429
+[2025-03-24T01:18:52.041Z] API Error: {
+  "id": "4f9df3ba8434524c6ca7bc6bfa4cc32e",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:52.041Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:52.041Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:52.042Z] Generating "Mountain Pass" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:52.042Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:52.042Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:52.042Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:52.042Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 1366785875
+[2025-03-24T01:18:52.042Z] Full prompt: "Mountain pass with rope bridge, fantasy scene, dramatic cliff, distant adventure. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:52.384Z] Error: Received status code 404
+[2025-03-24T01:18:52.385Z] API Error: {
+  "id": "32a0e76080498b71b1c573499334e438",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:52.385Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:52.385Z] ❌ Failed to generate Mountain Pass: All engines failed: API request failed with status 404
+[2025-03-24T01:18:52.385Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:55.387Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T01:18:55.388Z] Generating "Village Tavern" using Stability SDXL 1.0...
+[2025-03-24T01:18:55.388Z] Adjusted dimensions: 1344x768 -> 1344x768
+[2025-03-24T01:18:55.388Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+[2025-03-24T01:18:55.388Z] Engine: stable-diffusion-xl-1024-v1-0, Dimensions: 1344x768, Seed: 1391266301
+[2025-03-24T01:18:55.388Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:55.702Z] Error: Received status code 429
+[2025-03-24T01:18:55.702Z] API Error: {
+  "id": "a9d4e9c9c58191f0d3f42cc8aa4082e6",
+  "message": "Your organization does not have enough balance to request this action (need $0.012, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:55.702Z] Failed with stable-diffusion-xl-1024-v1-0: API request failed with status 429
+[2025-03-24T01:18:55.702Z] Attempting fallback to Stable Diffusion 1.6...
+[2025-03-24T01:18:55.703Z] Generating "Village Tavern" using Stable Diffusion 1.6...
+[2025-03-24T01:18:55.703Z] Adjusted dimensions: 1344x768 -> 1024x576
+[2025-03-24T01:18:55.703Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-v1-6/text-to-image
+[2025-03-24T01:18:55.703Z] Engine: stable-diffusion-v1-6, Dimensions: 1024x576, Seed: 1160625036
+[2025-03-24T01:18:55.703Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:56.002Z] Error: Received status code 429
+[2025-03-24T01:18:56.002Z] API Error: {
+  "id": "586f706c0df2d2b0dfc5fc860a9865b7",
+  "message": "Your organization does not have enough balance to request this action (need $0.009852623932434875, have $0.0040456 in active grants, $0 in balance).",
+  "name": "insufficient_balance"
+}
+[2025-03-24T01:18:56.002Z] Failed with stable-diffusion-v1-6: API request failed with status 429
+[2025-03-24T01:18:56.003Z] Attempting fallback to Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:56.003Z] Generating "Village Tavern" using Stable Diffusion 512 v2.1...
+[2025-03-24T01:18:56.003Z] Using standard dimensions for Stable Diffusion 512 v2.1: 512x512
+[2025-03-24T01:18:56.003Z] Adjusted dimensions: 1344x768 -> 512x512
+[2025-03-24T01:18:56.003Z] Making API request to: https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+[2025-03-24T01:18:56.003Z] Engine: stable-diffusion-512-v2-1, Dimensions: 512x512, Seed: 1258407864
+[2025-03-24T01:18:56.003Z] Full prompt: "Medieval tavern interior, cozy inn, fireplace, patrons, fantasy RPG scene. fantasy RPG game art, professional quality, cohesive game art style"
+[2025-03-24T01:18:56.353Z] Error: Received status code 404
+[2025-03-24T01:18:56.353Z] API Error: {
+  "id": "512fec97bbf4200f2153571304b13e67",
+  "message": "The specified engine (ID stable-diffusion-512-v2-1) was not found.",
+  "name": "not_found"
+}
+[2025-03-24T01:18:56.354Z] Failed with stable-diffusion-512-v2-1: API request failed with status 404
+[2025-03-24T01:18:56.354Z] ❌ Failed to generate Village Tavern: All engines failed: API request failed with status 404
+[2025-03-24T01:18:56.354Z] Waiting 3 seconds before next request...
+[2025-03-24T01:18:59.355Z] 
+
+===== GENERATION SUMMARY =====
+[2025-03-24T01:18:59.355Z] Total assets: 8
+[2025-03-24T01:18:59.355Z] Successfully generated: 1
+[2025-03-24T01:18:59.356Z] Failed: 7
+[2025-03-24T01:18:59.356Z] 
+Failed assets:
+[2025-03-24T01:18:59.356Z] - Landing Page: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Main Menu Background: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Character Creation Background: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Mysterious Letter: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Forest Path (Ghost): All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Mountain Pass: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.356Z] - Village Tavern: All engines failed: API request failed with status 404
+[2025-03-24T01:18:59.357Z] 
+Successful assets:
+[2025-03-24T01:18:59.357Z] - Loading Page: Generated with Stability SDXL 1.0 (seed: 369412065)
+[2025-03-24T01:18:59.372Z] Created documentation at: C:\gameX\rpg-game\media\images\generated\README.md
+[2025-03-24T01:18:59.373Z] 
+Image generation process complete!

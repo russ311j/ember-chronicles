@@ -1,0 +1,348 @@
+[2025-03-24T00:38:47.946Z] Starting image generation with AIML API...
+[2025-03-24T00:38:47.946Z] 
+===== Processing: Loading Page =====
+[2025-03-24T00:38:47.947Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:38:47.947Z] Generating "Loading Page" using stable-diffusion-v3-medium...
+[2025-03-24T00:38:47.947Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:47.947Z] Model: stable-diffusion-v3-medium, Prompt: "Fantasy loading screen, minimal design, mystical"
+[2025-03-24T00:38:48.640Z] Error: Received status code 429
+[2025-03-24T00:38:48.640Z] API Error: {
+  "requestId": "77458e2f-6576-4a0b-b7ef-a3b53eab8f2e",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:49.592Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:48.641Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:38:48.641Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:38:48.642Z] Generating "Loading Page" using stable-diffusion-v35-large...
+[2025-03-24T00:38:48.642Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:48.642Z] Model: stable-diffusion-v35-large, Prompt: "Fantasy loading screen, minimal design, mystical"
+[2025-03-24T00:38:49.217Z] Error: Received status code 429
+[2025-03-24T00:38:49.217Z] API Error: {
+  "requestId": "fbdb9da5-d071-43bb-ab96-30f8d15a9363",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:50.175Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:49.217Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:38:49.217Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:49.217Z] Generating "Loading Page" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:49.218Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:49.218Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Fantasy loading screen, minimal design, mystical"
+[2025-03-24T00:38:49.845Z] Error: Received status code 429
+[2025-03-24T00:38:49.845Z] API Error: {
+  "requestId": "5d9d507a-ddca-443e-89ec-906a703cd87b",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:50.794Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:49.846Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:38:49.846Z] ❌ Failed to generate Loading Page: All models failed for Loading Page. Last error: API request failed with status 429
+[2025-03-24T00:38:49.846Z] Waiting 3 seconds before next request...
+[2025-03-24T00:38:52.855Z] 
+===== Processing: Landing Page =====
+[2025-03-24T00:38:52.855Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:38:52.855Z] Generating "Landing Page" using stable-diffusion-v3-medium...
+[2025-03-24T00:38:52.856Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:52.856Z] Model: stable-diffusion-v3-medium, Prompt: "Fantasy RPG landing page, magical scene"
+[2025-03-24T00:38:53.465Z] Error: Received status code 429
+[2025-03-24T00:38:53.465Z] API Error: {
+  "requestId": "6065f8c1-e0d5-4066-88f1-3eac58a3ddd2",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:54.423Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:53.465Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:38:53.466Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:38:53.466Z] Generating "Landing Page" using stable-diffusion-v35-large...
+[2025-03-24T00:38:53.466Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:53.466Z] Model: stable-diffusion-v35-large, Prompt: "Fantasy RPG landing page, magical scene"
+[2025-03-24T00:38:54.049Z] Error: Received status code 429
+[2025-03-24T00:38:54.049Z] API Error: {
+  "requestId": "38a9f462-3fb6-4434-a8be-29beb50cb65e",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:55.003Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:54.050Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:38:54.050Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:54.050Z] Generating "Landing Page" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:54.050Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:54.050Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Fantasy RPG landing page, magical scene"
+[2025-03-24T00:38:54.282Z] Error: Received status code 429
+[2025-03-24T00:38:54.283Z] API Error: {
+  "requestId": "b76b5d43-4de3-4944-a32e-1297e891de2f",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:55.236Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:54.283Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:38:54.283Z] ❌ Failed to generate Landing Page: All models failed for Landing Page. Last error: API request failed with status 429
+[2025-03-24T00:38:54.283Z] Waiting 3 seconds before next request...
+[2025-03-24T00:38:57.284Z] 
+===== Processing: Main Menu Background =====
+[2025-03-24T00:38:57.285Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:38:57.285Z] Generating "Main Menu Background" using stable-diffusion-v3-medium...
+[2025-03-24T00:38:57.285Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:57.285Z] Model: stable-diffusion-v3-medium, Prompt: "Fantasy castle on mountain, starry night"
+[2025-03-24T00:38:57.895Z] Error: Received status code 429
+[2025-03-24T00:38:57.896Z] API Error: {
+  "requestId": "0d345915-9afe-4e66-b8b1-cca1efe4cbf9",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:58.846Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:57.896Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:38:57.896Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:38:57.896Z] Generating "Main Menu Background" using stable-diffusion-v35-large...
+[2025-03-24T00:38:57.896Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:57.896Z] Model: stable-diffusion-v35-large, Prompt: "Fantasy castle on mountain, starry night"
+[2025-03-24T00:38:58.480Z] Error: Received status code 429
+[2025-03-24T00:38:58.481Z] API Error: {
+  "requestId": "63863018-59e6-4105-a2c4-67561ea3703f",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:59.439Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:58.481Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:38:58.481Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:58.481Z] Generating "Main Menu Background" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:38:58.481Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:38:58.481Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Fantasy castle on mountain, starry night"
+[2025-03-24T00:38:58.705Z] Error: Received status code 429
+[2025-03-24T00:38:58.706Z] API Error: {
+  "requestId": "ff963440-22c7-4707-bc31-fc600d94e581",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:38:59.661Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:38:58.706Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:38:58.706Z] ❌ Failed to generate Main Menu Background: All models failed for Main Menu Background. Last error: API request failed with status 429
+[2025-03-24T00:38:58.706Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:01.715Z] 
+===== Processing: Character Creation Background =====
+[2025-03-24T00:39:01.715Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:39:01.715Z] Generating "Character Creation Background" using stable-diffusion-v3-medium...
+[2025-03-24T00:39:01.715Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:01.715Z] Model: stable-diffusion-v3-medium, Prompt: "Mystical chamber with artifacts, glowing runes"
+[2025-03-24T00:39:02.309Z] Error: Received status code 429
+[2025-03-24T00:39:02.310Z] API Error: {
+  "requestId": "f33cb334-2081-42f1-a8e6-7c11c01edd43",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:03.262Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:02.310Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:39:02.310Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:39:02.310Z] Generating "Character Creation Background" using stable-diffusion-v35-large...
+[2025-03-24T00:39:02.310Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:02.310Z] Model: stable-diffusion-v35-large, Prompt: "Mystical chamber with artifacts, glowing runes"
+[2025-03-24T00:39:02.917Z] Error: Received status code 429
+[2025-03-24T00:39:02.917Z] API Error: {
+  "requestId": "0d81002c-436e-4592-a0ca-af829ac687ff",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:03.874Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:02.918Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:39:02.918Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:02.918Z] Generating "Character Creation Background" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:02.918Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:02.918Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Mystical chamber with artifacts, glowing runes"
+[2025-03-24T00:39:03.130Z] Error: Received status code 429
+[2025-03-24T00:39:03.131Z] API Error: {
+  "requestId": "baf80a78-b4be-4c73-8928-d721aa512f22",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:04.089Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:03.131Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:39:03.131Z] ❌ Failed to generate Character Creation Background: All models failed for Character Creation Background. Last error: API request failed with status 429
+[2025-03-24T00:39:03.131Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:06.132Z] 
+===== Processing: Mysterious Letter =====
+[2025-03-24T00:39:06.133Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:39:06.133Z] Generating "Mysterious Letter" using stable-diffusion-v3-medium...
+[2025-03-24T00:39:06.133Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:06.133Z] Model: stable-diffusion-v3-medium, Prompt: "Ancient parchment, fantasy symbols, old paper"
+[2025-03-24T00:39:06.723Z] Error: Received status code 429
+[2025-03-24T00:39:06.724Z] API Error: {
+  "requestId": "e31d77fa-7100-442e-906f-075a90c035c5",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:07.679Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:06.724Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:39:06.724Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:39:06.724Z] Generating "Mysterious Letter" using stable-diffusion-v35-large...
+[2025-03-24T00:39:06.724Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:06.724Z] Model: stable-diffusion-v35-large, Prompt: "Ancient parchment, fantasy symbols, old paper"
+[2025-03-24T00:39:06.940Z] Error: Received status code 429
+[2025-03-24T00:39:06.941Z] API Error: {
+  "requestId": "c7de7a3e-5cc3-40b4-8230-86974884426c",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:07.898Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:06.942Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:39:06.942Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:06.942Z] Generating "Mysterious Letter" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:06.943Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:06.943Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Ancient parchment, fantasy symbols, old paper"
+[2025-03-24T00:39:07.178Z] Error: Received status code 429
+[2025-03-24T00:39:07.179Z] API Error: {
+  "requestId": "9fd5719e-4cba-44b8-b3e4-c79b3cf3ff12",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:08.137Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:07.179Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:39:07.179Z] ❌ Failed to generate Mysterious Letter: All models failed for Mysterious Letter. Last error: API request failed with status 429
+[2025-03-24T00:39:07.179Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:10.194Z] 
+===== Processing: Forest Path (Ghost) =====
+[2025-03-24T00:39:10.195Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:39:10.195Z] Generating "Forest Path (Ghost)" using stable-diffusion-v3-medium...
+[2025-03-24T00:39:10.195Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:10.195Z] Model: stable-diffusion-v3-medium, Prompt: "Spooky forest path, ghostly apparition, misty"
+[2025-03-24T00:39:10.803Z] Error: Received status code 429
+[2025-03-24T00:39:10.803Z] API Error: {
+  "requestId": "e0e7cdb6-6bee-4790-8ed4-2247a0866982",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:11.760Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:10.804Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:39:10.804Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:39:10.804Z] Generating "Forest Path (Ghost)" using stable-diffusion-v35-large...
+[2025-03-24T00:39:10.804Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:10.804Z] Model: stable-diffusion-v35-large, Prompt: "Spooky forest path, ghostly apparition, misty"
+[2025-03-24T00:39:11.042Z] Error: Received status code 429
+[2025-03-24T00:39:11.042Z] API Error: {
+  "requestId": "ea1a1e08-906a-464e-8824-f40e099c368f",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:11.999Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:11.042Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:39:11.042Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:11.042Z] Generating "Forest Path (Ghost)" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:11.042Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:11.043Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Spooky forest path, ghostly apparition, misty"
+[2025-03-24T00:39:11.263Z] Error: Received status code 429
+[2025-03-24T00:39:11.264Z] API Error: {
+  "requestId": "5c436c2d-4d7b-4e64-895b-982bb8140ff0",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:12.223Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:11.264Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:39:11.264Z] ❌ Failed to generate Forest Path (Ghost): All models failed for Forest Path (Ghost). Last error: API request failed with status 429
+[2025-03-24T00:39:11.264Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:14.270Z] 
+===== Processing: Mountain Pass =====
+[2025-03-24T00:39:14.270Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:39:14.271Z] Generating "Mountain Pass" using stable-diffusion-v3-medium...
+[2025-03-24T00:39:14.271Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:14.271Z] Model: stable-diffusion-v3-medium, Prompt: "Mountain pass, rope bridge, fantasy scene"
+[2025-03-24T00:39:14.487Z] Error: Received status code 429
+[2025-03-24T00:39:14.488Z] API Error: {
+  "requestId": "0d977639-5c97-472a-9ed4-0a1f971b0f63",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:15.446Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:14.488Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:39:14.488Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:39:14.488Z] Generating "Mountain Pass" using stable-diffusion-v35-large...
+[2025-03-24T00:39:14.488Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:14.488Z] Model: stable-diffusion-v35-large, Prompt: "Mountain pass, rope bridge, fantasy scene"
+[2025-03-24T00:39:14.711Z] Error: Received status code 429
+[2025-03-24T00:39:14.712Z] API Error: {
+  "requestId": "d5ca62c8-9d48-42dd-b271-5da8abb70625",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:15.670Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:14.712Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:39:14.712Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:14.712Z] Generating "Mountain Pass" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:14.712Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:14.712Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Mountain pass, rope bridge, fantasy scene"
+[2025-03-24T00:39:14.931Z] Error: Received status code 429
+[2025-03-24T00:39:14.932Z] API Error: {
+  "requestId": "c8eb6179-3f99-4393-84cb-1d98a1a21247",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:15.890Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:14.932Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:39:14.932Z] ❌ Failed to generate Mountain Pass: All models failed for Mountain Pass. Last error: API request failed with status 429
+[2025-03-24T00:39:14.932Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:17.946Z] 
+===== Processing: Village Tavern =====
+[2025-03-24T00:39:17.946Z] Attempting generation with stable-diffusion-v3-medium...
+[2025-03-24T00:39:17.946Z] Generating "Village Tavern" using stable-diffusion-v3-medium...
+[2025-03-24T00:39:17.947Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:17.947Z] Model: stable-diffusion-v3-medium, Prompt: "Medieval tavern interior, cozy inn, fireplace"
+[2025-03-24T00:39:18.558Z] Error: Received status code 429
+[2025-03-24T00:39:18.558Z] API Error: {
+  "requestId": "7aa86faa-dda8-4fe5-8794-722408957572",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:19.516Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:18.559Z] Failed with stable-diffusion-v3-medium: API request failed with status 429
+[2025-03-24T00:39:18.559Z] Attempting generation with stable-diffusion-v35-large...
+[2025-03-24T00:39:18.559Z] Generating "Village Tavern" using stable-diffusion-v35-large...
+[2025-03-24T00:39:18.559Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:18.559Z] Model: stable-diffusion-v35-large, Prompt: "Medieval tavern interior, cozy inn, fireplace"
+[2025-03-24T00:39:18.777Z] Error: Received status code 429
+[2025-03-24T00:39:18.777Z] API Error: {
+  "requestId": "ce3f9c0f-1944-4a0f-b80a-02bc48922bc4",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:19.735Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:18.777Z] Failed with stable-diffusion-v35-large: API request failed with status 429
+[2025-03-24T00:39:18.777Z] Attempting generation with stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:18.778Z] Generating "Village Tavern" using stable-diffusion-xl-base-1.0...
+[2025-03-24T00:39:18.778Z] Making API request to: https://api.aimlapi.com/v1/images/generations
+[2025-03-24T00:39:18.778Z] Model: stable-diffusion-xl-base-1.0, Prompt: "Medieval tavern interior, cozy inn, fireplace"
+[2025-03-24T00:39:19.389Z] Error: Received status code 429
+[2025-03-24T00:39:19.389Z] API Error: {
+  "requestId": "66fbbddd-47ed-4408-86ed-2855d6b0912e",
+  "statusCode": 429,
+  "timestamp": "2025-03-24T00:39:20.347Z",
+  "path": "/v1/images/generations",
+  "message": "Free-tier limit: You've reached your free limit for the hour. Get AI/ML Subscription to use API, visit https://aimlapi.com/app/billing/ !"
+}
+[2025-03-24T00:39:19.389Z] Failed with stable-diffusion-xl-base-1.0: API request failed with status 429
+[2025-03-24T00:39:19.389Z] ❌ Failed to generate Village Tavern: All models failed for Village Tavern. Last error: API request failed with status 429
+[2025-03-24T00:39:19.389Z] Waiting 3 seconds before next request...
+[2025-03-24T00:39:22.390Z] 
+
+===== GENERATION SUMMARY =====

@@ -1,0 +1,5 @@
+Loading .env from: C:\gameX\rpg-game\.env
+.env file loaded successfully
+Environment variables: ["AIML_API_KEY","ELEVENLABS_API_KEY","FLUX_API_KEY","STABILITY_API_KEY"]
+AIML_API_KEY exists: true
+AIML_API_KEY value: ba404...
