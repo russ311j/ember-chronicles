@@ -18,45 +18,60 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Pre-check job to verify files exist and validate structure
   verify:
     runs-on: ubuntu-latest
     outputs:
-      files_exist: ${{ steps.check.outputs.files_exist }}
+      build_path: ${{ steps.check.outputs.build_path }}
     steps:
       - uses: actions/checkout@v4
       
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        working-directory: rpg-game
+        run: |
+          npm install
+          
+      - name: Build Project
+        working-directory: rpg-game
+        run: |
+          # Build the project - adjust this command based on your actual build script
+          npm run build || npm run deploy
+          
       - name: Debug directory structure
         run: |
-          echo "Current directory:"
-          pwd
-          echo "Directory contents:"
-          ls -la
-          echo "RPG game directory contents:"
-          ls -la rpg-game/
+          echo "Current directory structure:"
+          find . -type f -name "index.html"
           
-      - name: Check if files exist
+      - name: Locate index.html
         id: check
         shell: bash
         run: |
-          # First verify rpg-game directory exists
-          if [ ! -d "rpg-game" ]; then
-            echo "::error::Directory rpg-game not found!"
-            exit 1
-          fi
+          # Check multiple possible locations
+          possible_paths=(
+            "rpg-game/deploy-ember/index.html"
+            "rpg-game/deploy/index.html"
+            "rpg-game/dist/index.html"
+            "rpg-game/build/index.html"
+            "rpg-game/public/index.html"
+            "rpg-game/index.html"
+          )
           
-          # List contents to debug
+          for path in "${possible_paths[@]}"; do
+            if [ -f "$path" ]; then
+              echo "Found index.html at: $path"
+              echo "build_path=$(dirname $path)" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          done
+          
+          echo "::error::index.html not found in any expected location!"
           echo "Contents of rpg-game directory:"
-          ls -la rpg-game/
-          
-          # Check for index.html
-          if [ -f "rpg-game/index.html" ]; then
-            echo "Found index.html"
-            echo "files_exist=true" >> $GITHUB_OUTPUT
-          else
-            echo "::error::index.html not found at rpg-game/index.html"
-            exit 1
-          fi
+          ls -R rpg-game/
+          exit 1
 
   build:
     needs: verify
@@ -73,38 +88,22 @@ jobs:
         id: prepare
         run: |
           mkdir -p _site
-          cp -rv rpg-game/* _site/
+          BUILD_PATH="${{ needs.verify.outputs.build_path }}"
+          echo "Copying from $BUILD_PATH to _site"
+          cp -rv "$BUILD_PATH"/* _site/
+          
           echo "Contents of _site directory:"
           ls -la _site/
+          
           if [ ! -f "_site/index.html" ]; then
-            echo "::error::Failed to copy index.html to _site"
+            echo "::error::index.html not found in _site directory after copy"
             exit 1
           fi
           
       - name: Upload artifact
-        id: upload
         uses: actions/upload-pages-artifact@v3
-        continue-on-error: true
         with:
           path: '_site'
-          retention-days: 1
-          
-      - name: Retry upload on failure
-        if: steps.upload.outcome == 'failure'
-        run: |
-          echo "First upload attempt failed, waiting 10 seconds before retry..."
-          sleep 10
-          for i in {1..3}; do
-            echo "Retry attempt $i..."
-            if actions/upload-pages-artifact@v3 --path _site --retention-days 1; then
-              echo "Upload succeeded on retry $i"
-              exit 0
-            fi
-            echo "Retry $i failed, waiting 10 seconds..."
-            sleep 10
-          done
-          echo "::error::All upload retries failed"
-          exit 1
           
   deploy:
     environment:
@@ -119,22 +118,8 @@ jobs:
         timeout-minutes: 10
         
       - name: Verify deployment
-        if: always()
         run: |
           if [ "${{ steps.deployment.outcome }}" != "success" ]; then
-            echo "::error::Deployment failed! Checking status..."
-            
-            # Check deployment status
-            if curl -s -o /dev/null -w "%{http_code}" ${{ steps.deployment.outputs.page_url }} | grep -q "200"; then
-              echo "Site is accessible despite deployment status!"
-            else
-              echo "::error::Site is not accessible. Deployment failed!"
-              exit 1
-            fi
-          fi
-          
-      - name: Cleanup
-        if: always()
-        run: |
-          echo "Cleaning up temporary files..."
-          rm -rf ./.github/tmp || true 
+            echo "::error::Deployment failed!"
+            exit 1
+          fi 
