@@ -18,21 +18,56 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Pre-check job to verify files exist
+  verify:
+    runs-on: ubuntu-latest
+    outputs:
+      files_exist: ${{ steps.check.outputs.files_exist }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check if files exist
+        id: check
+        shell: bash
+        run: |
+          if [ -d "./rpg-game" ]; then
+            echo "files_exist=true" >> $GITHUB_OUTPUT
+          else
+            echo "Directory ./rpg-game not found!"
+            exit 1
+          fi
+
   build:
+    needs: verify
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
       
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
         
+      - name: Verify directory contents
+        run: |
+          ls -la ./rpg-game
+          echo "Verifying directory structure..."
+          
       - name: Upload artifact
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
           path: './rpg-game'
           retention-days: 1
+        
+      - name: Verify artifact upload
+        if: always()
+        run: |
+          if [ "${{ steps.upload.outcome }}" != "success" ]; then
+            echo "Artifact upload failed! Retrying..."
+            exit 1
+          fi
 
   deploy:
     environment:
@@ -47,4 +82,12 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
+        
+      - name: Verify deployment
+        if: always()
+        run: |
+          if [ "${{ steps.deployment.outcome }}" != "success" ]; then
+            echo "Deployment failed! Check permissions and environment protection rules."
+            exit 1
+          fi 
