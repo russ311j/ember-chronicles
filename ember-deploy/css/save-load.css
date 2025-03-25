@@ -1,0 +1,150 @@
+/* Save/Load UI Styles */
+
+.save-load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.save-slot {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2a2a2a;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-slot:hover {
+    border-color: #666;
+    transform: translateY(-2px);
+}
+
+.slot-content {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slot-preview {
+    flex: 1;
+    color: #fff;
+}
+
+.slot-character {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.slot-level {
+    color: #4CAF50;
+    margin-bottom: 0.25rem;
+}
+
+.slot-location {
+    color: #2196F3;
+    margin-bottom: 0.25rem;
+}
+
+.slot-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.empty-slot {
+    color: #666;
+    font-style: italic;
+}
+
+.slot-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.slot-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slot-actions button:hover {
+    background-color: #555;
+}
+
+.slot-actions .delete-button {
+    background-color: #d32f2f;
+}
+
+.slot-actions .delete-button:hover {
+    background-color: #f44336;
+}
+
+.mode-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.mode-buttons button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-buttons button:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+}
+
+.mode-buttons button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .save-load-container {
+        padding: 1rem;
+    }
+
+    .slot-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slot-actions {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .mode-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 

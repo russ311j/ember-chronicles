@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="768" viewBox="0 0 1024 768" fill="none">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#2a234a"/>
+  
+  <!-- Text -->
+  <text x="512" y="384" font-family="Arial" font-size="48" fill="#ffffff" text-anchor="middle">
+    Placeholder Image
+  </text>
+  <text x="512" y="454" font-family="Arial" font-size="24" fill="#aaaaaa" text-anchor="middle">
+    The Ember Throne Chronicles
+  </text>
+  
+  <!-- Progress bar -->
+  <rect x="70" y="170" width="260" height="20" fill="#555" />
+  <rect x="70" y="170" width="100" height="20" fill="#6d4c41" />
+  <text x="200" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Loading: 40%</text>
+</svg> 

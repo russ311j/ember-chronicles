@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novel Style Test</title>
+  <link rel="stylesheet" href="css/novel-style.css">
+  <script src="js/novel-style-engine.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .test-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .test-button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .test-results {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <h1>Novel Style Test</h1>
+    
+    <button id="toggle-novel-style" class="test-button">Toggle Novel Style</button>
+    <button id="initialize-engine" class="test-button">Initialize Novel Style Engine</button>
+    
+    <div class="test-results" id="results">
+      <p>Test results will appear here.</p>
+    </div>
+    
+    <div id="sample-content">
+      <h2>Sample Content</h2>
+      <p>This is some sample content to test the novel style.</p>
+      <p>The novel style should add paper texture, decorative corners, and change the typography.</p>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const resultsDiv = document.getElementById('results');
+      
+      function log(message) {
+        const logEntry = document.createElement('div');
+        logEntry.textContent = message;
+        resultsDiv.appendChild(logEntry);
+      }
+      
+      // Check if GameX namespace exists
+      if (!window.GameX) {
+        window.GameX = {};
+        log('Created GameX namespace');
+      }
+      
+      // Check if NovelStyleEngine exists
+      if (typeof GameX.NovelStyleEngine === 'undefined') {
+        log('ERROR: NovelStyleEngine is not defined. Script may not be loaded correctly.');
+      } else {
+        log('NovelStyleEngine is available');
+      }
+      
+      // Toggle button
+      document.getElementById('toggle-novel-style').addEventListener('click', function() {
+        document.body.classList.toggle('novel-style');
+        
+        if (document.body.classList.contains('novel-style')) {
+          log('Novel style applied via classList');
+          this.textContent = 'Remove Novel Style';
+        } else {
+          log('Novel style removed via classList');
+          this.textContent = 'Apply Novel Style';
+        }
+      });
+      
+      // Initialize button
+      document.getElementById('initialize-engine').addEventListener('click', function() {
+        if (typeof GameX.NovelStyleEngine !== 'undefined') {
+          try {
+            const result = GameX.NovelStyleEngine.init({
+              defaultStyle: 'fantasy book illustration',
+              cacheImages: true
+            });
+            
+            log('NovelStyleEngine initialization result: ' + result);
+            log('Is novel-style class on body: ' + document.body.classList.contains('novel-style'));
+            
+            // Create check for DOM elements
+            const uiContainer = document.getElementById('novel-ui-container');
+            if (uiContainer) {
+              log('UI container created: ' + uiContainer.id);
+            } else {
+              log('ERROR: UI container not created');
+            }
+          } catch (error) {
+            log('ERROR initializing NovelStyleEngine: ' + error.message);
+          }
+        } else {
+          log('ERROR: Cannot initialize - NovelStyleEngine is not defined');
+        }
+      });
+      
+      // Run initial checks
+      log('Body has novel-style class: ' + document.body.classList.contains('novel-style'));
+      log('Window MCP available: ' + (typeof window.MCP !== 'undefined'));
+      log('Window MCPClient available: ' + (typeof window.MCPClient !== 'undefined'));
+      
+      // Check for required assets
+      const img = new Image();
+      img.onload = function() {
+        log('Paper texture loaded successfully');
+      };
+      img.onerror = function() {
+        log('ERROR: Failed to load paper texture');
+      };
+      img.src = 'media/images/paper_texture.svg';
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,33 @@
+{
+  "name": "gamex",
+  "version": "1.0.0",
+  "description": "GameX RPG project",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server rpg-game -p 8080",
+    "generate": "node scripts/generate-asset.js",
+    "generate:direct": "node scripts/generate-asset-direct.js",
+    "generate:game-assets": "node scripts/generate-game-assets.js",
+    "generate:ember-assets": "node scripts/ember-throne-assets-generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rpg",
+    "game"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fal-ai/client": "^1.3.0",
+    "@google/generative-ai": "^0.24.0",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs-extra": "^11.3.0",
+    "http-server": "^14.1.1",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.32.6",
+    "stability-client": "^1.9.0"
+  }
+}

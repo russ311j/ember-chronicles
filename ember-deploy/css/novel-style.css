@@ -1,0 +1,404 @@
+/**
+ * Novel Style CSS
+ * Styles for rendering the game as an interactive novel
+ */
+
+/* Novel UI Container */
+#novel-ui-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* Debug indicator for novel-style */
+body.novel-style::before {
+  content: "NOVEL STYLE ACTIVE";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Background textures */
+body.novel-style {
+  background-color: #f5f2e9 !important;
+  background-image: url('../media/images/paper_texture.svg');
+  background-repeat: repeat;
+}
+
+/* Main container styling for novel mode */
+body.novel-style #game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fffcf5;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1500px;
+}
+
+/* Book binding effect */
+.novel-binding {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(to right, 
+    #8b4513 0%, 
+    #a05a2c 5%, 
+    #8b4513 10%, 
+    #a05a2c 15%, 
+    #8b4513 20%, 
+    #a05a2c 25%, 
+    #8b4513 30%,
+    #9a6948 100%
+  );
+  box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.5), 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  border-radius: 3px 0 0 3px;
+  pointer-events: none;
+}
+
+body.novel-style .dual-pane-layout {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0 8px 8px 0;
+  margin-left: 25px;
+  background-color: #fffcf5;
+  transform-origin: left center;
+  transition: transform 0.3s ease-out;
+}
+
+/* Page corner decorations */
+.novel-corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  z-index: 11;
+}
+
+.top-left-corner {
+  top: 10px;
+  left: 45px;
+  border-top: 3px double #8b4513;
+  border-left: 3px double #8b4513;
+  border-radius: 5px 0 0 0;
+}
+
+.top-right-corner {
+  top: 10px;
+  right: 10px;
+  border-top: 3px double #8b4513;
+  border-right: 3px double #8b4513;
+  border-radius: 0 5px 0 0;
+}
+
+.bottom-left-corner {
+  bottom: 10px;
+  left: 45px;
+  border-bottom: 3px double #8b4513;
+  border-left: 3px double #8b4513;
+  border-radius: 0 0 0 5px;
+}
+
+.bottom-right-corner {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 3px double #8b4513;
+  border-right: 3px double #8b4513;
+  border-radius: 0 0 5px 0;
+}
+
+/* Page number styling */
+.novel-page-number {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #6d4c41;
+  text-align: center;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.novel-page-number span {
+  background-color: #fffcf5;
+  padding: 3px 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chapter title styling */
+.novel-chapter-title {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16px;
+  color: #6d4c41;
+  text-align: center;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.novel-chapter-title span {
+  background-color: #fffcf5;
+  padding: 3px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Illustration pane styling in novel mode */
+body.novel-style #illustration-pane {
+  border: 2px solid #8b4513;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 15px;
+  background-color: #f8f4e9;
+}
+
+body.novel-style #scene-image {
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Story pane styling in novel mode */
+body.novel-style #story-pane {
+  font-family: 'Lora', serif;
+}
+
+body.novel-style #passage-title {
+  font-family: 'MedievalSharp', cursive;
+  color: #5d4037;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d7ccc8;
+}
+
+body.novel-style #passage-text {
+  line-height: 1.8;
+  text-align: justify;
+  color: #3e2723;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body.novel-style #passage-text p {
+  text-indent: 2em;
+  margin-bottom: 1em;
+}
+
+body.novel-style #passage-text em {
+  font-style: italic;
+  color: #5d4037;
+}
+
+/* Choice buttons styling in novel mode */
+body.novel-style .choice-button {
+  font-family: 'Lora', serif;
+  background-color: #f5f2e9;
+  border: 1px solid #bcaaa4;
+  border-radius: 4px;
+  color: #5d4037;
+  padding: 10px 15px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+body.novel-style .choice-button:hover {
+  background-color: #d7ccc8;
+  border-color: #a1887f;
+}
+
+body.novel-style .roll-indicator {
+  font-style: italic;
+  color: #8d6e63;
+  font-size: 0.9em;
+}
+
+/* Game UI styling in novel mode */
+body.novel-style #game-ui {
+  border-top: 1px solid #d7ccc8;
+  padding-top: 10px;
+}
+
+body.novel-style .stat-bar {
+  background-color: #efebe9;
+  border: 1px solid #d7ccc8;
+}
+
+body.novel-style .health-bar .stat-value {
+  background-color: #d32f2f;
+}
+
+body.novel-style .mana-bar .stat-value {
+  background-color: #1976d2;
+}
+
+body.novel-style .control-button {
+  font-family: 'Lora', serif;
+  background-color: #8d6e63;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+body.novel-style .control-button:hover {
+  background-color: #6d4c41;
+}
+
+/* Panels styling in novel mode */
+body.novel-style .game-panel {
+  font-family: 'Lora', serif;
+  background-color: #efebe9;
+  border: 2px solid #8b4513;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.novel-style .panel-header {
+  background-color: #8d6e63;
+}
+
+body.novel-style .panel-header h2 {
+  font-family: 'MedievalSharp', cursive;
+  color: #efebe9;
+}
+
+body.novel-style .close-panel {
+  color: #efebe9;
+}
+
+body.novel-style .menu-button {
+  font-family: 'Lora', serif;
+  background-color: #8d6e63;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+body.novel-style .menu-button:hover {
+  background-color: #6d4c41;
+}
+
+/* Dice roll styling in novel mode */
+body.novel-style #dice-roll-container {
+  font-family: 'Lora', serif;
+  background-color: rgba(121, 85, 72, 0.9);
+  border: 3px solid #5d4037;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+body.novel-style #dice {
+  border-color: #efebe9;
+}
+
+body.novel-style #dice-value {
+  color: #efebe9;
+  font-family: 'MedievalSharp', cursive;
+}
+
+body.novel-style #roll-outcome {
+  color: #efebe9;
+  font-weight: bold;
+}
+
+/* Combat UI styling in novel mode */
+body.novel-style #combat-ui {
+  font-family: 'Lora', serif;
+  background-color: rgba(121, 85, 72, 0.9);
+  border: 3px solid #5d4037;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+body.novel-style #combat-log {
+  background-color: #efebe9;
+  border: 1px solid #d7ccc8;
+  color: #3e2723;
+}
+
+body.novel-style .combat-btn {
+  background-color: #8d6e63;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+body.novel-style .combat-btn:hover {
+  background-color: #6d4c41;
+}
+
+/* Loading indicator */
+#novel-ui-container.loading:after {
+  content: 'Illuminating the manuscript...';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(121, 85, 72, 0.9);
+  color: #efebe9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'MedievalSharp', cursive;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body.novel-style .dual-pane-layout {
+    flex-direction: column;
+  }
+  
+  body.novel-style #illustration-pane {
+    max-height: 40vh;
+  }
+  
+  .novel-binding {
+    width: 20px;
+  }
+  
+  body.novel-style .dual-pane-layout {
+    margin-left: 18px;
+  }
+  
+  .novel-corner {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .top-left-corner {
+    left: 35px;
+  }
+  
+  .bottom-left-corner {
+    left: 35px;
+  }
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap'); 

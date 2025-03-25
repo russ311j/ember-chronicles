@@ -1,0 +1,7 @@
+C:\gameX\scripts\gemini-image-test.js:const { GoogleGenerativeAI } = require('@google/generative-ai');
+C:\gameX\scripts\gemini-test.js:const { GoogleGenerativeAI } = require('@google/generative-ai');
+C:\gameX\scripts\generate-flux-asset.js:const { fal } = require('@fal-ai/client');
+C:\gameX\scripts\generate-gemini-asset.js:const { GoogleGenerativeAI } = require('@google/generative-ai');
+C:\gameX\scripts\generate-prompt.js:const { GoogleGenerativeAI } = require('@google/generative-ai');
+C:\gameX\scripts\generate-smart-asset.js:const { GoogleGenerativeAI } = require('@google/generative-ai');
+C:\gameX\scripts\list-models.js:const { GoogleGenerativeAI } = require('@google/generative-ai');

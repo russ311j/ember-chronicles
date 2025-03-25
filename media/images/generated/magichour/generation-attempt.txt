@@ -1,0 +1,10 @@
+
+Generation attempted at: 2025-03-24T04:06:10.209Z
+Image: Title Page - The Ember Throne Chronicles
+Prompt: Epic fantasy game title page, "The Ember Throne Chronicles", ornate magical throne with burning embers, phoenix and serpent symbols, fantasy RPG game art, professional quality, book cover style
+API Key: mhk_...PZp7
+
+GENERATION SUCCESSFUL!
+Generated at: 2025-03-24T04:06:10.513Z
+Image saved to: C:\gameX\media\images\generated\magichour\title_page.png
+Copied to: C:\gameX\media\images\generated\title_page.png

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ember Throne Chronicles</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <script src="js/gamex-utils.js"></script>
+  <script src="js/gemini-integration.js"></script>
+  <script src="js/gemini-image-generator.js"></script>
+  <script src="js/asset-generator.js"></script>
+  <script src="js/fix-missing-assets.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1a1a;
+      background-image: url('media/images/placeholder/placeholder.svg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      font-family: 'MedievalSharp', cursive, serif;
+      overflow: hidden;
+      visibility: hidden; /* Hide until fonts are loaded */
+    }
+
+    .title-container {
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+    }
+
+    .game-title {
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 0 0 10px #ff6b6b;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .subtitle {
+      font-size: 1.5em;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in 2s forwards;
+    }
+
+    .press-enter {
+      font-size: 1.2em;
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in 3s forwards, pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff6b6b; }
+      to { text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b; }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .fade-out {
+      animation: fadeOut 1s ease-out forwards;
+    }
+
+    /* Loading indicator */
+    #asset-generation-status {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      max-width: 80%;
+      z-index: 1000;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-container">
+    <h1 class="game-title">The Ember Throne Chronicles</h1>
+    <p class="subtitle">A Tale of Adventure and Destiny</p>
+    <p class="press-enter">Press Enter to Begin</p>
+  </div>
+
+  <div id="asset-generation-status">
+    Generating missing assets... <span id="generation-progress">0%</span>
+  </div>
+
+  <script>
+    // Ensure fonts are loaded before showing content
+    document.fonts.ready.then(() => {
+      document.body.style.visibility = 'visible';
+    });
+
+    // Check if assets are being generated and show status
+    let assetGenerationInterval;
+    
+    function checkAssetGenerationStatus() {
+      if (window.GameX && window.GameX.AssetGenerator) {
+        const statusElement = document.getElementById('asset-generation-status');
+        const progressElement = document.getElementById('generation-progress');
+        
+        if (GameX.AssetGenerator.isGenerating) {
+          statusElement.style.display = 'block';
+          const total = GameX.AssetGenerator.generationQueue ? 
+            GameX.AssetGenerator.generationQueue.length + 1 : 1;
+          const completed = GameX.AssetGenerator.generationQueue ? 
+            total - GameX.AssetGenerator.generationQueue.length : 0;
+          const percent = Math.round((completed / total) * 100);
+          progressElement.textContent = `${percent}%`;
+        } else {
+          statusElement.style.display = 'none';
+          clearInterval(assetGenerationInterval);
+        }
+      }
+    }
+    
+    // Start checking status
+    assetGenerationInterval = setInterval(checkAssetGenerationStatus, 1000);
+
+    function proceedToMenu() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1000);
+    }
+
+    // Handle Enter key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        proceedToMenu();
+      }
+    });
+
+    // Handle click anywhere
+    document.addEventListener('click', proceedToMenu);
+
+    // Log any errors
+    window.onerror = function(msg, url, lineNo, columnNo, error) {
+      console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+      return false;
+    };
+
+    // Initialize GameX utils if available
+    if (window.GameX && window.GameX.Utils) {
+      window.GameX.Utils.initImageErrorHandling();
+    }
+  </script>
+</body>
+</html> 

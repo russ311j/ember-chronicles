@@ -1,0 +1,58 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#553c9a"/>
+  
+  <!-- Character silhouette -->
+  <g transform="translate(50, 30)">
+    <!-- Head with wizard hat -->
+    <path d="M100,50 C130,50 130,90 100,90 C70,90 70,50 100,50 Z" fill="#4a5568"/>
+    <path d="M70,55 L100,15 L130,55 L115,65 L100,45 L85,65 Z" fill="#6b46c1"/>
+    <circle cx="105" cy="30" r="3" fill="#d6bcfa"/>
+    
+    <!-- Robe body -->
+    <path d="M85,90 L115,90 L125,120 L130,180 L135,300 L65,300 L70,180 L75,120 Z" fill="#6b46c1"/>
+    
+    <!-- Arms -->
+    <path d="M75,100 L60,115 L55,145 L65,155 L75,140 Z" fill="#6b46c1"/>
+    <path d="M125,100 L140,115 L145,145 L135,155 L125,140 Z" fill="#6b46c1"/>
+    
+    <!-- Robe details -->
+    <path d="M85,90 L115,90 L115,180 L85,180 Z" fill="#805ad5"/>
+    <path d="M70,180 L130,180 L135,300 L65,300 Z" fill="#805ad5"/>
+    
+    <!-- Magic staff -->
+    <rect x="140" y="115" width="5" height="180" fill="#a0aec0"/>
+    <circle cx="142.5" cy="115" r="10" fill="#d6bcfa"/>
+    <path d="M142.5,115 L150,100 M142.5,115 L135,100 M142.5,115 L155,115 M142.5,115 L130,115" stroke="#d6bcfa" stroke-width="2"/>
+    
+    <!-- Magic effect -->
+    <circle cx="142.5" cy="115" r="15" fill="none" stroke="#d6bcfa" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" values="15;20;15" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="142.5" cy="115" r="25" fill="none" stroke="#d6bcfa" stroke-width="1" opacity="0.4">
+      <animate attributeName="r" values="25;30;25" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Magical particles -->
+  <g fill="#d6bcfa">
+    <circle cx="80" cy="100" r="2" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="160" r="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="200" r="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="120" r="1.5" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Class label -->
+  <rect x="75" y="340" width="150" height="40" rx="5" fill="rgba(0,0,0,0.5)"/>
+  <text x="150" y="365" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">Mage</text>
+</svg> 

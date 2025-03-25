@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background parchment texture -->
+  <rect width="800" height="600" fill="#f9efd4"/>
+  
+  <!-- Parchment texture overlay -->
+  <filter id="paper-texture" x="0%" y="0%" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" stitchTiles="stitch" result="noise"/>
+    <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.3 0" in="noise" result="dust"/>
+  </filter>
+  <rect width="800" height="600" filter="url(#paper-texture)" opacity="0.3"/>
+  
+  <!-- Slightly aged edges -->
+  <rect width="800" height="600" fill="none" stroke="#d2b48c" stroke-width="15" opacity="0.5"/>
+  <rect x="15" y="15" width="770" height="570" fill="none" stroke="#8b4513" stroke-width="1" stroke-dasharray="3,2" opacity="0.3"/>
+  
+  <!-- The letter with warm lighting from window -->
+  <defs>
+    <radialGradient id="windowLight" cx="0.7" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#fff6e5" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f9efd4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#windowLight)" opacity="0.8"/>
+  
+  <!-- Letter content with elegant script -->
+  <g font-family="'Lora', serif" letter-spacing="1">
+    <text x="400" y="120" font-size="28" fill="#5d4037" text-anchor="middle" font-weight="bold">From the Desk of Archmagus Valorian</text>
+    
+    <g font-size="18" fill="#3e2723">
+      <text x="220" y="180">My dear apprentice,</text>
+      
+      <text x="220" y="230">The day I feared has finally arrived. The Ember Throne stirs once more,</text>
+      <text x="220" y="260">awakening powers that should have remained dormant for an age.</text>
+      <text x="220" y="290">You must come at once to the Citadel of Whispers.</text>
+      
+      <text x="220" y="340">Bring only what you need for the journey. Trust no one.</text>
+      <text x="220" y="370">The fate of the realm hangs in the balance.</text>
+      
+      <text x="220" y="430">Make haste,</text>
+      <text x="220" y="470">Valorian</text>
+    </g>
+  </g>
+  
+  <!-- Wax seal with emblem -->
+  <circle cx="310" cy="500" r="40" fill="#9c2717"/>
+  <circle cx="310" cy="500" r="38" fill="#cc3311"/>
+  <path d="M310,470 L320,490 L340,495 L325,515 L330,535 L310,525 L290,535 L295,515 L280,495 L300,490 Z" fill="#9c2717"/>
+  
+  <!-- Elegant border elements -->
+  <g stroke="#8b4513" stroke-width="1.5" fill="none" opacity="0.7">
+    <!-- Top left corner flourish -->
+    <path d="M100,80 C120,60 150,70 160,90 C170,70 190,60 210,80" />
+    <path d="M100,100 C130,80 160,90 170,110" />
+    
+    <!-- Bottom right corner flourish -->
+    <path d="M600,500 C620,480 650,490 660,510 C670,490 690,480 710,500" />
+    <path d="M600,520 C630,500 660,510 670,530" />
+  </g>
+  
+  <!-- Window light filtering onto desk -->
+  <polygon points="650,150 750,100 750,300 680,320" fill="#fffbf0" opacity="0.2"/>
+  
+  <!-- Ink bottle and quill suggestion -->
+  <ellipse cx="550" cy="520" rx="20" ry="10" fill="#1a1110"/>
+  <path d="M545,515 C540,490 535,480 530,470 C545,480 555,490 560,510" stroke="#5d4037" stroke-width="2" fill="none"/>
+  <path d="M532,473 C535,475 540,476 542,474" stroke="#5d4037" stroke-width="1" fill="none"/>
+</svg> 

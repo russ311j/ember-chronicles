@@ -1,0 +1,8 @@
+<!-- This is just a placeholder text file. In a real project, this would be a JPG image file. -->
+<!-- To implement this project fully, you would need to create or obtain an actual JPG image for this scene. -->
+<!-- Recommended image: A weathered traveler leading the way through a narrow path between hills, looking suspiciously over his shoulder -->
+<!-- Dimensions: 800x450px -->
+<!-- Color scheme: Twilight colors with long shadows -->
+
+<!-- This file is referenced in story-system.js -->
+<!-- In a real implementation, replace this placeholder with an actual JPG file named shady_guide.jpg --> 

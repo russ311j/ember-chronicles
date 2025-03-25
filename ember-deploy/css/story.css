@@ -1,0 +1,444 @@
+/**
+ * Story System Styles for GameX RPG - Ember Throne Chronicles
+ * Novel-like paperback styling
+ */
+
+/* Story Container */
+.story-container {
+  padding: 30px;
+  max-width: 100%;
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: #333;
+  background-color: #f5f0e8; /* Paper-like color */
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Novel paperback layout */
+.dual-pane {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a3c;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Left side - Illustration */
+.illustration-pane {
+  width: 40%;
+  height: 100%;
+  background-color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-right: 2px solid #4a4a6a;
+}
+
+/* Character stats below illustration */
+.character-stats {
+  background-color: #2a2a3c;
+  color: #f0f0f0;
+  padding: 15px;
+  border-top: 1px solid #4a4a6a;
+  border-right: 2px solid #4a4a6a;
+}
+
+/* Right side - Narrative */
+.narrative-pane {
+  width: 60%;
+  height: 100%;
+  background-color: #f5f0e8; /* Paper-like color */
+  padding: 0;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Story Page */
+.story-page {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%;
+}
+
+/* Story Title */
+.story-title {
+  font-family: 'MedievalSharp', cursive;
+  color: #8B4513;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid #d3c5a6;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Content */
+.story-content {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.story-narrative {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Letter styling */
+.letter-content {
+  font-style: italic;
+  background-color: #f0e8d5;
+  border: 1px solid #d3c5a6;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Choice buttons like page turns */
+.story-choices {
+  margin-top: 40px;
+  border-top: 1px solid #d3c5a6;
+  padding-top: 20px;
+}
+
+.story-choices h3 {
+  color: #8B4513;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-button {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: #e8dec7;
+  border: 1px solid #d3c5a6;
+  border-radius: 0;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #6b4226;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.choice-button:hover {
+  background-color: #d6c8b0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Character stats styling */
+.stat-header {
+  margin-bottom: 15px;
+}
+
+.stat-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+.stat-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-bar label {
+  width: 40px;
+  font-size: 14px;
+}
+
+.bar-bg {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.health .bar-fill {
+  background-color: #e53935;
+}
+
+.mana .bar-fill {
+  background-color: #3f51b5;
+}
+
+.stat-bar span {
+  font-size: 12px;
+  min-width: 60px;
+  text-align: right;
+}
+
+.stat-rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.stat-item .label {
+  color: #bbb;
+}
+
+.stat-item .value {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* UI Elements */
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  padding: 10px 15px;
+  background-color: rgba(42, 42, 60, 0.8);
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.home-button:hover {
+  background-color: rgba(74, 74, 106, 0.9);
+}
+
+.game-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 10px 15px;
+  background-color: rgba(42, 42, 60, 0.8);
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-menu-button:hover {
+  background-color: rgba(74, 74, 106, 0.9);
+}
+
+.inventory-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 10px 15px;
+  background-color: rgba(42, 42, 60, 0.8);
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inventory-toggle:hover {
+  background-color: rgba(74, 74, 106, 0.9);
+}
+
+.inventory-panel {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(26, 26, 46, 0.95);
+  transition: right 0.3s ease;
+  z-index: 110;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inventory-panel.open {
+  right: 0;
+}
+
+.inventory-panel h2 {
+  color: #ffd700;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4a4a6a;
+}
+
+.inventory-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inventory-item {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.inventory-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Game Menu */
+.game-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.game-menu.open {
+  display: flex;
+}
+
+.game-menu-content {
+  background-color: #2a2a3c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.game-menu-content h2 {
+  color: #ffd700;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.menu-option {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #3a3a5a;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-option:hover {
+  background-color: #4a4a7a;
+}
+
+/* Dice Roll Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+  .dual-pane {
+    flex-direction: column;
+  }
+
+  .illustration-pane, .narrative-pane {
+    width: 100%;
+    height: 50%;
+  }
+
+  .illustration-pane {
+    flex-direction: row;
+  }
+
+  .illustration {
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid #4a4a6a;
+    border-bottom: 2px solid #4a4a6a;
+  }
+
+  .character-stats {
+    width: 40%;
+    height: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid #4a4a6a;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-narrative {
+    font-size: 16px;
+  }
+
+  .story-title {
+    font-size: 24px;
+  }
+
+  .choice-button {
+    padding: 12px 15px;
+  }
+
+  .illustration-pane {
+    flex-direction: column;
+  }
+
+  .illustration, .character-stats {
+    width: 100%;
+    height: 50%;
+  }
+} 

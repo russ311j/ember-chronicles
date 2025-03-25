@@ -1,0 +1,417 @@
+/**
+ * Ember Throne Chronicles CSS
+ * Styling for the interactive gamebook narrative
+ */
+
+/* Base styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a2e;
+  font-family: 'Lora', serif;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+
+/* Loading screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #12121f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+#loading-content {
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+#loading-content h1 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#loading-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #2d2d4a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#loading-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #42304a, #ffd700);
+  width: 0%;
+  transition: width 0.2s ease;
+}
+
+#loading-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Game Container */
+#game-container {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* Screen styles */
+.screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Title Screen */
+#title-screen {
+  background-image: url('../media/images/generated/magichour/title_page.png');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-content {
+  background-color: rgba(18, 18, 31, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  min-height: 60vh;
+}
+
+.game-title {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3.5rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.game-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+.title-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+}
+
+/* Menu buttons */
+.menu-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80%;
+  max-width: 300px;
+  display: block;
+}
+
+.menu-button:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.menu-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Story Screen */
+#story-screen {
+  flex-direction: column;
+}
+
+#story {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Game Controls */
+#game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #12121f;
+  border-top: 2px solid #42304a;
+}
+
+.control-button {
+  background-color: #2d2d4a;
+  color: #e0e0e0;
+  border: 1px solid #42304a;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-button:hover {
+  background-color: #42304a;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #1a1a2e;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+/* Save confirmation popup */
+.save-confirmation {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #42304a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  font-family: 'Lora', serif;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Main page container */
+.ember-throne-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a2e;
+  font-family: 'Lora', serif;
+  color: #e0e0e0;
+}
+
+/* Illustration container - left side */
+.illustration-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+}
+
+.illustration-container img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Content container - right side */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #12121f;
+  overflow-y: auto;
+  border-left: 2px solid #42304a;
+  position: relative;
+}
+
+/* Add decorative book corner */
+.content-container::before,
+.content-container::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #42304a;
+}
+
+.content-container::before {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 20px;
+}
+
+.content-container::after {
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 20px;
+}
+
+/* Page title */
+.page-title {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Narrative text */
+.narrative-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+/* First letter styling - drop cap */
+.narrative-text::first-letter {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3.5rem;
+  float: left;
+  line-height: 1;
+  margin-right: 10px;
+  color: #ffd700;
+}
+
+/* Choices container */
+.choices-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+  border-top: 1px solid #42304a;
+}
+
+/* Choice buttons */
+.choice-button {
+  background-color: #2d2d4a;
+  color: #e0e0e0;
+  border: 1px solid #42304a;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.choice-button:hover {
+  background-color: #42304a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.choice-button:active {
+  transform: translateY(1px);
+}
+
+/* Page number indicator */
+.content-container::before {
+  content: attr(data-page);
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1rem;
+  color: #ffd700;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .ember-throne-page {
+    flex-direction: column;
+  }
+  
+  .illustration-container {
+    height: 40vh;
+  }
+  
+  .illustration-container img {
+    max-height: 35vh;
+  }
+  
+  .content-container {
+    border-left: none;
+    border-top: 2px solid #42304a;
+  }
+  
+  .game-title {
+    font-size: 2.5rem;
+  }
+  
+  .game-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ember-throne-page {
+  animation: fadeIn 0.5s ease;
+} 

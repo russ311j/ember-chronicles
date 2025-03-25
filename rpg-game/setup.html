@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameX Setup</title>
+  <style>
+    body {
+      font-family: 'Bookerly', 'Georgia', serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      color: #634d36;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 24px;
+      color: #8b694c;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      color: #634d36;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    code {
+      background-color: #f1ece5;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: Consolas, Monaco, 'Andale Mono', monospace;
+      font-size: 14px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #634d36;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+    
+    .button:hover {
+      background-color: #8b694c;
+    }
+    
+    .warning {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .file-list {
+      background-color: #f1ece5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .file-list code {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GameX Setup</h1>
+    
+    <p>Welcome to GameX, an interactive story adventure. This guide will help you get started with the project, whether you're playing or extending the game.</p>
+    
+    <h2>Quick Start</h2>
+    
+    <ol>
+      <li>
+        <h3>Open the Game</h3>
+        <p>Simply click the "Play Now" button on the home page or navigate directly to <a href="game.html">game.html</a> to start playing the game.</p>
+      </li>
+      
+      <li>
+        <h3>Browser Requirements</h3>
+        <p>GameX works best with modern browsers like Chrome, Firefox, Edge, or Safari. JavaScript must be enabled.</p>
+      </li>
+      
+      <li>
+        <h3>Game Controls</h3>
+        <p>Navigate through the story by clicking on the choice links at the bottom of the screen. Use the inventory button to access your items.</p>
+      </li>
+    </ol>
+    
+    <h2>Project Resources</h2>
+    
+    <div class="file-list">
+      <code>game.html</code> - Main game file to launch the interactive story
+      <code>css/custom.css</code> - Custom styling for the dual-pane layout
+      <code>js/dice-roller.js</code> - Dice mechanics implementation
+      <code>js/inventory-system.js</code> - Inventory management system
+      <code>js/combat-system.js</code> - Turn-based combat mechanics
+      <code>js/sound-manager.js</code> - Audio playback system
+      <code>js/gamex-utils.js</code> - Utility functions
+      <code>js/gamex-core.js</code> - Core game engine
+      <code>media/</code> - Directory containing game assets (images, audio)
+    </div>
+    
+    <h2>Game Features</h2>
+    
+    <ul>
+      <li><strong>Character Creation</strong> - Create and customize your protagonist</li>
+      <li><strong>Inventory System</strong> - Collect, use, and manage items throughout your adventure</li>
+      <li><strong>Combat System</strong> - Engage in turn-based battles using dice mechanics</li>
+      <li><strong>Branching Narratives</strong> - Your choices affect the story and outcome</li>
+      <li><strong>Dice Roll Mechanics</strong> - Randomized elements for combat and skill checks</li>
+      <li><strong>Sound Effects</strong> - Immersive audio for key moments</li>
+      <li><strong>Dynamic Illustrations</strong> - Visual representation of scenes</li>
+      <li><strong>Responsive Design</strong> - Play on desktop or mobile devices</li>
+    </ul>
+    
+    <h2>For Developers</h2>
+    
+    <p>If you want to modify or extend the game:</p>
+    
+    <ul>
+      <li><strong>Edit Story Content:</strong> Modify the passages in <code>gamex-core.js</code> to change or add to the story</li>
+      <li><strong>Add Illustrations:</strong> Place new images in the <code>media/images/</code> directory</li>
+      <li><strong>Customize UI:</strong> Edit the CSS in <code>css/custom.css</code> to change the appearance</li>
+      <li><strong>Add Game Mechanics:</strong> Extend the JavaScript modules in <code>js/</code> directory</li>
+    </ul>
+    
+    <div class="warning">
+      <strong>Important:</strong> The game saves progress to your browser's localStorage. Clearing your browser data will erase saved games.
+    </div>
+    
+    <h2>Need Help?</h2>
+    
+    <p>If you encounter any issues or have questions:</p>
+    <ul>
+      <li>Check the browser console (F12) for any error messages</li>
+      <li>Refer to the documentation in the <code>docs/</code> directory</li>
+      <li>Examine the JavaScript files for implementation details</li>
+    </ul>
+    
+    <p>
+      <a href="index.html" class="button">Back to Home</a>
+    </p>
+    
+    <footer>
+      &copy; 2025 GameX Interactive Story Adventure. All rights reserved.
+    </footer>
+  </div>
+  
+  <script>
+    // Check if required files exist and show warnings if they don't
+    document.addEventListener('DOMContentLoaded', function() {
+      const requiredFiles = [
+        'game.html',
+        'js/dice-roller.js',
+        'js/inventory-system.js',
+        'js/combat-system.js',
+        'js/gamex-core.js'
+      ];
+      
+      const container = document.querySelector('.container');
+      
+      requiredFiles.forEach(file => {
+        fetch(file)
+          .catch(() => {
+            const warning = document.createElement('div');
+            warning.className = 'warning';
+            warning.innerHTML = `<strong>Warning:</strong> The file <code>${file}</code> is missing. Some game features may not work correctly.`;
+            container.insertBefore(warning, container.firstChild.nextSibling);
+          });
+      });
+    });
+  </script>
+</body>
+</html> 

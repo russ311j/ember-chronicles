@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#2F4F4F"/>
+  <text x="400" y="280" font-family="Arial" font-size="30" text-anchor="middle" fill="white">
+    Main Menu Background
+  </text>
+  <text x="400" y="320" font-family="Arial" font-size="20" text-anchor="middle" fill="#cccccc">
+    Epic fantasy landscape with castle in the distance for main menu background
+  </text>
+</svg> 

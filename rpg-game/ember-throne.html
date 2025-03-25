@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>The Ember Throne Chronicles</title>
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&family=Lora:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/main.css?v=1.0.1">
+  <link rel="stylesheet" href="css/ember-throne.css?v=1.0.1">
+  
+  <!-- Load the core GameX scripts -->
+  <script src="js/gamex-utils.js?v=1.0.1"></script>
+  <script src="js/asset-loader.js?v=1.0.1"></script>
+  <script src="js/sound-manager.js?v=1.0.1"></script>
+  <script src="js/gamex-core.js?v=1.0.1"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="loading-content">
+      <h1>The Ember Throne Chronicles</h1>
+      <div id="loading-bar">
+        <div id="loading-progress"></div>
+      </div>
+      <p id="loading-text">Loading game assets...</p>
+    </div>
+  </div>
+
+  <!-- Main Game Container -->
+  <div id="game-container">
+    <!-- Story Screen -->
+    <div id="story-screen" class="screen active">
+      <div id="story"></div>
+      
+      <!-- Game Controls -->
+      <div id="game-controls">
+        <button id="menu-button" class="control-button">Menu</button>
+        <button id="save-button" class="control-button">Save</button>
+        <button id="sound-toggle" class="control-button">Sound: On</button>
+      </div>
+    </div>
+    
+    <!-- Game Menu Modal -->
+    <div id="game-menu" class="modal">
+      <div class="modal-content">
+        <h2>Game Menu</h2>
+        <button id="resume-game" class="menu-button">Resume Game</button>
+        <button id="save-game" class="menu-button">Save Game</button>
+        <button id="load-saved-game" class="menu-button">Load Game</button>
+        <button id="exit-to-main" class="menu-button">Exit to Main Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load the Ember Throne Chronicles specific scripts -->
+  <script src="js/pages/ember-throne.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check for character data
+      const characterData = sessionStorage.getItem('current-character');
+      if (!characterData) {
+        // No character data found, redirect back to main menu
+        window.location.href = 'index.html';
+        return;
+      }
+
+      // Show loading screen initially
+      const loadingScreen = document.getElementById('loading-screen');
+      const gameContainer = document.getElementById('game-container');
+      
+      // Simulate asset loading
+      let progress = 0;
+      const progressBar = document.getElementById('loading-progress');
+      const progressText = document.getElementById('loading-text');
+      
+      const loadingInterval = setInterval(function() {
+        progress += 5;
+        progressBar.style.width = progress + '%';
+        progressText.textContent = 'Loading game assets... ' + progress + '%';
+        
+        if (progress >= 100) {
+          clearInterval(loadingInterval);
+          loadingScreen.style.opacity = '0';
+          setTimeout(function() {
+            loadingScreen.style.display = 'none';
+            gameContainer.style.display = 'block';
+          }, 500);
+        }
+      }, 100);
+    });
+  </script>
+</body>
+</html> 

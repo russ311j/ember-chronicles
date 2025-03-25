@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ember Throne Chronicles</title>
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&family=Lora:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/game.css">
+  <link rel="stylesheet" href="css/novel-style.css">
+  <script src="js/gamex-utils.js"></script>
+  <script src="js/gamex-core.js"></script>
+  <script src="js/dice-roller.js"></script>
+  <script src="js/novel-style-engine.js"></script>
+  <script src="js/gemini-image-generator.js"></script>
+  <script src="js/gemini-integration.js"></script>
+  <script src="js/asset-generator.js"></script>
+  <script src="js/character-system.js"></script>
+  <script src="js/inventory-system.js"></script>
+  <script src="js/combat-system.js"></script>
+  <script src="js/sound-manager.js"></script>
+  <script src="js/story-system.js"></script>
+  <script src="js/game-engine.js"></script>
+  <script>
+    // Initialize MCP client for AI image generation
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize MCP if available
+      if (window.MCPClient) {
+        window.MCP = {};
+        
+        // Initialize game assets API
+        MCPClient.initGameAssets().then(api => {
+          console.log('MCP Game Assets API initialized');
+          window.MCP.gameAssets = api;
+        }).catch(err => {
+          console.error('Error initializing MCP Game Assets:', err);
+        });
+      } else {
+        console.warn('MCP client not available. Some features will be limited.');
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="game-container">
+    <!-- Main game layout with dual panes -->
+    <div class="dual-pane-layout">
+      <!-- Left pane: Illustrations and visuals -->
+      <div id="illustration-pane">
+        <div id="current-illustration">
+          <img id="scene-image" src="media/images/placeholder.svg" alt="Current scene">
+        </div>
+      </div>
+      
+      <!-- Right pane: Interactive story text -->
+      <div id="story-pane">
+        <div id="story-content">
+          <h1 id="passage-title">The Ember Throne Chronicles</h1>
+          <div id="passage-text">
+            <p>Loading your adventure...</p>
+          </div>
+          
+          <div id="passage-choices">
+            <!-- Choices will be dynamically inserted here -->
+          </div>
+        </div>
+        
+        <!-- Game UI elements -->
+        <div id="game-ui">
+          <div id="character-stats">
+            <div class="stat-bar health-bar">
+              <span class="stat-label">Health:</span>
+              <div class="stat-value-container">
+                <div class="stat-value" id="health-value"></div>
+              </div>
+              <span class="stat-numbers"><span id="current-health">0</span>/<span id="max-health">0</span></span>
+            </div>
+            
+            <div class="stat-bar mana-bar">
+              <span class="stat-label">Mana:</span>
+              <div class="stat-value-container">
+                <div class="stat-value" id="mana-value"></div>
+              </div>
+              <span class="stat-numbers"><span id="current-mana">0</span>/<span id="max-mana">0</span></span>
+            </div>
+          </div>
+          
+          <div id="game-controls">
+            <button id="inventory-btn" class="control-button">Inventory</button>
+            <button id="character-btn" class="control-button">Character</button>
+            <button id="save-btn" class="control-button">Save Game</button>
+            <button id="menu-btn" class="control-button">Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Inventory Panel (hidden by default) -->
+    <div id="inventory-panel" class="game-panel">
+      <div class="panel-header">
+        <h2>Inventory</h2>
+        <button class="close-panel">&times;</button>
+      </div>
+      <div class="panel-content">
+        <div id="inventory-items">
+          <!-- Items will be dynamically inserted here -->
+        </div>
+        <div id="item-details">
+          <h3>Select an item</h3>
+          <p class="item-description">Item details will appear here.</p>
+          <div class="item-actions">
+            <button id="use-item" disabled>Use</button>
+            <button id="drop-item" disabled>Drop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Character Panel (hidden by default) -->
+    <div id="character-panel" class="game-panel">
+      <div class="panel-header">
+        <h2>Character Sheet</h2>
+        <button class="close-panel">&times;</button>
+      </div>
+      <div class="panel-content">
+        <div class="character-info">
+          <h3 id="character-name">Name</h3>
+          <p>Level <span id="character-level">1</span> <span id="character-class">Class</span></p>
+          <p>Experience: <span id="character-exp">0</span>/<span id="character-next-level">100</span></p>
+        </div>
+        
+        <div class="character-stats">
+          <div class="stat-row">
+            <span class="stat-name">Strength</span>
+            <span class="stat-value" id="stat-strength">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Dexterity</span>
+            <span class="stat-value" id="stat-dexterity">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Intelligence</span>
+            <span class="stat-value" id="stat-intelligence">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Constitution</span>
+            <span class="stat-value" id="stat-constitution">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Wisdom</span>
+            <span class="stat-value" id="stat-wisdom">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Charisma</span>
+            <span class="stat-value" id="stat-charisma">0</span>
+          </div>
+        </div>
+        
+        <div class="character-abilities">
+          <h3>Special Abilities</h3>
+          <ul id="character-abilities-list">
+            <!-- Abilities will be dynamically inserted here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Game Menu (hidden by default) -->
+    <div id="game-menu" class="game-panel">
+      <div class="panel-header">
+        <h2>Game Menu</h2>
+        <button class="close-panel">&times;</button>
+      </div>
+      <div class="panel-content">
+        <button id="resume-game" class="menu-button">Resume Game</button>
+        <button id="save-game" class="menu-button">Save Game</button>
+        <button id="load-game" class="menu-button">Load Game</button>
+        <button id="toggle-novel-style" class="menu-button">Toggle Novel Style</button>
+        <button id="options-menu" class="menu-button">Options</button>
+        <button id="exit-to-main" class="menu-button">Exit to Main Menu</button>
+      </div>
+    </div>
+    
+    <!-- Dice Roll Animation (displayed when dice are rolled) -->
+    <div id="dice-roll-container">
+      <div id="dice-roll-visual">
+        <div id="dice">
+          <div id="dice-value">20</div>
+        </div>
+      </div>
+      <div id="dice-roll-result">
+        <p>You rolled a <span id="roll-value">20</span>!</p>
+        <p id="roll-outcome">Success!</p>
+      </div>
+    </div>
+    
+    <!-- Combat UI (displayed during combat) -->
+    <div id="combat-ui">
+      <div id="enemy-info">
+        <h3 id="enemy-name">Enemy</h3>
+        <div class="stat-bar enemy-health-bar">
+          <div class="stat-value-container">
+            <div class="stat-value" id="enemy-health-value"></div>
+          </div>
+          <span class="stat-numbers"><span id="enemy-current-health">0</span>/<span id="enemy-max-health">0</span></span>
+        </div>
+      </div>
+      
+      <div id="combat-log">
+        <p>Combat has begun!</p>
+      </div>
+      
+      <div id="combat-actions">
+        <button id="attack-btn" class="combat-btn">Attack</button>
+        <button id="defend-btn" class="combat-btn">Defend</button>
+        <button id="item-btn" class="combat-btn">Use Item</button>
+        <button id="flee-btn" class="combat-btn">Flee</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make sure dice roll containers exist
+      if (typeof GameX.CharacterSystem !== 'undefined') {
+        GameX.CharacterSystem.initDiceRollContainers();
+      }
+      
+      // Initialize Novel Style Engine
+      if (typeof GameX.NovelStyleEngine !== 'undefined') {
+        GameX.NovelStyleEngine.init({
+          // Configure the engine
+          defaultStyle: 'fantasy book illustration, detail, dramatic lighting',
+          cacheImages: true,
+          imageWidth: 800,
+          imageHeight: 600
+        });
+      }
+      
+      // Load character data from session storage
+      const characterData = sessionStorage.getItem('current-character');
+      let character = null;
+      
+      if (characterData) {
+        try {
+          character = JSON.parse(characterData);
+          
+          // Update character UI
+          updateCharacterUI(character);
+          
+          // Start the game with the first passage
+          loadPassage('start');
+        } catch (error) {
+          console.error('Error loading character data:', error);
+          // Handle error - redirect to character creation or main menu
+          window.location.href = 'index.html';
+        }
+      } else {
+        console.error('No character data found');
+        // Redirect to main menu
+        window.location.href = 'index.html';
+      }
+      
+      // Update character stats UI
+      function updateCharacterUI(character) {
+        if (!character) return;
+        
+        // Update health and mana bars
+        document.getElementById('current-health').textContent = character.health;
+        document.getElementById('max-health').textContent = character.maxHealth;
+        document.getElementById('health-value').style.width = `${(character.health / character.maxHealth) * 100}%`;
+        
+        document.getElementById('current-mana').textContent = character.mana;
+        document.getElementById('max-mana').textContent = character.maxMana;
+        document.getElementById('mana-value').style.width = `${(character.mana / character.maxMana) * 100}%`;
+        
+        // Update character panel
+        document.getElementById('character-name').textContent = character.name;
+        document.getElementById('character-class').textContent = character.className;
+        document.getElementById('character-level').textContent = character.level;
+        document.getElementById('character-exp').textContent = character.exp;
+        document.getElementById('character-next-level').textContent = character.expToNextLevel;
+        
+        // Update character stats
+        document.getElementById('stat-strength').textContent = character.stats.strength;
+        document.getElementById('stat-dexterity').textContent = character.stats.dexterity;
+        document.getElementById('stat-intelligence').textContent = character.stats.intelligence;
+        document.getElementById('stat-constitution').textContent = character.stats.constitution;
+        document.getElementById('stat-wisdom').textContent = character.stats.wisdom;
+        document.getElementById('stat-charisma').textContent = character.stats.charisma;
+        
+        // Update abilities list
+        const abilitiesList = document.getElementById('character-abilities-list');
+        abilitiesList.innerHTML = '';
+        
+        character.abilities.forEach(ability => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${ability.name}:</strong> ${ability.description}`;
+          abilitiesList.appendChild(li);
+        });
+      }
+      
+      // Page counter for novel style
+      let currentPage = 1;
+      
+      // Game Story Data (passages)
+      const storyData = {
+        'start': {
+          title: 'A Mysterious Invitation',
+          text: `<p>The day begins like any other in your quiet village life. The morning sun filters through your window, casting long rays across the worn wooden floor of your humble dwelling.</p>
+                <p>As you prepare for another day of routine, a knock at your door breaks the familiar pattern. A messenger, clad in unusual attire, delivers a sealed letter bearing a symbol you haven't seen in years — the emblem of your long-forgotten mentor.</p>
+                <p>The letter is cryptic, written in your mentor's unmistakable hand: <em>"The Ember Throne stirs once more. The power we feared would remain dormant has awakened. You must come at once. The fate of the realm hangs in the balance."</em></p>
+                <p>Something about the urgency of the message sends a chill down your spine. This isn't merely a request — it's a call to destiny.</p>`,
+          choices: [
+            { text: 'Accept the invitation immediately', next: 'accept_invitation' },
+            { text: 'Investigate the letter for hidden messages', next: 'investigate_letter', roll: { type: 'intelligence', difficulty: 12 } },
+            { text: 'Seek advice from the village elder', next: 'seek_advice' },
+            { text: 'Ignore the letter and continue your day', next: 'ignore_letter' }
+          ],
+          image: 'media/images/mysterious_letter.svg',
+          imagePrompt: 'Fantasy illustration of mysterious letter with magical seal and emblem, morning light filtering through window onto wooden floor'
+        },
+        
+        'accept_invitation': {
+          title: 'The Journey Begins',
+          text: `<p>Without hesitation, you gather your few possessions, knowing in your heart that this call cannot be ignored. Within the hour, you're on the road, the familiar sights of your village shrinking behind you.</p>
+                <p>The path ahead winds through lands you've only heard about in tavern tales — the Enchanted Forest of Eldre and the Desolate Moors beyond. If the stories are true, dangers lurk at every turn.</p>
+                <p>As dusk approaches on your first day of travel, you reach a crossroads. A weathered signpost points in three directions: a well-traveled road to the east, a shadowy forest path to the north, and a narrow trail up a rocky hillside to the west.</p>`,
+          choices: [
+            { text: 'Take the well-traveled eastern road', next: 'eastern_road' },
+            { text: 'Venture into the forest path to the north', next: 'forest_path' },
+            { text: 'Climb the rocky trail to the west', next: 'rocky_trail', roll: { type: 'strength', difficulty: 10 } }
+          ],
+          image: 'media/images/crossroads.svg',
+          imagePrompt: 'Fantasy illustration of a traveler at a crossroads at dusk, weathered signpost pointing to three paths, one leading to a forest, one to a road, and one up a rocky hill'
+        },
+        
+        // Add more passages here as needed
+      };
+      
+      // Load a passage by ID
+      function loadPassage(passageId) {
+        const passage = storyData[passageId];
+        if (!passage) {
+          console.error(`Passage not found: ${passageId}`);
+          return;
+        }
+        
+        // Update title and text
+        document.getElementById('passage-title').textContent = passage.title;
+        document.getElementById('passage-text').innerHTML = passage.text;
+        
+        // Generate AI image for the scene if Novel Style Engine is available
+        if (typeof GameX.NovelStyleEngine !== 'undefined' && passage.imagePrompt && window.MCP && window.MCP.gameAssets) {
+          GameX.NovelStyleEngine.generateBackground(passage.imagePrompt)
+            .then(imageUrl => {
+              GameX.NovelStyleEngine.applyBackground(imageUrl);
+            })
+            .catch(error => {
+              console.error('Error generating background:', error);
+              // Fallback to the default image
+              if (passage.image) {
+                document.getElementById('scene-image').src = passage.image;
+              }
+            });
+        } else {
+          // Fallback to the default image
+          if (passage.image) {
+            document.getElementById('scene-image').src = passage.image;
+          }
+        }
+        
+        // Update novel-style page number and chapter title
+        if (typeof GameX.NovelStyleEngine !== 'undefined') {
+          currentPage++;
+          GameX.NovelStyleEngine.updatePageNumber(currentPage);
+          GameX.NovelStyleEngine.setChapterTitle(passage.title);
+        }
+        
+        // Generate choices
+        const choicesElement = document.getElementById('passage-choices');
+        choicesElement.innerHTML = '';
+        
+        passage.choices.forEach((choice, index) => {
+          const button = document.createElement('button');
+          button.className = 'choice-button';
+          button.textContent = choice.text;
+          
+          button.addEventListener('click', function() {
+            if (choice.roll) {
+              // Disable all choice buttons during roll
+              document.querySelectorAll('.choice-button').forEach(btn => {
+                btn.disabled = true;
+              });
+              
+              // Get the stat modifier
+              const statBonus = character.stats[choice.roll.type];
+              
+              // Use the enhanced animate dice roll
+              GameX.DiceRoller.animateD20Roll(
+                statBonus,
+                choice.roll.difficulty,
+                (rollData) => {
+                  // Re-enable buttons
+                  document.querySelectorAll('.choice-button').forEach(btn => {
+                    btn.disabled = false;
+                  });
+                  
+                  // Process result
+                  if (rollData.success) {
+                    // Success - proceed to the next passage
+                    loadPassage(choice.next);
+                  } else {
+                    // Failure - load alternative passage or apply consequences
+                    loadPassage(choice.fail || 'roll_failure');
+                  }
+                },
+                {
+                  keepVisible: false,
+                  duration: 2000
+                }
+              );
+            } else {
+              // No roll required, just navigate to the next passage
+              loadPassage(choice.next);
+            }
+          });
+          
+          // If this choice requires a roll, add an indicator
+          if (choice.roll) {
+            const rollInfo = document.createElement('span');
+            rollInfo.className = 'roll-indicator';
+            rollInfo.innerHTML = ` <i class="dice-icon"></i> ${choice.roll.type.toUpperCase()} DC ${choice.roll.difficulty}`;
+            button.appendChild(rollInfo);
+          }
+          
+          choicesElement.appendChild(button);
+        });
+      }
+      
+      // Show dice roll animation and result - legacy function kept for compatibility
+      function showDiceRoll(roll, bonus, total, difficulty) {
+        GameX.DiceRoller.animateD20Roll(
+          bonus,
+          difficulty,
+          null,
+          {
+            keepVisible: false,
+            duration: 2000
+          }
+        );
+      }
+      
+      // UI controls
+      document.getElementById('inventory-btn').addEventListener('click', function() {
+        document.getElementById('inventory-panel').classList.toggle('active');
+      });
+      
+      document.getElementById('character-btn').addEventListener('click', function() {
+        document.getElementById('character-panel').classList.toggle('active');
+      });
+      
+      document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('game-menu').classList.toggle('active');
+      });
+      
+      // Toggle novel style
+      document.getElementById('toggle-novel-style').addEventListener('click', function() {
+        document.body.classList.toggle('novel-style');
+        
+        // Update button text
+        if (document.body.classList.contains('novel-style')) {
+          this.textContent = 'Use Standard Style';
+        } else {
+          this.textContent = 'Use Novel Style';
+        }
+      });
+      
+      // Close panel buttons
+      document.querySelectorAll('.close-panel').forEach(button => {
+        button.addEventListener('click', function() {
+          this.closest('.game-panel').classList.remove('active');
+        });
+      });
+      
+      // Game menu buttons
+      document.getElementById('resume-game').addEventListener('click', function() {
+        document.getElementById('game-menu').classList.remove('active');
+      });
+      
+      document.getElementById('exit-to-main').addEventListener('click', function() {
+        window.location.href = 'index.html';
+      });
+      
+      // Load inventory items
+      function loadInventory() {
+        if (!character || !character.inventory) return;
+        
+        const inventoryElement = document.getElementById('inventory-items');
+        inventoryElement.innerHTML = '';
+        
+        character.inventory.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.className = 'inventory-item';
+          itemElement.textContent = item;
+          itemElement.dataset.item = item;
+          
+          itemElement.addEventListener('click', function() {
+            selectItem(item);
+          });
+          
+          inventoryElement.appendChild(itemElement);
+        });
+      }
+      
+      // Select an inventory item
+      function selectItem(itemName) {
+        const items = document.querySelectorAll('.inventory-item');
+        items.forEach(item => {
+          item.classList.remove('selected');
+          if (item.dataset.item === itemName) {
+            item.classList.add('selected');
+          }
+        });
+        
+        // Enable item action buttons
+        document.getElementById('use-item').disabled = false;
+        document.getElementById('drop-item').disabled = false;
+        
+        // Show item details (in a real game, this would come from an item database)
+        document.querySelector('.item-description').textContent = `A ${itemName.toLowerCase()}. It might be useful on your journey.`;
+      }
+      
+      // Load inventory on startup
+      loadInventory();
+      
+      // Item action buttons
+      document.getElementById('use-item').addEventListener('click', function() {
+        const selectedItem = document.querySelector('.inventory-item.selected');
+        if (selectedItem) {
+          // In a real game, this would have different effects based on the item
+          alert(`You used the ${selectedItem.dataset.item}.`);
+        }
+      });
+      
+      document.getElementById('drop-item').addEventListener('click', function() {
+        const selectedItem = document.querySelector('.inventory-item.selected');
+        if (selectedItem && character) {
+          // Remove the item from inventory
+          const itemIndex = character.inventory.indexOf(selectedItem.dataset.item);
+          if (itemIndex !== -1) {
+            character.inventory.splice(itemIndex, 1);
+            
+            // Update session storage
+            sessionStorage.setItem('current-character', JSON.stringify(character));
+            
+            // Reload inventory UI
+            loadInventory();
+            
+            // Disable buttons and reset description
+            document.getElementById('use-item').disabled = true;
+            document.getElementById('drop-item').disabled = true;
+            document.querySelector('.item-description').textContent = 'Item details will appear here.';
+          }
+        }
+      });
+      
+      // Enable novel style by default if available
+      if (typeof GameX.NovelStyleEngine !== 'undefined') {
+        document.body.classList.add('novel-style');
+        if (document.getElementById('toggle-novel-style')) {
+          document.getElementById('toggle-novel-style').textContent = 'Use Standard Style';
+        }
+      }
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ember Throne Chronicles</title>
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&family=Lora:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/story.css">
+  <style>
+    /* Novel-like paperback styling */
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a2e;
+      font-family: 'Lora', serif;
+    }
+
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0f0f1a;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #game-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .screen {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .screen.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Novel paperback layout */
+    .dual-pane {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: #2a2a3c;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Left side - Illustration */
+    .illustration-pane {
+      width: 40%;
+      height: 100%;
+      background-color: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .illustration {
+      flex-grow: 1;
+      width: 100%;
+      object-fit: cover;
+      border-right: 2px solid #4a4a6a;
+    }
+
+    /* Character stats below illustration */
+    .character-stats {
+      background-color: #2a2a3c;
+      color: #f0f0f0;
+      padding: 15px;
+      border-top: 1px solid #4a4a6a;
+      border-right: 2px solid #4a4a6a;
+    }
+
+    /* Right side - Narrative */
+    .narrative-pane {
+      width: 60%;
+      height: 100%;
+      background-color: #f5f0e8; /* Paper-like color */
+      padding: 0;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    /* Story container styling */
+    .story-container {
+      padding: 30px;
+      max-width: 100%;
+      margin: 0;
+      background-color: #f5f0e8;
+      color: #333;
+      height: 100%;
+      overflow-y: auto;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    /* Novel-like title */
+    .story-title {
+      font-family: 'MedievalSharp', cursive;
+      color: #8B4513;
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-align: center;
+      border-bottom: 1px solid #d3c5a6;
+      padding-bottom: 15px;
+    }
+
+    /* Novel-like narrative text */
+    .story-narrative {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    /* Choice buttons like page turns */
+    .story-choices {
+      margin-top: 40px;
+      border-top: 1px solid #d3c5a6;
+      padding-top: 20px;
+    }
+
+    .story-choices h3 {
+      color: #8B4513;
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .choice-button {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      background-color: #e8dec7;
+      border: 1px solid #d3c5a6;
+      border-radius: 0;
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      color: #6b4226;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .choice-button:hover {
+      background-color: #d6c8b0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* UI Elements */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+      padding: 10px 15px;
+      background-color: rgba(42, 42, 60, 0.8);
+      color: #f0f0f0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .home-button:hover {
+      background-color: rgba(74, 74, 106, 0.9);
+    }
+
+    .game-menu-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      padding: 10px 15px;
+      background-color: rgba(42, 42, 60, 0.8);
+      color: #f0f0f0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .game-menu-button:hover {
+      background-color: rgba(74, 74, 106, 0.9);
+    }
+
+    /* Character stats styling */
+    .stat-header {
+      margin-bottom: 15px;
+    }
+
+    .stat-header h3 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+      color: #ffd700;
+    }
+
+    .stat-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .stat-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stat-bar label {
+      width: 40px;
+      font-size: 14px;
+    }
+
+    .bar-bg {
+      flex-grow: 1;
+      height: 8px;
+      background-color: #444;
+      border-radius: 4px;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    .health .bar-fill {
+      background-color: #e53935;
+    }
+
+    .mana .bar-fill {
+      background-color: #3f51b5;
+    }
+
+    .stat-bar span {
+      font-size: 12px;
+      min-width: 60px;
+      text-align: right;
+    }
+
+    .stat-rows {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .stat-item .label {
+      color: #bbb;
+    }
+
+    .stat-item .value {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .inventory-toggle {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      padding: 10px 15px;
+      background-color: rgba(42, 42, 60, 0.8);
+      color: #f0f0f0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .inventory-toggle:hover {
+      background-color: rgba(74, 74, 106, 0.9);
+    }
+
+    .inventory-panel {
+      position: absolute;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background-color: rgba(26, 26, 46, 0.95);
+      transition: right 0.3s ease;
+      z-index: 110;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .inventory-panel.open {
+      right: 0;
+    }
+
+    .inventory-panel h2 {
+      color: #ffd700;
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #4a4a6a;
+    }
+
+    .game-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+    }
+
+    .game-menu.open {
+      display: flex;
+    }
+
+    .game-menu-content {
+      background-color: #2a2a3c;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .game-menu-content h2 {
+      color: #ffd700;
+      margin-top: 0;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .menu-option {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      background-color: #3a3a5a;
+      color: #f0f0f0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .menu-option:hover {
+      background-color: #4a4a7a;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 900px) {
+      .dual-pane {
+        flex-direction: column;
+      }
+
+      .illustration-pane, .narrative-pane {
+        width: 100%;
+        height: 50%;
+      }
+
+      .illustration-pane {
+        flex-direction: row;
+      }
+
+      .illustration {
+        width: 60%;
+        height: 100%;
+        border-right: 1px solid #4a4a6a;
+        border-bottom: 2px solid #4a4a6a;
+      }
+
+      .character-stats {
+        width: 40%;
+        height: 100%;
+        border-top: none;
+        border-right: none;
+        border-left: 1px solid #4a4a6a;
+        overflow-y: auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .story-narrative {
+        font-size: 16px;
+      }
+
+      .story-title {
+        font-size: 24px;
+      }
+
+      .choice-button {
+        padding: 12px 15px;
+      }
+
+      .illustration-pane {
+        flex-direction: column;
+      }
+
+      .illustration, .character-stats {
+        width: 100%;
+        height: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="loading-content">
+      <h1>The Ember Throne Chronicles</h1>
+      <div id="loading-bar">
+        <div id="loading-progress"></div>
+      </div>
+      <p id="loading-text">Loading game assets...</p>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="story-screen" class="screen active">
+      <!-- Dual Pane Layout -->
+      <div class="dual-pane">
+        <!-- Illustration Pane (Left) -->
+        <div class="illustration-pane">
+          <img class="illustration" src="media/images/placeholder.svg" alt="Scene illustration" id="scene-image">
+          <div class="character-stats" id="character-stats">
+            <!-- Character stats will be displayed here -->
+            <p>Loading character data...</p>
+          </div>
+        </div>
+        
+        <!-- Story Pane (Right) -->
+        <div class="narrative-pane">
+          <div id="story-container" class="story-container">
+            <!-- Story content will be displayed here by the story system -->
+            <p>Loading your adventure...</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Game Menu Button -->
+      <button class="game-menu-button" id="game-menu-button">Menu</button>
+      
+      <!-- Home Button -->
+      <a href="index.html" class="home-button" title="Return to Main Menu">Home</a>
+      
+      <!-- Inventory Panel (Slide-in) -->
+      <div class="inventory-panel" id="inventory-panel">
+        <h2>Inventory</h2>
+        <div id="inventory-items">
+          <!-- Inventory items will be displayed here -->
+          <p>Loading inventory...</p>
+        </div>
+      </div>
+      
+      <!-- Inventory Toggle Button -->
+      <button class="inventory-toggle" id="inventory-toggle">Inventory</button>
+      
+      <!-- Game Menu (Pause) -->
+      <div class="game-menu" id="game-menu">
+        <div class="game-menu-content">
+          <h2>Game Menu</h2>
+          <button class="menu-option" id="resume-game">Resume Game</button>
+          <button class="menu-option" id="save-game">Save Game</button>
+          <button class="menu-option" id="load-game-menu">Load Game</button>
+          <button class="menu-option" id="options-menu">Options</button>
+          <button class="menu-option" id="exit-to-main">Exit to Main Menu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Load JavaScript Modules -->
+  <script src="js/asset-loader.js"></script>
+  <script src="js/scene-manager.js"></script>
+  <script src="js/gamex-utils.js"></script>
+  <script src="js/dice-roller.js"></script>
+  <script src="js/inventory-system.js"></script>
+  <script src="js/character-system.js"></script>
+  <script src="js/combat-system.js"></script>
+  <script src="js/story-system.js"></script>
+  <script src="js/gamex-core.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Hide loading screen once everything is loaded
+      window.addEventListener('load', function() {
+        document.getElementById('loading-screen').style.display = 'none';
+      });
+      
+      // Game state
+      window.GameState = {
+        currentScene: null,
+        character: null,
+        inventory: [],
+        gameFlags: {},
+        
+        // Initialize the game
+        init: function() {
+          // Load character from session storage
+          const characterData = sessionStorage.getItem('current-character');
+          
+          if (characterData) {
+            try {
+              this.character = JSON.parse(characterData);
+              // Successfully loaded character, initialize game
+              this.setupGame();
+            } catch (error) {
+              console.error('Error parsing character data:', error);
+              this.redirectToMainMenu('Invalid character data. Please create a new character.');
+            }
+          } else {
+            // For debugging, create a default character if none exists
+            this.character = this.createDefaultCharacter();
+            this.setupGame();
+            
+            // In production, you would instead redirect to character creation:
+            // this.redirectToMainMenu('No character found. Please create a new character.');
+          }
+        },
+        
+        // Create a default character for testing
+        createDefaultCharacter: function() {
+          return {
+            name: "Adventurer",
+            className: "Warrior",
+            level: 1,
+            health: 30,
+            maxHealth: 30,
+            mana: 10,
+            maxMana: 10,
+            exp: 0,
+            expToNextLevel: 100,
+            gold: 50,
+            stats: {
+              strength: 14,
+              dexterity: 12,
+              intelligence: 8,
+              constitution: 13,
+              wisdom: 10,
+              charisma: 9
+            },
+            inventory: ["Health Potion", "Bread", "Torch", "Dagger"]
+          };
+        },
+        
+        // Set up the game
+        setupGame: function() {
+          if (!this.character) {
+            this.redirectToMainMenu('Character data not loaded properly.');
+            return;
+          }
+          
+          // Set up UI and event listeners
+          this.setupUI();
+          this.setupEventListeners();
+          
+          // Initialize the story system
+          this.storySystem = GameX.StorySystem.init('story-container');
+          
+          // Update character stats display
+          this.updateCharacterStats();
+          
+          // Update inventory display
+          this.updateInventory();
+          
+          // Hide loading screen once game is initialized
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.display = 'none';
+          }
+        },
+        
+        // Set up UI elements
+        setupUI: function() {
+          // Initialize inventory panel
+          const inventoryToggle = document.getElementById('inventory-toggle');
+          const inventoryPanel = document.getElementById('inventory-panel');
+          
+          if (inventoryToggle && inventoryPanel) {
+            inventoryToggle.addEventListener('click', function() {
+              inventoryPanel.classList.toggle('open');
+            });
+          }
+          
+          // Initialize game menu
+          const gameMenuButton = document.getElementById('game-menu-button');
+          const gameMenu = document.getElementById('game-menu');
+          
+          if (gameMenuButton && gameMenu) {
+            gameMenuButton.addEventListener('click', function() {
+              gameMenu.classList.toggle('open');
+            });
+            
+            document.getElementById('resume-game').addEventListener('click', function() {
+              gameMenu.classList.remove('open');
+            });
+            
+            document.getElementById('save-game').addEventListener('click', () => {
+              this.saveGame();
+              // Also save story state
+              if (GameX.StorySystem.saveState) {
+                GameX.StorySystem.saveState();
+              }
+              gameMenu.classList.remove('open');
+              alert('Game saved successfully!');
+            });
+            
+            document.getElementById('load-game-menu').addEventListener('click', () => {
+              // Load story state
+              if (GameX.StorySystem.loadState && GameX.StorySystem.loadState()) {
+                gameMenu.classList.remove('open');
+              } else {
+                alert('No saved game found.');
+              }
+            });
+            
+            document.getElementById('options-menu').addEventListener('click', () => {
+              // Implement options menu functionality
+              alert('Options menu functionality to be implemented');
+            });
+            
+            document.getElementById('exit-to-main').addEventListener('click', () => {
+              if (confirm('Are you sure you want to exit to the main menu? Any unsaved progress will be lost.')) {
+                window.location.href = 'index.html';
+              }
+            });
+          }
+        },
+        
+        // Set up event listeners
+        setupEventListeners: function() {
+          // Additional event listeners if needed
+          // Most story events are handled by the story system itself
+        },
+        
+        // Update character stats display
+        updateCharacterStats: function() {
+          const statsElement = document.getElementById('character-stats');
+          if (!statsElement || !this.character) return;
+          
+          const char = this.character;
+          let statsHTML = `
+            <div class="stat-header">
+              <h3>${char.name}</h3>
+              <div>Level ${char.level} ${char.className}</div>
+            </div>
+            <div class="stat-bars">
+              <div class="stat-bar health">
+                <label>HP:</label>
+                <div class="bar-bg">
+                  <div class="bar-fill" style="width: ${(char.health / char.maxHealth) * 100}%;"></div>
+                </div>
+                <span>${char.health}/${char.maxHealth}</span>
+              </div>
+              <div class="stat-bar mana">
+                <label>MP:</label>
+                <div class="bar-bg">
+                  <div class="bar-fill" style="width: ${(char.mana / char.maxMana) * 100}%;"></div>
+                </div>
+                <span>${char.mana}/${char.maxMana}</span>
+              </div>
+            </div>
+            <div class="stat-rows">
+              <div class="stat-item">
+                <span class="label">STR:</span>
+                <span class="value">${char.stats.strength}</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">DEX:</span>
+                <span class="value">${char.stats.dexterity}</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">INT:</span>
+                <span class="value">${char.stats.intelligence}</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">CON:</span>
+                <span class="value">${char.stats.constitution}</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">WIS:</span>
+                <span class="value">${char.stats.wisdom}</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">CHA:</span>
+                <span class="value">${char.stats.charisma}</span>
+              </div>
+            </div>
+            <div class="stat-item" style="margin-top: 10px;">
+              <span class="label">Gold:</span>
+              <span class="value">${char.gold}</span>
+            </div>
+          `;
+          
+          statsElement.innerHTML = statsHTML;
+        },
+        
+        // Update inventory display
+        updateInventory: function() {
+          const inventoryElement = document.getElementById('inventory-items');
+          if (!inventoryElement || !this.character) return;
+          
+          const inventory = this.character.inventory || [];
+          
+          if (inventory.length === 0) {
+            inventoryElement.innerHTML = '<p>Your inventory is empty.</p>';
+            return;
+          }
+          
+          let itemsHTML = '<ul class="inventory-list">';
+          
+          inventory.forEach(item => {
+            itemsHTML += `<li class="inventory-item">${item}</li>`;
+          });
+          
+          itemsHTML += '</ul>';
+          inventoryElement.innerHTML = itemsHTML;
+          
+          // Add event listeners for inventory items
+          document.querySelectorAll('.inventory-item').forEach(item => {
+            item.addEventListener('click', function() {
+              // Implement item interaction
+              alert(`Item selected: ${this.textContent}`);
+            });
+          });
+        },
+        
+        // Save game
+        saveGame: function() {
+          const saveData = {
+            character: this.character,
+            gameFlags: this.gameFlags,
+            timestamp: new Date().toISOString()
+          };
+          
+          try {
+            localStorage.setItem('ember-throne-save', JSON.stringify(saveData));
+            return true;
+          } catch (error) {
+            console.error('Error saving game:', error);
+            return false;
+          }
+        },
+        
+        // Load game
+        loadGame: function() {
+          const saveData = localStorage.getItem('ember-throne-save');
+          
+          if (!saveData) {
+            return false;
+          }
+          
+          try {
+            const data = JSON.parse(saveData);
+            this.character = data.character;
+            this.gameFlags = data.gameFlags;
+            
+            // Update UI
+            this.updateCharacterStats();
+            this.updateInventory();
+            
+            return true;
+          } catch (error) {
+            console.error('Error loading game:', error);
+            return false;
+          }
+        },
+        
+        // Redirect to main menu with an error message
+        redirectToMainMenu: function(errorMessage) {
+          if (errorMessage) {
+            sessionStorage.setItem('error-message', errorMessage);
+          }
+          window.location.href = 'index.html';
+        }
+      };
+      
+      // Initialize the game
+      window.GameState.init();
+    });
+  </script>
+</body>
+</html> 

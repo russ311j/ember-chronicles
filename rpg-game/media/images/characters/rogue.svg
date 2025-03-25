@@ -1,0 +1,44 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#1a202c"/>
+  
+  <!-- Character silhouette -->
+  <g transform="translate(50, 30)">
+    <!-- Head with hood -->
+    <path d="M100,50 C130,50 130,90 100,90 C70,90 70,50 100,50 Z" fill="#4a5568"/>
+    <path d="M65,75 L70,45 L100,30 L130,45 L135,75 L125,90 L75,90 Z" fill="#2d3748"/>
+    <path d="M85,70 L95,70 M105,70 L115,70" stroke="#1a202c" stroke-width="1"/>
+    
+    <!-- Body with leather armor -->
+    <path d="M85,90 L115,90 L120,130 L125,180 L115,190 L100,195 L85,190 L75,180 L80,130 Z" fill="#2d3748"/>
+    
+    <!-- Arms -->
+    <path d="M75,95 L55,105 L45,130 L55,160 L65,145 L70,120 Z" fill="#2d3748"/>
+    <path d="M125,95 L145,105 L155,130 L145,160 L135,145 L130,120 Z" fill="#2d3748"/>
+    
+    <!-- Armor details -->
+    <path d="M85,90 L115,90 L110,130 L90,130 Z" fill="#4a5568"/>
+    <path d="M90,130 L110,130 L110,180 L90,180 Z" fill="#4a5568"/>
+    
+    <!-- Legs -->
+    <path d="M85,190 L80,250 L75,300 L95,300 L95,250 Z" fill="#4a5568"/>
+    <path d="M115,190 L120,250 L125,300 L105,300 L105,250 Z" fill="#4a5568"/>
+    
+    <!-- Weapons -->
+    <!-- Dagger 1 -->
+    <rect x="140" y="125" width="5" height="30" fill="#a0aec0"/>
+    <path d="M137.5,125 L147.5,125 L142.5,115 Z" fill="#718096"/>
+    <!-- Dagger 2 -->
+    <rect x="50" y="135" width="30" height="5" transform="rotate(30, 50, 135)" fill="#a0aec0"/>
+    <path d="M80,127 L73,143 L83,139 Z" fill="#718096"/>
+  </g>
+  
+  <!-- Shadow effects -->
+  <g fill="#000000" opacity="0.3">
+    <ellipse cx="150" cy="350" rx="70" ry="15"/>
+  </g>
+  
+  <!-- Class label -->
+  <rect x="75" y="340" width="150" height="40" rx="5" fill="rgba(0,0,0,0.5)"/>
+  <text x="150" y="365" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">Rogue</text>
+</svg> 

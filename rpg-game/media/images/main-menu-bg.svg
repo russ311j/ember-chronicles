@@ -1,0 +1,87 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1c2e" />
+      <stop offset="40%" stop-color="#1f3b5a" />
+      <stop offset="100%" stop-color="#2c5282" />
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="75%" cy="25%" r="20%" fx="75%" fy="25%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#f5e7c1" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#f5e7c1" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1200" height="800" fill="url(#skyGradient)"/>
+  
+  <!-- Moon glow -->
+  <circle cx="900" cy="200" r="240" fill="url(#moonGlow)"/>
+  
+  <!-- Moon -->
+  <circle cx="900" cy="200" r="80" fill="#f5e7c1"/>
+  <circle cx="870" cy="180" r="20" fill="#e6d8b2" opacity="0.6"/>
+  <circle cx="920" cy="210" r="15" fill="#e6d8b2" opacity="0.5"/>
+  <circle cx="890" cy="230" r="12" fill="#e6d8b2" opacity="0.7"/>
+  
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="200" cy="100" r="2" opacity="0.8"/>
+    <circle cx="300" cy="150" r="1.5" opacity="0.7"/>
+    <circle cx="500" cy="80" r="2" opacity="0.9"/>
+    <circle cx="700" cy="120" r="1.8" opacity="0.8"/>
+    <circle cx="1000" cy="300" r="2" opacity="0.6"/>
+    <circle cx="1100" cy="180" r="1.7" opacity="0.7"/>
+    <circle cx="150" cy="250" r="2" opacity="0.8"/>
+    <circle cx="400" cy="200" r="1.5" opacity="0.7"/>
+    <circle cx="600" cy="150" r="2" opacity="0.9"/>
+    <circle cx="800" cy="100" r="1.8" opacity="0.8"/>
+    <circle cx="250" cy="300" r="2" opacity="0.6"/>
+    <circle cx="350" cy="80" r="1.7" opacity="0.7"/>
+    <circle cx="450" cy="130" r="1.5" opacity="0.8"/>
+    <circle cx="650" cy="90" r="2" opacity="0.9"/>
+    <circle cx="850" cy="110" r="1.5" opacity="0.7"/>
+    <circle cx="950" cy="70" r="1.8" opacity="0.8"/>
+    <circle cx="1050" cy="140" r="2" opacity="0.6"/>
+    <circle cx="1150" cy="100" r="1.7" opacity="0.7"/>
+  </g>
+  
+  <!-- Distant mountain range -->
+  <path d="M0,500 L100,450 L200,480 L300,430 L400,470 L500,420 L600,460 L700,410 L800,440 L900,400 L1000,430 L1100,410 L1200,450 L1200,800 L0,800 Z" fill="#1a365d" opacity="0.8"/>
+  
+  <!-- Middle mountain range -->
+  <path d="M0,550 L100,500 L200,530 L300,480 L400,520 L500,480 L600,510 L700,470 L800,520 L900,470 L1000,510 L1100,480 L1200,520 L1200,800 L0,800 Z" fill="#2a4365" opacity="0.9"/>
+  
+  <!-- Foreground mountain range -->
+  <path d="M0,600 L50,570 L100,590 L150,550 L200,580 L250,560 L300,590 L350,550 L400,570 L450,540 L500,570 L550,530 L600,560 L650,540 L700,580 L750,550 L800,570 L850,540 L900,560 L950,530 L1000,560 L1050,540 L1100,570 L1150,550 L1200,580 L1200,800 L0,800 Z" fill="#2d3748"/>
+  
+  <!-- Forest silhouette -->
+  <path d="M0,650 L0,800 L1200,800 L1200,650 C1150,640 1100,660 1050,640 C1000,660 950,640 900,650 C850,635 800,655 750,640 C700,660 650,640 600,650 C550,635 500,655 450,640 C400,660 350,640 300,650 C250,635 200,655 150,640 C100,660 50,640 0,650 Z" fill="#1a202c"/>
+  
+  <!-- Castle silhouette -->
+  <path d="M400,650 L400,550 L420,550 L420,530 L440,530 L440,510 L460,510 L460,530 L480,530 L480,550 L500,550 L500,530 L520,530 L520,550 L540,550 L540,530 L560,530 L560,510 L580,510 L580,490 L600,490 L600,470 L620,470 L620,450 L640,450 L640,470 L660,470 L660,490 L680,490 L680,510 L700,510 L700,530 L720,530 L720,550 L740,550 L740,570 L760,570 L760,650 Z" fill="#111827"/>
+  
+  <!-- Castle details -->
+  <rect x="460" y="570" width="20" height="30" fill="#1f2937"/>
+  <rect x="600" y="570" width="20" height="30" fill="#1f2937"/>
+  <rect x="680" y="570" width="20" height="30" fill="#1f2937"/>
+  <path d="M640,450 L640,420 L650,410 L660,420 L660,450 Z" fill="#1f2937"/>
+  
+  <!-- Castle windows -->
+  <rect x="480" y="580" width="10" height="15" fill="#4a5568" opacity="0.8"/>
+  <rect x="620" y="580" width="10" height="15" fill="#4a5568" opacity="0.8"/>
+  <rect x="700" y="580" width="10" height="15" fill="#4a5568" opacity="0.8"/>
+  <rect x="630" y="500" width="10" height="15" fill="#4a5568" opacity="0.8"/>
+  <rect x="650" y="500" width="10" height="15" fill="#4a5568" opacity="0.8"/>
+  
+  <!-- Shooting star -->
+  <g>
+    <line x1="300" y1="120" x2="350" y2="170" stroke="#ffffff" stroke-width="1.5" opacity="0.8">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" />
+    </line>
+    <circle cx="350" cy="170" r="1.5" fill="#ffffff" opacity="0.8">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg> 

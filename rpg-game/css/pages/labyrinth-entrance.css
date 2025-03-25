@@ -1,0 +1,291 @@
+.labyrinth-entrance-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.labyrinth-entrance-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.labyrinth-entrance-title {
+    font-size: 2.5rem;
+    color: #e0c9a6;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+.labyrinth-entrance-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+}
+
+.labyrinth-entrance-description p {
+    margin: 0 0 1rem 0;
+}
+
+.labyrinth-entrance-description p:last-child {
+    margin-bottom: 0;
+}
+
+.labyrinth-entrance-warning {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ff6b6b;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    border-radius: 0.5rem;
+}
+
+.labyrinth-entrance-warning p {
+    margin: 0 0 0.5rem 0;
+}
+
+.labyrinth-entrance-warning p:last-child {
+    margin-bottom: 0;
+}
+
+.labyrinth-entrance-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.labyrinth-entrance-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #e0c9a6;
+    background: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+.labyrinth-entrance-button:hover {
+    background: rgba(60, 60, 60, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.labyrinth-entrance-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.labyrinth-entrance-button.enter {
+    background: rgba(40, 40, 40, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.labyrinth-entrance-button.enter:hover {
+    background: rgba(60, 60, 60, 1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.labyrinth-entrance-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.labyrinth-entrance-modal-content {
+    background: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+}
+
+.labyrinth-entrance-modal-content h3 {
+    color: #e0c9a6;
+    font-size: 1.8rem;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.labyrinth-entrance-modal-text {
+    color: #d4d4d4;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.labyrinth-entrance-modal-text p {
+    margin: 0 0 1rem 0;
+}
+
+.labyrinth-entrance-modal-text ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.labyrinth-entrance-modal-text li {
+    margin: 0.5rem 0;
+}
+
+.labyrinth-entrance-modal-close {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #e0c9a6;
+    background: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.labyrinth-entrance-modal-close:hover {
+    background: rgba(60, 60, 60, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .labyrinth-entrance-content {
+        padding: 1rem;
+    }
+
+    .labyrinth-entrance-main-content {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .labyrinth-entrance-title {
+        font-size: 2rem;
+    }
+
+    .labyrinth-entrance-description {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .labyrinth-entrance-warning {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .labyrinth-entrance-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .labyrinth-entrance-modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .labyrinth-entrance-modal-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .labyrinth-entrance-modal-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .labyrinth-entrance-title {
+        font-size: 1.8rem;
+    }
+
+    .labyrinth-entrance-description {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .labyrinth-entrance-warning {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .labyrinth-entrance-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .labyrinth-entrance-modal-content {
+        padding: 1rem;
+    }
+
+    .labyrinth-entrance-modal-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .labyrinth-entrance-modal-text {
+        font-size: 0.9rem;
+    }
+} 

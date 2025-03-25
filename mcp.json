@@ -1,0 +1,107 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "enabled": true
+    },
+    "stability": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-stability"
+      ],
+      "env": {
+        "STABILITY_API_KEY": "${STABILITY_API_KEY}",
+        "IMAGE_WIDTH": "${IMAGE_GEN_WIDTH}",
+        "IMAGE_HEIGHT": "${IMAGE_GEN_HEIGHT}",
+        "IMAGE_QUALITY": "${IMAGE_GEN_QUALITY}",
+        "OUTPUT_DIR": "assets/stability"
+      },
+      "enabled": true
+    },
+    "gemini": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gemini"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+        "IMAGE_WIDTH": "${IMAGE_GEN_WIDTH}",
+        "IMAGE_HEIGHT": "${IMAGE_GEN_HEIGHT}",
+        "IMAGE_QUALITY": "${IMAGE_GEN_QUALITY}",
+        "OUTPUT_DIR": "assets/gemini"
+      },
+      "enabled": true
+    },
+    "fal": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fal"
+      ],
+      "env": {
+        "FAL_KEY": "${FAL_KEY}",
+        "OUTPUT_DIR": "assets/fal"
+      },
+      "enabled": true
+    },
+    "browser-tools": {
+      "command": "wsl",
+      "args": [
+        "bash",
+        "-c",
+        "'/home/[username]/.nvm/versions/node/v20.18.0/bin/npx @agentdeskai/browser-tools-mcp@1.2.0'"
+      ],
+      "enabled": true
+    },
+    "elevenlabs": {
+      "command": "uvx",
+      "args": ["elevenlabs-mcp-server"],
+      "env": {
+        "ELEVENLABS_API_KEY": "${ELEVENLABS_API_KEY}",
+        "ELEVENLABS_VOICE_ID": "${ELEVENLABS_VOICE_ID}",
+        "ELEVENLABS_MODEL_ID": "eleven_flash_v2",
+        "ELEVENLABS_STABILITY": "0.5",
+        "ELEVENLABS_SIMILARITY_BOOST": "0.75",
+        "ELEVENLABS_STYLE": "0.1",
+        "ELEVENLABS_OUTPUT_DIR": "output"
+      },
+      "enabled": true
+    },
+    "game-assets": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-game-assets"
+      ],
+      "env": {
+        "HUGGINGFACE_TOKEN": "${HUGGINGFACE_TOKEN}",
+        "ASSET_OUTPUT_DIR": "assets/generated"
+      },
+      "enabled": true
+    },
+    "flux": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-flux"
+      ],
+      "env": {
+        "FLUX_API_KEY": "${FLUX_API_KEY}",
+        "FLUX_MODEL": "flux-1.1-pro",
+        "FLUX_OUTPUT_DIR": "assets/flux",
+        "FLUX_QUALITY": "high",
+        "FLUX_STYLE": "photorealistic"
+      },
+      "enabled": true
+    }
+  }
+} 

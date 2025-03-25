@@ -1,0 +1,40 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#2a4365"/>
+  
+  <!-- Character silhouette -->
+  <g transform="translate(50, 30)">
+    <!-- Head with helmet -->
+    <path d="M100,50 C130,50 130,90 100,90 C70,90 70,50 100,50 Z" fill="#4a5568"/>
+    <path d="M80,70 L70,50 L80,40 L120,40 L130,50 L120,70 Z" fill="#2d3748"/>
+    <path d="M95,35 L105,35 L110,25 L90,25 Z" fill="#2d3748"/>
+    
+    <!-- Body with armor -->
+    <path d="M85,90 L115,90 L125,130 L135,190 L115,200 L100,190 L85,200 L65,190 L75,130 Z" fill="#4a5568"/>
+    
+    <!-- Shoulders and arms -->
+    <path d="M75,95 L55,105 L45,130 L55,160 L65,145 L70,120 Z" fill="#4a5568"/>
+    <path d="M125,95 L145,105 L155,130 L145,160 L135,145 L130,120 Z" fill="#4a5568"/>
+    
+    <!-- Arm armor -->
+    <path d="M55,105 L45,110 L40,125 L50,125 L55,115 Z" fill="#2d3748"/>
+    <path d="M145,105 L155,110 L160,125 L150,125 L145,115 Z" fill="#2d3748"/>
+    
+    <!-- Legs -->
+    <path d="M85,200 L80,250 L75,300 L95,300 L90,250 Z" fill="#4a5568"/>
+    <path d="M115,200 L120,250 L125,300 L105,300 L110,250 Z" fill="#4a5568"/>
+    
+    <!-- Sword -->
+    <path d="M150,160 L190,130 L195,135 L155,165 Z" fill="#718096"/>
+    <rect x="145" y="165" width="15" height="5" fill="#a0aec0"/>
+    <rect x="150" y="160" width="5" height="40" fill="#718096"/>
+    
+    <!-- Shield -->
+    <path d="M40,125 L60,115 L60,155 L40,165 L20,155 L20,115 Z" fill="#718096"/>
+    <circle cx="40" cy="135" r="10" fill="#a0aec0"/>
+  </g>
+  
+  <!-- Class label -->
+  <rect x="75" y="340" width="150" height="40" rx="5" fill="rgba(0,0,0,0.5)"/>
+  <text x="150" y="365" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">Warrior</text>
+</svg> 

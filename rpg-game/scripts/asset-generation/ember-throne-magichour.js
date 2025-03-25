@@ -1,0 +1,1 @@
+console.log("Starting Magic Hour image generation..."); const fs = require("fs"); const path = require("path"); const logDir = path.resolve(__dirname, "../logs"); fs.writeFileSync(path.join(logDir, "magic-hour-test.log"), `Magic Hour test log created at ${new Date().toISOString()}\n`); console.log("Log file created in", logDir); console.log("Magic Hour script complete.");

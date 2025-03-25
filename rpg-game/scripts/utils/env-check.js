@@ -1,0 +1,1 @@
+console.log('API DEBUG'); console.log('ENV PATH:', process.cwd() + '/.env'); const dotenv = require('dotenv'); dotenv.config(); console.log('KEYS:', Object.keys(process.env).filter(k => k.includes('API') || k.includes('KEY'))); console.log('MAGIC:', process.env.MAGIC_HOUR_API_KEY);

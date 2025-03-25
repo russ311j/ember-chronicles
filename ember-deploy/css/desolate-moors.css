@@ -1,0 +1,200 @@
+.moors-journey-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.journey-main-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.journey-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.journey-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    min-height: 100px;
+    animation: fadeIn 0.5s ease-in-out;
+    color: #e0e0e0;
+}
+
+.journey-text span {
+    opacity: 0;
+    animation: fadeIn 0.1s ease-in-out forwards;
+}
+
+.journey-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.journey-choice-button {
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 2px solid #ff6b6b;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.journey-choice-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.journey-choice-button:hover {
+    background-color: rgba(255, 107, 107, 0.2);
+    transform: translateX(10px);
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.journey-choice-button:hover::before {
+    left: 100%;
+}
+
+.journey-choice-button:active {
+    transform: translateX(5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .moors-journey-content {
+        padding: 1rem;
+    }
+
+    .journey-main-content {
+        padding: 1.5rem;
+    }
+
+    .journey-title {
+        font-size: 2rem;
+    }
+
+    .journey-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .journey-choice-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Accessibility */
+.journey-choice-button:focus {
+    outline: 2px solid #ff6b6b;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .journey-choice-button {
+        background-color: #000;
+        border: 2px solid #ff6b6b;
+    }
+
+    .journey-choice-button:hover {
+        background-color: #333;
+    }
+}
+
+/* Mist Effect */
+.moors-journey-content::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    pointer-events: none;
+    animation: mistFloat 20s infinite linear;
+}
+
+@keyframes mistFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
