@@ -252,10 +252,10 @@
       const illustration = document.createElement('div');
       illustration.className = 'illustration-container';
       const img = document.createElement('img');
-      img.src = `media/images/generated/magichour/page_${pageNumber}.png`;
+      img.src = `/ember-chronicles/media/images/generated/page_${pageNumber}.png`;
       img.alt = pageData.title;
       img.onerror = function() {
-        this.src = 'media/images/placeholder.svg';
+        this.src = '/ember-chronicles/media/images/placeholder.svg';
       };
       illustration.appendChild(img);
       
