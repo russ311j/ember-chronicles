@@ -49,7 +49,7 @@ html, body {
 
 /* Main Menu Styles */
 #main-menu {
-  background-image: url('../media/images/generated/ui/main_menu.png');
+  background-image: url('../media/images/generated/main_menu.png');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1910,7 +1910,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #111111;
-  background-image: url('../media/images/generated/ui/main_menu.png');
+  background-image: url('../media/images/generated/main_menu.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
