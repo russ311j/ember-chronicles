@@ -20,58 +20,19 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    outputs:
-      build_path: ${{ steps.check.outputs.build_path }}
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          
-      - name: Install Dependencies
-        working-directory: rpg-game
-        run: |
-          npm install
-          
-      - name: Build Project
-        working-directory: rpg-game
-        run: |
-          # Build the project - adjust this command based on your actual build script
-          npm run build || npm run deploy
-          
-      - name: Debug directory structure
-        run: |
-          echo "Current directory structure:"
-          find . -type f -name "index.html"
-          
-      - name: Locate index.html
+      - name: Verify index.html exists
         id: check
-        shell: bash
         run: |
-          # Check multiple possible locations
-          possible_paths=(
-            "rpg-game/deploy-ember/index.html"
-            "rpg-game/deploy/index.html"
-            "rpg-game/dist/index.html"
-            "rpg-game/build/index.html"
-            "rpg-game/public/index.html"
-            "rpg-game/index.html"
-          )
-          
-          for path in "${possible_paths[@]}"; do
-            if [ -f "$path" ]; then
-              echo "Found index.html at: $path"
-              echo "build_path=$(dirname $path)" >> $GITHUB_OUTPUT
-              exit 0
-            fi
-          done
-          
-          echo "::error::index.html not found in any expected location!"
-          echo "Contents of rpg-game directory:"
-          ls -R rpg-game/
-          exit 1
+          if [ ! -f "rpg-game/index.html" ]; then
+            echo "::error::index.html not found at rpg-game/index.html"
+            echo "Contents of rpg-game directory:"
+            ls -la rpg-game/
+            exit 1
+          fi
+          echo "Found index.html at rpg-game/index.html"
 
   build:
     needs: verify
@@ -81,29 +42,37 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v4
         
       - name: Prepare site root
-        id: prepare
         run: |
+          # Create _site directory and copy ONLY from rpg-game
           mkdir -p _site
-          BUILD_PATH="${{ needs.verify.outputs.build_path }}"
-          echo "Copying from $BUILD_PATH to _site"
-          cp -rv "$BUILD_PATH"/* _site/
+          echo "Copying contents from rpg-game to _site"
+          cp -rv rpg-game/* _site/
+          
+          if [ ! -f "_site/index.html" ]; then
+            echo "::error::Failed to copy index.html from rpg-game"
+            exit 1
+          fi
           
           echo "Contents of _site directory:"
           ls -la _site/
           
-          if [ ! -f "_site/index.html" ]; then
-            echo "::error::index.html not found in _site directory after copy"
-            exit 1
-          fi
-          
-      - name: Upload artifact
+      - name: Upload artifact with retries
         uses: actions/upload-pages-artifact@v3
+        id: upload
         with:
           path: '_site'
+          retention-days: 1
+          
+      - name: Verify artifact upload
+        if: always()
+        run: |
+          if [ "${{ steps.upload.outcome }}" != "success" ]; then
+            echo "::error::Artifact upload failed!"
+            exit 1
+          fi
           
   deploy:
     environment:
@@ -118,6 +87,7 @@ jobs:
         timeout-minutes: 10
         
       - name: Verify deployment
+        if: always()
         run: |
           if [ "${{ steps.deployment.outcome }}" != "success" ]; then
             echo "::error::Deployment failed!"
