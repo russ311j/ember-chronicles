@@ -22,73 +22,74 @@
   GameX.AssetLoader = {
     // Default image paths
     defaults: {
-      backgroundImage: 'media/images/generated/title_page.png'
+      backgroundImage: '/ember-chronicles/media/images/generated/title_page.png'
     },
     
     // Asset mapping - maps story page IDs to image assets
     assetMap: {
       // Main backgrounds for story pages
-      '1_1': 'media/images/generated/page_1.png', // A Mysterious Invitation
-      '1_1_investigate': 'media/images/generated/page_3.png', // Inquisitive Investigation
-      '1_1_advice': 'media/images/generated/page_4.png', // Seeking Counsel
-      '1_1_dismiss': 'media/images/generated/page_1.png', // Reuse Mysterious Invitation
-      '1_1_archive': 'media/images/generated/page_2.png', // Bold Acceptance
-      '2_1': 'media/images/generated/page_5.png', // Preparation for Journey
-      '2_1_guide': 'media/images/generated/page_6.png', // Entering the Dark Forest
+      '1_1': '/ember-chronicles/media/images/generated/page_1.png', // A Mysterious Invitation
+      '1_1_investigate': '/ember-chronicles/media/images/generated/page_3.png', // Inquisitive Investigation
+      '1_1_advice': '/ember-chronicles/media/images/generated/page_4.png', // Seeking Counsel
+      '1_1_dismiss': '/ember-chronicles/media/images/generated/page_1.png', // Reuse Mysterious Invitation
+      '1_1_archive': '/ember-chronicles/media/images/generated/page_2.png', // Bold Acceptance
+      '2_1': '/ember-chronicles/media/images/generated/page_5.png', // Preparation for Journey
+      '2_1_guide': '/ember-chronicles/media/images/generated/page_6.png', // Entering the Dark Forest
       
       // The Ember Throne Chronicles story pages (1-30)
-      'title_page': 'media/images/generated/title_page.png',
-      'page_1': 'media/images/generated/page_1.png',
-      'page_2': 'media/images/generated/page_2.png',
-      'page_3': 'media/images/generated/page_3.png',
-      'page_4': 'media/images/generated/page_4.png',
-      'page_5': 'media/images/generated/page_5.png',
-      'page_6': 'media/images/generated/page_6.png',
-      'page_7': 'media/images/generated/page_7.png',
-      'page_8': 'media/images/generated/page_8.png',
-      'page_9': 'media/images/generated/page_9.png',
-      'page_10': 'media/images/generated/page_10.png',
-      'page_11': 'media/images/generated/page_11.png',
-      'page_12': 'media/images/generated/page_12.png',
-      'page_13': 'media/images/generated/page_13.png',
-      'page_14': 'media/images/generated/page_14.png',
-      'page_15': 'media/images/generated/page_15.png',
-      'page_16': 'media/images/generated/page_16.png',
-      'page_17': 'media/images/generated/page_17.png',
-      'page_18': 'media/images/generated/page_18.png',
-      'page_19': 'media/images/generated/page_19.png',
-      'page_20': 'media/images/generated/page_20.png',
-      'page_21': 'media/images/generated/page_21.png',
-      'page_22': 'media/images/generated/page_22.png',
-      'page_23': 'media/images/generated/page_23.png',
-      'page_24': 'media/images/generated/page_24.png',
-      'page_25': 'media/images/generated/page_25.png',
-      'page_26': 'media/images/generated/page_26.png',
-      'page_27': 'media/images/generated/page_27.png',
-      'page_28': 'media/images/generated/page_28.png',
-      'page_29': 'media/images/generated/page_29.png',
-      'page_30': 'media/images/generated/page_30.png',
+      'title_page': '/ember-chronicles/media/images/generated/title_page.png',
+      'page_1': '/ember-chronicles/media/images/generated/page_1.png',
+      'page_2': '/ember-chronicles/media/images/generated/page_2.png',
+      'page_3': '/ember-chronicles/media/images/generated/page_3.png',
+      'page_4': '/ember-chronicles/media/images/generated/page_4.png',
+      'page_5': '/ember-chronicles/media/images/generated/page_5.png',
+      'page_6': '/ember-chronicles/media/images/generated/page_6.png',
+      'page_7': '/ember-chronicles/media/images/generated/page_7.png',
+      'page_8': '/ember-chronicles/media/images/generated/page_8.png',
+      'page_9': '/ember-chronicles/media/images/generated/page_9.png',
+      'page_10': '/ember-chronicles/media/images/generated/page_10.png',
+      'page_11': '/ember-chronicles/media/images/generated/page_11.png',
+      'page_12': '/ember-chronicles/media/images/generated/page_12.png',
+      'page_13': '/ember-chronicles/media/images/generated/page_13.png',
+      'page_14': '/ember-chronicles/media/images/generated/page_14.png',
+      'page_15': '/ember-chronicles/media/images/generated/page_15.png',
+      'page_16': '/ember-chronicles/media/images/generated/page_16.png',
+      'page_17': '/ember-chronicles/media/images/generated/page_17.png',
+      'page_18': '/ember-chronicles/media/images/generated/page_18.png',
+      'page_19': '/ember-chronicles/media/images/generated/page_19.png',
+      'page_20': '/ember-chronicles/media/images/generated/page_20.png',
+      'page_21': '/ember-chronicles/media/images/generated/page_21.png',
+      'page_22': '/ember-chronicles/media/images/generated/page_22.png',
+      'page_23': '/ember-chronicles/media/images/generated/page_23.png',
+      'page_24': '/ember-chronicles/media/images/generated/page_24.png',
+      'page_25': '/ember-chronicles/media/images/generated/page_25.png',
+      'page_26': '/ember-chronicles/media/images/generated/page_26.png',
+      'page_27': '/ember-chronicles/media/images/generated/page_27.png',
+      'page_28': '/ember-chronicles/media/images/generated/page_28.png',
+      'page_29': '/ember-chronicles/media/images/generated/page_29.png',
+      'page_30': '/ember-chronicles/media/images/generated/page_30.png',
       
       // Scene illustrations
-      'mysterious_letter': 'media/images/generated/mysterious_letter.png',
+      'mysterious_letter': '/ember-chronicles/media/images/generated/mysterious_letter.png',
       
       // Character portraits
-      'protagonist': 'media/images/generated/protagonist.png',
-      'village_elder': 'media/images/generated/village_elder.png',
-      'messenger': 'media/images/generated/mysterious_messenger.png',
+      'protagonist': '/ember-chronicles/media/images/generated/protagonist.png',
+      'village_elder': '/ember-chronicles/media/images/generated/village_elder.png',
+      'messenger': '/ember-chronicles/media/images/generated/mysterious_messenger.png',
       
       // Character class portraits (Baldur's Gate style)
-      'warrior': 'media/images/generated/characters/warrior_portrait.png',
-      'mage': 'media/images/generated/characters/mage_portrait.png',
-      'rogue': 'media/images/generated/characters/rogue_portrait.png',
-      'cleric': 'media/images/generated/characters/cleric_portrait.png',
+      'warrior': '/ember-chronicles/media/images/generated/characters/warrior_portrait.png',
+      'mage': '/ember-chronicles/media/images/generated/characters/mage_portrait.png',
+      'rogue': '/ember-chronicles/media/images/generated/characters/rogue_portrait.png',
+      'cleric': '/ember-chronicles/media/images/generated/characters/cleric_portrait.png',
       
       // UI elements
-      'button_frame': 'media/images/generated/button_frame.png',
-      'panel_background': 'media/images/generated/dialog_box.png',
-      'inventory_slot': 'media/images/generated/inventory_bg.png',
-      'loading_screen': 'media/images/generated/loading_screen.png',
-      'main_menu': 'media/images/generated/main_menu.png'
+      'button_frame': '/ember-chronicles/media/images/generated/button_frame.png',
+      'dialog_box': '/ember-chronicles/media/images/generated/dialog_box.png',
+      'inventory_slot': '/ember-chronicles/media/images/generated/inventory_bg.png',
+      'loading_screen': '/ember-chronicles/media/images/generated/loading_screen.png',
+      'main_menu': '/ember-chronicles/media/images/generated/main_menu.png',
+      'placeholder': '/ember-chronicles/media/images/placeholder.svg'
     },
     
     // Audio mapping - references to SoundManager.soundAssetMap for consistency
