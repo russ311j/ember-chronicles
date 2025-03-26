@@ -25,24 +25,47 @@ jobs:
       page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: Debug Directory Structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "List workspace root:"
+          ls -la
+          echo "List rpg-game directory:"
+          ls -la rpg-game/
+          echo "Checking for index.html:"
+          find . -name "index.html"
       
       - name: Verify index.html exists
         id: check
         run: |
-          if [ ! -f "rpg-game/index.html" ]; then
-            echo "::error::index.html not found at rpg-game/index.html"
+          # Use absolute path to be certain
+          WORKSPACE="${GITHUB_WORKSPACE}"
+          INDEX_PATH="${WORKSPACE}/rpg-game/index.html"
+          
+          echo "Checking for index.html at: $INDEX_PATH"
+          
+          if [ ! -f "$INDEX_PATH" ]; then
+            echo "::error::index.html not found at $INDEX_PATH"
             echo "Contents of rpg-game directory:"
-            ls -la rpg-game/
+            ls -la "${WORKSPACE}/rpg-game/"
             exit 1
           fi
-          echo "Found index.html at rpg-game/index.html"
+          echo "Found index.html at $INDEX_PATH"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
       - name: Prepare site root
         run: |
+          # Ensure we're in the workspace root
+          cd "${GITHUB_WORKSPACE}"
+          
+          # Create _site directory
           mkdir -p _site
+          
           echo "Copying contents from rpg-game to _site"
           cp -rv rpg-game/* _site/
           
@@ -51,6 +74,9 @@ jobs:
           
           if [ ! -f "_site/index.html" ]; then
             echo "::error::Failed to copy index.html from rpg-game"
+            echo "Checking source and destination:"
+            ls -la rpg-game/
+            ls -la _site/
             exit 1
           fi
           
