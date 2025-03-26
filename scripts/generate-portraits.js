@@ -17,7 +17,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 const portraits = [
   {
     id: 'title_page',
-    prompt: 'Epic medieval fantasy title page, grand throne room with a majestic golden throne, magical ember crystals floating and glowing with intense energy, dramatic rays of light streaming through ornate stained glass windows, dark atmospheric fantasy style, professional digital art, hyper-detailed architectural elements, painted look, fantasy game art style, cinematic lighting, 8K resolution'
+    prompt: 'Majestic medieval fantasy throne room interior, massive ornate golden throne centered, floating magical ember crystals casting ethereal orange glow, towering marble columns with intricate carvings, dramatic god rays piercing through tall stained glass windows, rich royal purple and gold color scheme, dark atmospheric fantasy style, volumetric lighting, cinematic composition, extremely detailed architectural elements, professional digital art, hyper-realistic textures, epic scale, 8K resolution'
   },
   {
     id: 'page_5',
