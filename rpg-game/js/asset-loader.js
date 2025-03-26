@@ -22,93 +22,73 @@
   GameX.AssetLoader = {
     // Default image paths
     defaults: {
-      missingImage: '/media/images/placeholder.svg',
-      loadingImage: '/media/images/placeholder.svg',
-      backgroundImage: '/media/images/generated/title_page.png'
+      backgroundImage: 'media/images/generated/title_page.png'
     },
     
     // Asset mapping - maps story page IDs to image assets
     assetMap: {
       // Main backgrounds for story pages
-      '1_1': '/media/images/generated/page_1.png', // A Mysterious Invitation
-      '1_1_investigate': '/media/images/generated/page_3.png', // Inquisitive Investigation
-      '1_1_advice': '/media/images/generated/page_4.png', // Seeking Counsel
-      '1_1_dismiss': '/media/images/generated/page_1.png', // Reuse Mysterious Invitation
-      '1_1_archive': '/media/images/generated/page_2.png', // Bold Acceptance
-      '2_1': '/media/images/generated/page_5.png', // Preparation for Journey
-      '2_1_guide': '/media/images/generated/page_6.png', // Entering the Dark Forest
+      '1_1': 'media/images/generated/page_1.png', // A Mysterious Invitation
+      '1_1_investigate': 'media/images/generated/page_3.png', // Inquisitive Investigation
+      '1_1_advice': 'media/images/generated/page_4.png', // Seeking Counsel
+      '1_1_dismiss': 'media/images/generated/page_1.png', // Reuse Mysterious Invitation
+      '1_1_archive': 'media/images/generated/page_2.png', // Bold Acceptance
+      '2_1': 'media/images/generated/page_5.png', // Preparation for Journey
+      '2_1_guide': 'media/images/generated/page_6.png', // Entering the Dark Forest
       
       // The Ember Throne Chronicles story pages (1-30)
-      'title_page': '/media/images/generated/title_page.png',
-      'page_1': '/media/images/generated/page_1.png',
-      'page_2': '/media/images/generated/page_2.png',
-      'page_3': '/media/images/generated/page_3.png',
-      'page_4': '/media/images/generated/page_4.png',
-      'page_5': '/media/images/generated/page_5.png',
-      'page_6': '/media/images/generated/page_6.png',
-      'page_7': '/media/images/generated/page_7.png',
-      'page_8': '/media/images/generated/page_8.png',
-      'page_9': '/media/images/generated/page_9.png',
-      'page_10': '/media/images/generated/page_10.png',
-      'page_11': '/media/images/generated/page_11.png',
-      'page_12': '/media/images/generated/page_12.png',
-      'page_13': '/media/images/generated/page_13.png',
-      'page_14': '/media/images/generated/page_14.png',
-      'page_15': '/media/images/generated/page_15.png',
-      'page_16': '/media/images/generated/page_16.png',
-      'page_17': '/media/images/generated/page_17.png',
-      'page_18': '/media/images/generated/page_18.png',
-      'page_19': '/media/images/generated/page_19.png',
-      'page_20': '/media/images/generated/page_20.png',
-      'page_21': '/media/images/generated/page_21.png',
-      'page_22': '/media/images/generated/page_22.png',
-      'page_23': '/media/images/generated/page_23.png',
-      'page_24': '/media/images/generated/page_24.png',
-      'page_25': '/media/images/generated/page_25.png',
-      'page_26': '/media/images/generated/page_26.png',
-      'page_27': '/media/images/generated/page_27.png',
-      'page_28': '/media/images/generated/page_28.png',
-      'page_29': '/media/images/generated/page_29.png',
-      'page_30': '/media/images/generated/page_30.png',
+      'title_page': 'media/images/generated/title_page.png',
+      'page_1': 'media/images/generated/page_1.png',
+      'page_2': 'media/images/generated/page_2.png',
+      'page_3': 'media/images/generated/page_3.png',
+      'page_4': 'media/images/generated/page_4.png',
+      'page_5': 'media/images/generated/page_5.png',
+      'page_6': 'media/images/generated/page_6.png',
+      'page_7': 'media/images/generated/page_7.png',
+      'page_8': 'media/images/generated/page_8.png',
+      'page_9': 'media/images/generated/page_9.png',
+      'page_10': 'media/images/generated/page_10.png',
+      'page_11': 'media/images/generated/page_11.png',
+      'page_12': 'media/images/generated/page_12.png',
+      'page_13': 'media/images/generated/page_13.png',
+      'page_14': 'media/images/generated/page_14.png',
+      'page_15': 'media/images/generated/page_15.png',
+      'page_16': 'media/images/generated/page_16.png',
+      'page_17': 'media/images/generated/page_17.png',
+      'page_18': 'media/images/generated/page_18.png',
+      'page_19': 'media/images/generated/page_19.png',
+      'page_20': 'media/images/generated/page_20.png',
+      'page_21': 'media/images/generated/page_21.png',
+      'page_22': 'media/images/generated/page_22.png',
+      'page_23': 'media/images/generated/page_23.png',
+      'page_24': 'media/images/generated/page_24.png',
+      'page_25': 'media/images/generated/page_25.png',
+      'page_26': 'media/images/generated/page_26.png',
+      'page_27': 'media/images/generated/page_27.png',
+      'page_28': 'media/images/generated/page_28.png',
+      'page_29': 'media/images/generated/page_29.png',
+      'page_30': 'media/images/generated/page_30.png',
       
       // Scene illustrations
-      'mysterious_letter': '/media/images/generated/mysterious_letter.png',
-      'forest_path': '/media/images/generated/dark_forest.png',
-      'mountain_pass': '/media/images/generated/mountain_trail.png',
-      'village_tavern': '/media/images/generated/village.png',
-      'ice_cave': '/media/images/generated/ice_cave.png',
-      'ancient_library': '/media/images/generated/ancient_library.png',
-      'ancient_temple': '/media/images/generated/ancient_temple.png',
-      'ember_throne': '/media/images/generated/ember_throne_chamber.png',
-      'hermit_hut': '/media/images/generated/hermit_hut.png',
+      'mysterious_letter': 'media/images/generated/mysterious_letter.png',
       
       // Character portraits
-      'protagonist': '/media/images/generated/protagonist.png',
-      'village_elder': '/media/images/generated/village_elder.png',
-      'messenger': '/media/images/generated/mysterious_messenger.png',
-      'forest_guardian': '/media/images/generated/forest_guardian.png',
-      'mountain_hermit': '/media/images/generated/mountain_hermit.png',
-      'temple_guardian': '/media/images/generated/temple_guardian.png',
+      'protagonist': 'media/images/generated/protagonist.png',
+      'village_elder': 'media/images/generated/village_elder.png',
+      'messenger': 'media/images/generated/mysterious_messenger.png',
       
       // Character class portraits (Baldur's Gate style)
-      'warrior': '/media/images/generated/characters/warrior_portrait.png',
-      'mage': '/media/images/generated/characters/mage_portrait.png',
-      'rogue': '/media/images/generated/characters/rogue_portrait.png',
-      'cleric': '/media/images/generated/characters/cleric_portrait.png',
-      
-      // Items
-      'letter': '/media/images/generated/mysterious_letter.png',
-      'map': '/media/images/generated/ancient_map.png',
-      'key': '/media/images/generated/crystal_key.png',
-      'amulet': '/media/images/generated/ember_amulet.png',
-      'tome': '/media/images/generated/ancient_tome.png',
+      'warrior': 'media/images/generated/characters/warrior_portrait.png',
+      'mage': 'media/images/generated/characters/mage_portrait.png',
+      'rogue': 'media/images/generated/characters/rogue_portrait.png',
+      'cleric': 'media/images/generated/characters/cleric_portrait.png',
       
       // UI elements
-      'button_frame': '/media/images/generated/button_frame.png',
-      'panel_background': '/media/images/generated/dialog_box.png',
-      'inventory_slot': '/media/images/generated/inventory_bg.png',
-      'loading_screen': '/media/images/generated/loading_screen.png',
-      'main_menu': '/media/images/generated/main_menu.png'
+      'button_frame': 'media/images/generated/button_frame.png',
+      'panel_background': 'media/images/generated/dialog_box.png',
+      'inventory_slot': 'media/images/generated/inventory_bg.png',
+      'loading_screen': 'media/images/generated/loading_screen.png',
+      'main_menu': 'media/images/generated/main_menu.png'
     },
     
     // Audio mapping - references to SoundManager.soundAssetMap for consistency
@@ -181,13 +161,7 @@
           img.onerror = () => {
             errorCount++;
             logAssetLoad(imageSrc, false);
-            
-            // Try again with placeholder if it's not the placeholder itself
-            if (imageSrc !== this.defaults.missingImage) {
-              console.warn(`Failed to load image: ${imageSrc} - Using placeholder instead`);
-            }
-            
-            // Still resolve the promise to avoid hanging
+            console.error(`Failed to load image: ${imageSrc}`);
             resolve(null);
           };
           
@@ -249,17 +223,32 @@
     
     // Get the image path for a specific story page
     getImageForPage: function(pageId) {
-      return this.assetMap[pageId] || this.defaults.missingImage;
+      const imagePath = this.assetMap[pageId];
+      if (!imagePath) {
+        console.error(`No image found for page: ${pageId}`);
+        return null;
+      }
+      return imagePath;
     },
     
     // Get the image path for a specific character class
     getCharacterPortrait: function(characterClass) {
-      return this.assetMap[characterClass.toLowerCase()] || this.defaults.missingImage;
+      const imagePath = this.assetMap[characterClass.toLowerCase()];
+      if (!imagePath) {
+        console.error(`No portrait found for character class: ${characterClass}`);
+        return null;
+      }
+      return imagePath;
     },
     
     // Get the image path for a UI element
     getUIAsset: function(elementName) {
-      return this.assetMap[elementName] || this.defaults.missingImage;
+      const imagePath = this.assetMap[elementName];
+      if (!imagePath) {
+        console.error(`No UI asset found for: ${elementName}`);
+        return null;
+      }
+      return imagePath;
     },
     
     // Get the sound ID for a scene theme
