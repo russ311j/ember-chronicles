@@ -17,11 +17,15 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 const portraits = [
   {
     id: 'title_page',
-    prompt: 'Epic fantasy title page, medieval throne room with an ornate golden throne, ember crystals glowing with magical energy, dramatic lighting with rays of light through stained glass windows, dark fantasy oil painting style, professional digital art, intricate architectural details, painted look, fantasy game art style, 8K resolution'
+    prompt: 'Epic medieval fantasy title page, grand throne room with a majestic golden throne, magical ember crystals floating and glowing with intense energy, dramatic rays of light streaming through ornate stained glass windows, dark atmospheric fantasy style, professional digital art, hyper-detailed architectural elements, painted look, fantasy game art style, cinematic lighting, 8K resolution'
   },
   {
     id: 'page_5',
-    prompt: 'Fantasy adventurer preparing for journey, medieval marketplace scene, bustling with activity, merchants selling supplies and equipment, warm morning light, dark fantasy oil painting style, professional digital art, detailed environment and characters, painted look, fantasy game art style, 8K resolution'
+    prompt: 'Fantasy adventurer preparing for an epic journey in a bustling medieval marketplace, merchants displaying weapons and magical items, warm morning sunlight filtering through market stalls, atmospheric fantasy style, professional digital art, highly detailed environment and characters, painted look, fantasy game art style, cinematic composition, 8K resolution'
+  },
+  {
+    id: 'page_1',
+    prompt: 'A mysterious messenger delivering an ornate letter in a medieval village at dusk, magical ember crystals glowing in the background, atmospheric fantasy setting, professional digital art, highly detailed environment and characters, dark fantasy oil painting style, dramatic lighting, fantasy game art style, cinematic composition, 8K resolution'
   }
 ];
 
