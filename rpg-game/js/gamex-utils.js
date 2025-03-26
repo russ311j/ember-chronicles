@@ -248,17 +248,13 @@
       return obj;
     },
 
-    // Default placeholder image path
-    PLACEHOLDER_IMAGE: '/media/images/placeholder/placeholder.svg',
-
     // Handle image loading errors
     handleImageError: function(img) {
-        console.log('Image failed to load:', img.src);
-        // Store the original source for potential retry
+        console.error('Image failed to load:', img.src);
+        // Store the original source for debugging
         img.dataset.originalSrc = img.src;
-        // Set the placeholder image
-        img.src = this.PLACEHOLDER_IMAGE;
-        return true; // Prevent default error handling
+        // Log the error but don't replace with placeholder
+        return false; // Allow default error handling
     },
 
     // Initialize image error handling
@@ -269,104 +265,47 @@
                 GameX.Utils.handleImageError(e.target);
             }
         }, true);
-
-        // Fix existing broken images
-        document.querySelectorAll('img').forEach(img => {
-            if (!img.complete || img.naturalHeight === 0) {
-                GameX.Utils.handleImageError(img);
-            }
-        });
     },
 
-    // Handle CSS security errors
-    fixCssBackgroundImages: function(brokenUrl) {
-      // This fixes any CSS background-image properties that use the broken image
-      const styleSheets = document.styleSheets;
+    /**
+     * Replace broken images with a placeholder
+     * @param {string} src - The source URL of the broken image
+     */
+    replaceBrokenImage: function(src) {
+      // Get all images with the broken src
+      const images = document.querySelectorAll(`img[src="${src}"]`);
+      images.forEach(img => {
+        img.src = 'ember-chronicles/media/images/placeholder.svg';
+        img.alt = 'Image not available';
+      });
       
-      try {
-        for (let i = 0; i < styleSheets.length; i++) {
-          const sheet = styleSheets[i];
-          let rules;
-          
-          try {
-            // Only process same-origin stylesheets to avoid security errors
-            if (sheet.href && new URL(sheet.href).origin !== window.location.origin) {
-              console.log('Skipping cross-origin stylesheet:', sheet.href);
-              continue;
-            }
-            
-            rules = sheet.cssRules || sheet.rules;
-          } catch (e) {
-            console.warn('Cannot access rules in stylesheet. This is normal for cross-origin stylesheets.');
-            continue;
-          }
-          
-          if (!rules) continue;
-          
-          for (let j = 0; j < rules.length; j++) {
-            const rule = rules[j];
-            
-            if (!rule.style) continue;
-            
-            const bgImage = rule.style.backgroundImage;
-            
-            if (bgImage && bgImage.includes(brokenUrl)) {
-              const newBgImage = `url('/media/images/placeholder.svg')`;
-              console.log(`Fixing CSS background image: ${bgImage} -> ${newBgImage}`);
-              
-              // We can't directly modify the rule in some browsers, so we'll add a new style
-              const selector = rule.selectorText;
-              if (selector) {
-                const styleEl = document.createElement('style');
-                styleEl.textContent = `${selector} { background-image: ${newBgImage} !important; }`;
-                document.head.appendChild(styleEl);
-              }
-            }
-          }
+      // Fix CSS background images
+      this.fixCssBackgroundImages(src);
+    },
+    
+    /**
+     * Fix CSS background images that are broken
+     * @param {string} src - The source URL of the broken image
+     */
+    fixCssBackgroundImages: function(src) {
+      // Get all elements with background images
+      const elements = document.querySelectorAll('[style*="background-image"]');
+      elements.forEach(el => {
+        const style = window.getComputedStyle(el);
+        const bgImage = style.backgroundImage;
+        if (bgImage && bgImage.includes(src)) {
+          el.style.backgroundImage = 'url("ember-chronicles/media/images/placeholder.svg")';
         }
-      } catch (error) {
-        console.error('Error fixing CSS background images:', error);
-      }
+      });
     },
-
-    // Improved image error handling
-    replaceBrokenImage: function(img) {
-      if (!img) return;
-      
-      try {
-        // Store the original src for debugging
-        const originalSrc = img.src;
-        
-        // Set to placeholder
-        img.src = GameX.Utils.PLACEHOLDER_IMAGE;
-        
-        // Log the replacement
-        console.log(`Replaced broken image: ${originalSrc} -> ${GameX.Utils.PLACEHOLDER_IMAGE}`);
-        
-        // Try to fix background images in CSS
-        GameX.Utils.fixCssBackgroundImages(originalSrc);
-      } catch (error) {
-        console.error('Error replacing broken image:', error);
-      }
-    },
-
-    // Capture asset errors
-    assetError: function(event) {
-      if (!event.target) return;
-      
-      try {
-        // Handle image loading failures
-        if (event.target.tagName === 'IMG') {
-          console.log('Failed to load asset:', event.target.src);
-          GameX.Utils.replaceBrokenImage(event.target);
-        }
-        
-        // Prevent default error handling
-        event.preventDefault();
-        return false;
-      } catch (error) {
-        console.error('Error in asset error handler:', error);
-      }
+    
+    /**
+     * Handle asset loading errors
+     * @param {string} src - The source URL of the failed asset
+     */
+    assetError: function(src) {
+      console.error(`Failed to load asset: ${src}`);
+      this.replaceBrokenImage(src);
     },
 
     // Random number generator
@@ -396,7 +335,7 @@ const loadingScreen = {
   progress: 0,
   totalAssets: 7,
   loadedAssets: 0,
-  placeholderFallback: '/media/images/placeholder.svg',
+  placeholderFallback: 'media/images/placeholder.svg',
 
   init: function() {
     this.element = document.getElementById('loading-screen');
@@ -410,21 +349,21 @@ const loadingScreen = {
     
     // Preload our generated assets for Ember Throne Chronicles
     this.preloadAssets([
-      '/media/images/generated/title_page.png',
-      '/media/images/generated/main_menu.png',
-      '/media/images/generated/loading_screen.png',
-      '/media/images/generated/button_frame.png',
-      '/media/images/generated/dialog_box.png',
-      '/media/images/generated/inventory_bg.png',
-      '/media/images/generated/page_1.png',
-      '/media/images/generated/page_2.png',
-      '/media/images/generated/page_3.png',
-      '/media/images/generated/page_4.png',
-      '/media/images/generated/page_5.png',
-      '/media/images/generated/protagonist.png',
-      '/media/images/generated/village_elder.png',
-      '/media/images/generated/mysterious_messenger.png',
-      '/media/images/generated/mysterious_letter.png'
+      'media/images/generated/title_page.png',
+      'media/images/generated/main_menu.png',
+      'media/images/generated/loading_screen.png',
+      'media/images/generated/button_frame.png',
+      'media/images/generated/dialog_box.png',
+      'media/images/generated/inventory_bg.png',
+      'media/images/generated/page_1.png',
+      'media/images/generated/page_2.png',
+      'media/images/generated/page_3.png',
+      'media/images/generated/page_4.png',
+      'media/images/generated/page_5.png',
+      'media/images/generated/protagonist.png',
+      'media/images/generated/village_elder.png',
+      'media/images/generated/mysterious_messenger.png',
+      'media/images/generated/mysterious_letter.png'
     ]);
   },
 
@@ -456,7 +395,7 @@ const loadingScreen = {
     placeholderImg.onerror = () => {
       console.warn('Placeholder image not found at:', this.placeholderFallback);
       // Try to find any image that might work as a fallback
-      this.placeholderFallback = '/media/images/placeholder.svg';
+      this.placeholderFallback = 'media/images/placeholder.svg';
     };
     placeholderImg.src = this.placeholderFallback;
   },
@@ -538,12 +477,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const src = img.src;
     
     // Skip if already using placeholder
-    if (src.includes('/media/images/placeholder.svg')) return;
+    if (src.includes('media/images/placeholder.svg')) return;
     
     console.warn(`Global handler caught image load error: ${src}`);
     
     // Replace with placeholder
-    img.src = '/media/images/placeholder.svg';
+    img.src = 'media/images/placeholder.svg';
     
     // Prevent infinite error loops
     img.onerror = null;
@@ -571,7 +510,7 @@ function fixBackgroundImages() {
     const bgImage = computedStyle.backgroundImage;
     
     // If no background or using placeholder, skip
-    if (!bgImage || bgImage === 'none' || bgImage.includes('/media/images/placeholder.svg')) return;
+    if (!bgImage || bgImage === 'none' || bgImage.includes('media/images/placeholder.svg')) return;
     
     // Create a test image to check if the background loads
     const testImg = new Image();
@@ -580,7 +519,7 @@ function fixBackgroundImages() {
       
       // Apply fallback style
       const style = document.createElement('style');
-      style.textContent = `${selector} { background-image: url('/media/images/placeholder.svg') !important; }`;
+      style.textContent = `${selector} { background-image: url('media/images/placeholder.svg') !important; }`;
       document.head.appendChild(style);
     };
     
