@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>The Ember Throne Chronicles</title>
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=MedievalSharp&display=swap">
+  <link rel="stylesheet" href="css/main.css?v=1.0.1">
+  <script src="js/asset-loader.js?v=1.0.1"></script>
+  <script src="js/scene-manager.js?v=1.0.1"></script>
+  <script src="js/dice-roller.js?v=1.0.1"></script>
+  <script src="js/gamex-utils.js?v=1.0.1"></script>
+  <script src="js/character-system.js?v=1.0.1"></script>
+</head>
+<body>
+  <!-- Loading Screen with Landing Page background -->
+  <div id="loading-screen">
+    <div id="loading-content">
+      <h1>The Ember Throne Chronicles</h1>
+      <div id="loading-bar">
+        <div id="loading-progress"></div>
+      </div>
+      <p id="loading-text">Loading game assets...</p>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="main-menu" class="screen active">
+      <div class="menu-container">
+        <div id="title-section">
+          <h1 class="game-title">The Ember Throne Chronicles</h1>
+          <p class="game-subtitle">A Tale of Power, Mystery, and Destiny</p>
+        </div>
+        <div id="menu-section">
+          <button id="start-game" class="menu-button">Begin Your Journey</button>
+          <button id="load-game" class="menu-button coming-soon">Load Game</button>
+          <button id="options" class="menu-button coming-soon">Options</button>
+        </div>
+        <div id="error-message" style="display: none;"></div>
+      </div>
+    </div>
+
+    <div id="character-creation" class="screen">
+      <div class="character-creation-container">
+        <h2>Create Your Character</h2>
+        <div id="character-creation-form">
+          <!-- Character creation form will be populated by JS -->
+        </div>
+        <button id="back-to-main-from-character" class="back-button">Back to Main Menu</button>
+      </div>
+    </div>
+
+    <div id="load-game-screen" class="screen">
+      <div class="load-game-container">
+        <h2>Load Game</h2>
+        <div id="save-slots">
+          <!-- Save slots will be populated by JS -->
+        </div>
+        <button id="back-to-main-from-load" class="back-button">Back to Main Menu</button>
+      </div>
+    </div>
+
+    <div id="options-screen" class="screen">
+      <div class="options-container">
+        <h2>Options</h2>
+        <div class="option-group">
+          <label for="music-volume">Music Volume:</label>
+          <input type="range" id="music-volume" min="0" max="100" value="80">
+          <span id="music-volume-value">80%</span>
+        </div>
+        <div class="option-group">
+          <label for="sfx-volume">SFX Volume:</label>
+          <input type="range" id="sfx-volume" min="0" max="100" value="100">
+          <span id="sfx-volume-value">100%</span>
+        </div>
+        <div class="option-group">
+          <label for="fullscreen-toggle">Fullscreen:</label>
+          <input type="checkbox" id="fullscreen-toggle">
+        </div>
+        <div class="option-group">
+          <label for="text-size">Text Size:</label>
+          <select id="text-size">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <button id="save-options-btn" class="primary-button">Save Options</button>
+      </div>
+      <button id="back-to-main-from-options" class="back-button">Back to Main Menu</button>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add CSS for coming soon buttons
+      const style = document.createElement('style');
+      style.textContent = `
+        .coming-soon {
+          opacity: 0.7;
+          position: relative;
+        }
+        .coming-soon:after {
+          content: "Coming Soon";
+          position: absolute;
+          font-size: 0.7rem;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+          color: #ffd700;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+      `;
+      document.head.appendChild(style);
+
+      // Handle loading screen
+      const loadingScreen = document.getElementById('loading-screen');
+      const loadingProgress = document.getElementById('loading-progress');
+      const loadingText = document.getElementById('loading-text');
+      
+      // Simulate loading progress
+      let progress = 0;
+      const loadingInterval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(loadingInterval);
+          setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+              loadingScreen.style.display = 'none';
+            }, 500);
+          }, 500);
+        }
+        loadingProgress.style.width = `${progress}%`;
+      }, 100);
+      
+      // Check for error messages from other pages
+      const errorMessage = sessionStorage.getItem('error-message');
+      if (errorMessage) {
+        const errorElement = document.getElementById('error-message');
+        errorElement.textContent = errorMessage;
+        errorElement.style.display = 'block';
+        sessionStorage.removeItem('error-message');
+      }
+      
+      // Screen navigation
+      function showScreen(screenId) {
+        // Hide all screens
+        document.querySelectorAll('.screen').forEach(screen => {
+          screen.classList.remove('active');
+        });
+        
+        // Show the requested screen
+        document.getElementById(screenId).classList.add('active');
+      }
+      
+      // Main menu button handlers
+      document.getElementById('start-game').addEventListener('click', function() {
+        showCharacterCreation();
+      });
+      
+      document.getElementById('load-game').addEventListener('click', function(e) {
+        // Disabled functionality
+        console.log("Load Game feature coming soon!");
+        return false;
+      });
+      
+      document.getElementById('options').addEventListener('click', function(e) {
+        // Disabled functionality
+        console.log("Options feature coming soon!");
+        return false;
+      });
+      
+      // Back buttons
+      document.getElementById('back-to-main-from-load').addEventListener('click', function() {
+        showScreen('main-menu');
+      });
+      
+      document.getElementById('back-to-main-from-options').addEventListener('click', function() {
+        showScreen('main-menu');
+      });
+      
+      document.getElementById('back-to-main-from-character').addEventListener('click', function() {
+        showScreen('main-menu');
+      });
+      
+      // Options slider values
+      const musicVolume = document.getElementById('music-volume');
+      const sfxVolume = document.getElementById('sfx-volume');
+      const musicValue = document.getElementById('music-volume-value');
+      const sfxValue = document.getElementById('sfx-volume-value');
+      
+      if (musicVolume && musicValue) {
+        musicVolume.addEventListener('input', function() {
+          musicValue.textContent = this.value + '%';
+        });
+      }
+      
+      if (sfxVolume && sfxValue) {
+        sfxVolume.addEventListener('input', function() {
+          sfxValue.textContent = this.value + '%';
+        });
+      }
+      
+      // Save options button
+      document.getElementById('save-options-btn').addEventListener('click', function() {
+        // Save options if the function exists
+        if (typeof GameX !== 'undefined' && GameX.saveOptions) {
+          GameX.saveOptions();
+        }
+        showScreen('main-menu');
+      });
+      
+      // Load save slots
+      function loadSaveSlots() {
+        const saveSlots = document.getElementById('save-slots');
+        if (!saveSlots) return;
+        
+        let slotsHTML = '';
+        let foundSaves = false;
+        
+        // Check for save slots in local storage
+        for (let i = 1; i <= 3; i++) {
+          const saveKey = `gamex-save-${i}`;
+          const saveData = localStorage.getItem(saveKey);
+          
+          if (saveData) {
+            try {
+              const save = JSON.parse(saveData);
+              foundSaves = true;
+              
+              slotsHTML += `
+                <div class="save-slot" data-slot="${i}">
+                  <div class="save-info">
+                    <h3>Save Slot ${i}</h3>
+                    <p>Character: ${save.character.name}</p>
+                    <p>Level: ${save.character.level} ${save.character.className}</p>
+                    <p>Saved: ${new Date(save.timestamp).toLocaleString()}</p>
+                  </div>
+                  <div class="save-actions">
+                    <button class="load-slot-btn" data-slot="${i}">Load</button>
+                    <button class="delete-slot-btn" data-slot="${i}">Delete</button>
+                  </div>
+                </div>
+              `;
+            } catch (error) {
+              console.error(`Error parsing save in slot ${i}:`, error);
+            }
+          } else {
+            slotsHTML += `
+              <div class="save-slot empty" data-slot="${i}">
+                <div class="save-info">
+                  <h3>Save Slot ${i}</h3>
+                  <p>Empty</p>
+                </div>
+              </div>
+            `;
+          }
+        }
+        
+        if (!foundSaves) {
+          slotsHTML += '<p class="no-saves-message">No saved games found.</p>';
+        }
+        
+        saveSlots.innerHTML = slotsHTML;
+        
+        // Add event listeners to the load and delete buttons
+        document.querySelectorAll('.load-slot-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            const slot = this.getAttribute('data-slot');
+            loadGame(slot);
+          });
+        });
+        
+        document.querySelectorAll('.delete-slot-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            const slot = this.getAttribute('data-slot');
+            if (confirm(`Are you sure you want to delete save slot ${slot}?`)) {
+              deleteGame(slot);
+              loadSaveSlots(); // Refresh the save slots
+            }
+          });
+        });
+      }
+      
+      // Load game from a save slot
+      function loadGame(slot) {
+        const saveKey = `gamex-save-${slot}`;
+        const saveData = localStorage.getItem(saveKey);
+        
+        if (saveData) {
+          try {
+            // Store the save data in session storage for the game page to use
+            sessionStorage.setItem('current-save-data', saveData);
+            
+            // Extract character and store in session
+            const save = JSON.parse(saveData);
+            sessionStorage.setItem('current-character', JSON.stringify(save.character));
+            
+            // Navigate to the game page
+            window.location.href = 'ember-throne.html';
+          } catch (error) {
+            alert('Error loading game: Invalid save data.');
+            console.error('Error loading game:', error);
+          }
+        } else {
+          alert('No save data found in this slot.');
+        }
+      }
+      
+      // Delete a save slot
+      function deleteGame(slot) {
+        const saveKey = `gamex-save-${slot}`;
+        localStorage.removeItem(saveKey);
+      }
+      
+      // Load saved options
+      function loadOptions() {
+        const options = JSON.parse(localStorage.getItem('gamex-options')) || {
+          musicVolume: 80,
+          sfxVolume: 100,
+          fullscreen: false,
+          textSize: 'medium'
+        };
+        
+        document.getElementById('music-volume').value = options.musicVolume;
+        document.getElementById('music-volume-value').textContent = options.musicVolume + '%';
+        
+        document.getElementById('sfx-volume').value = options.sfxVolume;
+        document.getElementById('sfx-volume-value').textContent = options.sfxVolume + '%';
+        
+        document.getElementById('fullscreen-toggle').checked = options.fullscreen;
+        document.getElementById('text-size').value = options.textSize;
+      }
+      
+      // Save options
+      function saveOptions() {
+        const options = {
+          musicVolume: parseInt(document.getElementById('music-volume').value),
+          sfxVolume: parseInt(document.getElementById('sfx-volume').value),
+          fullscreen: document.getElementById('fullscreen-toggle').checked,
+          textSize: document.getElementById('text-size').value
+        };
+        
+        localStorage.setItem('gamex-options', JSON.stringify(options));
+      }
+
+      function showCharacterCreation() {
+        // Hide all screens, show character creation
+        document.querySelectorAll('.screen').forEach(screen => {
+          screen.classList.remove('active');
+        });
+        document.getElementById('character-creation').classList.add('active');
+        
+        // Render the character creation UI
+        const container = document.getElementById('character-creation-form');
+        
+        // Pass a callback for when character creation is complete
+        GameX.CharacterSystem.renderCharacterCreation(container, function(character) {
+          // Character creation was handled by the character system
+          // The redirect to game.html happens in the character-system.js
+          console.log('Character created:', character);
+        });
+      }
+    });
+  </script>
+</body>
+</html> 
