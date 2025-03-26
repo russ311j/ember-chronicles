@@ -24,6 +24,19 @@ jobs:
           fetch-depth: 0
           submodules: false
       
+      - name: Verify deployment directory
+        run: |
+          if [ ! -d "rpg-game" ]; then
+            echo "Error: rpg-game directory not found"
+            exit 1
+          fi
+          if [ ! -f "rpg-game/index.html" ]; then
+            echo "Error: rpg-game/index.html not found"
+            exit 1
+          fi
+          echo "Directory structure:"
+          ls -R rpg-game/
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
