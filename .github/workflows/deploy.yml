@@ -18,8 +18,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  verify:
+  build:
     runs-on: ubuntu-latest
+    environment: github-pages
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       
@@ -33,63 +36,58 @@ jobs:
             exit 1
           fi
           echo "Found index.html at rpg-game/index.html"
-
-  build:
-    needs: verify
-    runs-on: ubuntu-latest
-    environment: github-pages
-    steps:
-      - uses: actions/checkout@v4
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
       - name: Prepare site root
         run: |
-          # Create _site directory and copy ONLY from rpg-game
           mkdir -p _site
           echo "Copying contents from rpg-game to _site"
           cp -rv rpg-game/* _site/
+          
+          echo "Contents of _site directory:"
+          ls -la _site/
           
           if [ ! -f "_site/index.html" ]; then
             echo "::error::Failed to copy index.html from rpg-game"
             exit 1
           fi
           
-          echo "Contents of _site directory:"
-          ls -la _site/
-          
-      - name: Upload artifact with retries
+      # Using v3 of upload-artifact which is more stable for this use case
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        id: upload
         with:
-          path: '_site'
-          retention-days: 1
+          name: github-pages
+          path: _site
+          if-no-files-found: error
           
-      - name: Verify artifact upload
-        if: always()
-        run: |
-          if [ "${{ steps.upload.outcome }}" != "success" ]; then
-            echo "::error::Artifact upload failed!"
-            exit 1
-          fi
-          
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         timeout-minutes: 10
-        
-      - name: Verify deployment
-        if: always()
+
+  verify:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Deployment
         run: |
-          if [ "${{ steps.deployment.outcome }}" != "success" ]; then
-            echo "::error::Deployment failed!"
-            exit 1
-          fi 
+          # Wait for deployment to propagate
+          sleep 30
+          
+          # Try to access the site
+          SITE_URL="${{ needs.build.outputs.page_url }}"
+          echo "Checking site at: $SITE_URL"
+          
+          for i in {1..3}; do
+            if curl -sSf "$SITE_URL" > /dev/null; then
+              echo "Site is accessible!"
+              exit 0
+            fi
+            echo "Attempt $i failed, waiting 10 seconds..."
+            sleep 10
+          done
+          
+          echo "::error::Site is not accessible after 3 attempts"
+          exit 1 
